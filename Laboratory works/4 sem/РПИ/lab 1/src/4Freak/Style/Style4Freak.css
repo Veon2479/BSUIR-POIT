@@ -1,0 +1,329 @@
+/*Our Team Member*/
+.TeamMembers
+{	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	width: 100%;
+	min-width: 1170px;
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.TeamMembers .TeamMembersContent
+{
+	max-width: 500px;
+	text-align: center;
+}
+
+.TeamMembers .TeamMembersContent h2
+{
+	font-size: 29px;
+	font-weight: 500;
+}
+
+.TeamMemvers .TeamMembersContent p
+{
+	margin-top: 30px;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.TeamMembersContainer
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.TeamMembersContainer .TeamMemberInfo
+{
+	width: 100%;
+	display: flex;  
+	justify-content: center; 
+	align-items: center;
+	flex-direction: row;
+}
+
+.TeamMembersContainer .TeamMemberInfo .TeamMembersBox
+{
+	position: relative;
+	padding: 0 10px;
+}
+
+.TeamMembersContainer .TeamMemberInfo .TeamMembersBox .TeamMemberName
+{
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.TeamMembersContainer .TeamMemberInfo .TeamMembersBox .TeamMemberPost
+{
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.TeamMembersContainer .TeamMemberInfo .TeamMembersBox .TeamMembersIcon
+{
+	min-width: 60px;
+	min-height: 60px;
+	max-width: 44px;
+	background: #F0F1F1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10%;
+	margin: 10px;
+}
+
+.TeamMembersContainer .TeamMemberInfo .TeamMembersBox .TeamMembersIcon i
+{
+	color: #00897b;
+}
+
+.TeamMembersContainer .TeamMemberInfo .TeamMembersBox a
+{
+	color: #F0F1F1
+}
+
+.TeamMembersContainer .TeamMemberInfo .TeamMembersBox .TeamMembersIconContainer
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.TeamMembersContainer .TeamMemberInfo .TeamMembersBox a:hover   div
+{
+	color: #FFF;
+	background-color: #3949ab;
+}
+
+.TeamMembersContainer .TeamMemberInfo .TeamMembersBox a:hover i
+{
+	color: #FFF;
+	
+}
+
+.TeamMembersContainer .TeamMemberInfo .TeamMembersBox a:hover
+{
+	color: #3949ab;
+}
+
+
+/*Contact Us*/
+.Contact
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	width: 100%;
+	min-width: 1170px;
+}
+
+.Contact
+{
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../Picture/BGG.jpg) no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.Contact .ContactContent
+{
+	max-width: 500px;
+	text-align: center;
+}
+
+.Contact .ContactContent h2
+{
+	font-size: 29px;
+	font-weight: 500;
+	color: #FFF;
+}
+
+.Contact .ContactContent  p
+{
+	margin-top: 30px;
+	font-size: 14px;
+	font-weight: 300;
+	color: #FFF;
+}
+.ContactContainer
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.ContactContainer .ContactInfo
+{
+	width: 100%;
+	display: flex;  
+	justify-content: center; 
+	align-items: center;
+	flex-direction: row;
+}
+
+.ContactContainer .ContactInfo .ContactBox
+{
+	position: relative;
+	padding: 0 100px;
+	display: flex;
+}
+
+.ContactContainer .ContactInfo .ContactBox .ContactIcon
+{
+	color: #FFF;
+}
+
+.ContactContainer .ContactInfo .ContactBox .ContactIcon
+{
+	position: absolute;
+	left: 70px;
+	min-width: 100px;
+	min-height: 100px;
+	background: RGB(57, 73, 171);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 22px;
+	margin-left: 40px;
+}
+
+.ContactContainer .ContactInfo .ContactBox .MapMarkerIcon
+{
+	left: 94px;
+}
+
+.ContactContainer .ContactInfo .ContactBox .EnvelopeIcon
+{
+	left: 94px;
+}
+
+.ContactContainer .ContactInfo .ContactBox p
+{
+	display: flex;
+	margin-top: 130px;
+	color: #fff;
+	flex-direction: row;
+	text-align: center;
+	font-weight: 300;
+}
+
+.ContactForm
+{
+	width: 40%;
+	padding: 40px;	
+}
+
+.ContactForm
+{
+	position: relative;
+	width: 900px;
+}
+
+.ContactForm .ContactInputBox
+{
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.ContactForm .ContactInputBox input,
+.ContactForm .ContactInputBox textarea
+{
+	width: 100%;
+	height: 60px;
+	padding: 5px, 0;
+	font-size: 24px;
+	margin: 10px, 0;
+	border-radius: 10px;
+}
+
+.ContactForm .ContactInputBox textarea
+{
+	height: 300px;
+	resize: none;
+}
+
+.ContactForm .ContactInlineBox
+{
+	width: 47%;
+}
+
+.ContactForm .ContactEmailBox
+{
+	position: absolute;
+	top: 45px;	
+	right: 35px;
+	margin: 5px;
+}
+
+.ContactForm .ContactInputBox span
+{
+	position: absolute;
+	left: 10px;
+	top: 18px;
+	padding: 5px, 0;
+	font-size: 20px;
+	margin: 10px, 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: #666;	
+}
+
+.ContactForm .ContactInputBox input:focus ~ span,
+.ContactForm .ContactInputBox input:valid ~ span,
+.ContactForm .ContactInputBox textarea:focus ~ span,
+.ContactForm .ContactInputBox textarea:valid ~ span
+{
+    color: #FFF;
+    mix-blend-mode: multiply;
+}
+
+.ContactForm .ContactInputBox input[type="submit"]:hover
+{
+	color: #FFF;
+	background-color: #3949ab;
+}
+
+.ContactForm .ContactInputBox input[type="submit"]
+{
+	position: absolute;
+	right: 0;
+	width: 100px;
+	color: $fff;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 18px;
+}
+
+/*Footer*/
+.FooterContent 
+{
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	height: 65px;
+	min-width: 1170px
+}

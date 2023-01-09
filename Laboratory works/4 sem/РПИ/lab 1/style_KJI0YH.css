@@ -1,0 +1,201 @@
+/*Latest Wotks part*/
+
+.latest-works h1 {
+	text-align: center;
+	margin: 100px 0 20px 0
+}
+
+.latest-works .lw-text {
+	text-align: center;
+	font-size: 15px;
+	font-weight: 400;
+	margin: 0 30% 100px 30%;
+}
+
+.latest-works button{
+	color: #000;
+	padding: 15px 0;
+	margin: 50px 7px;
+	min-width: 175px;
+	background: white;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 600;
+	border: 2px solid #00897b;
+	cursor: pointer;
+	transition: background 0.5s;
+}
+
+.latest-works .view-all button {
+	padding: 15px 30px;
+}
+
+.latest-works button:hover{
+	background: #00897b;
+	color: #fff;
+}
+
+.latest-works .lw-images ul, li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.latest-works .lw-images li {
+	display: inline-block;
+	position: relative;
+	margin: 10px;
+	overflow: hidden;
+}
+
+.latest-works .lw-images img {
+	display: block;
+}
+
+.latest-works .lw-images .descr {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+	color: #fff;
+	padding-top: 25%;
+	text-align: center;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.latest-works .lw-images .descr h4{
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 2px;
+}
+
+.latest-works .lw-images li:hover .descr{	
+	opacity: 1;
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+/*Pricing Plan part*/
+
+.pricing-plan {
+	background-color: #f1f1f1;
+	padding: 50px 0 100px 0;
+
+}
+
+.pricing-plan h1{
+	font-size: 25px;
+	margin: 50px 0 35px 0;
+}
+
+.pricing-plan .pp-text {
+	text-align: center;
+	font-size: 15px;
+	font-weight: 400;
+	margin: 0 30% 100px 30%;
+}
+
+.price-row {
+	display: flex;
+	justify-content: center;
+}
+
+.price-col {
+	background: #fff;
+	align-items: center;
+	min-width: 370px;
+	min-height: 670px;
+	overflow: hidden;
+	margin: 0 10px;
+	transition: all 0.5s;
+	padding: 0;
+}
+
+.price-col:hover {
+	box-shadow: 10px 10px 50px 10px rgba(0,0,0,0.35);
+}
+
+.price-title-back {
+	display: flex;
+	flex-direction: column;
+	background: url(src/KJI0YH/priceback.png) 0 0 no-repeat;
+	width: 375px;
+	height: 209px;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+.price-title {
+	font-size: 25px;
+	margin: 0 0 40px 0;
+}
+
+.price-head .price-num {
+	font-size: 50px;
+}
+
+.price-head .price-month {
+	font-size: 17px;
+}
+
+.price-head i{
+	width: 12px;
+	height: 20px;
+	display: inline-block;
+	position: relative;
+	bottom:25px;
+	left: 2px;
+}
+
+.price-text {
+	text-align: center;
+	color: #212121;
+	font-size: 17px;
+}
+
+.price-text li {
+	margin: 60px 0 50px 0;
+	text-align: center;
+}
+
+.price-text li:after {
+  content: '';
+	max-width: 178px;
+  display: block;
+  position: relative;
+  margin: 5px 100px;
+  height: 1px;
+  background-color: #bfbfbf;
+}
+
+.price-text li:first-child {
+	margin: 60px 0 50px 0;
+}
+
+.price-col button {
+	border: 2px solid #000;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 22px 0;
+	width: 178px;
+	cursor: pointer;
+	transition: background 0.5s;
+	margin: 0 0 60px 0;
+	background-color: #fff;
+}
+
+.price-button {
+	display: flex;
+	justify-content: center;
+}
+
+.price-col button:hover{
+	color: #fff;
+	background: #00897b;
+	border: 0;
+}

@@ -1,0 +1,87 @@
+
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Сидеть на вершине */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: hidden; /* Включите прокрутку, если это необходимо */
+    background-color: rgb(0,0,0); /* Цвет запасной вариант */
+    background-color: rgba(0,0,0,0.5); /* Черный с непрозрачностью */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% сверху и по центру */
+    padding: 25px;
+    border: 1px solid #888;
+    width: 35%; /* Может быть больше или меньше, в зависимости от размера экрана */
+}
+
+.modal-content p{
+    border-bottom: #00897b 2px solid;
+}
+
+.modal-content .namebox span,
+.modal-content .emailbox span,
+.modal-content .phonebox span{
+    position: relative;
+    top: -28px;
+    left: 10px;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.modal-content .namebox input:focus ~ span,
+.modal-content .emailbox input:focus ~ span,
+.modal-content .phonebox input:focus ~ span,
+.modal-content .namebox input:valid ~ span,
+.modal-content .emailbox input:valid ~ span,
+.modal-content .phonebox input:valid ~ span {
+    color: #fff;
+    mix-blend-mode: multiply;
+}
+
+.close {
+    position: relative;
+    top: -10px;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content input {
+    font-family: 'Open Sans', sans-serif;
+    align-content: center;
+    font-size: 16px;
+    width: 100%;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.modal-content .submit {
+    color: #000;
+    background: white;
+    text-transform: uppercase;
+    border: 2px solid #00897b;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.modal-content .submit:hover {
+    background: #00897b;
+    color: #fff;
+}
+
+

@@ -1,0 +1,42 @@
+.aq_modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 100; /* Сидеть на вершине */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: hidden; /* Включите прокрутку, если это необходимо */
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.5);
+}
+
+.aq_modal_content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% сверху и по центру */
+    padding: 25px;
+    border: 1px solid #888;
+    width: 35%; /* Может быть больше или меньше, в зависимости от размера экрана */
+}
+.aq_modal_content h4 {
+    text-align: center;
+    margin: 10px;
+    font-size: larger;
+    text-decoration: underline;
+}
+
+.aq_close {
+    position: relative;
+    top: -10px;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.aq_close:hover,
+.aq_close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
