@@ -1,0 +1,13 @@
+Operators:
+  num entries   lexem
+
+Operands:
+  num entries   lexem
+    1       1   lexem <>, last char met <>, previous sign char met <>
+    2       1   ERROR! Parser exeeded number of readed lexems!
+
+Operators dictionary: 0 - Operators, in total: 0
+Operands dictionary: 2 - Operands, in total: 2
+Program dictionary: 2
+Program length: 2
+Program volume: 2
