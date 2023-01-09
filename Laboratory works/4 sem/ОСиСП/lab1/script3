@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+if [ "2" -ne "$#" ]	#parameters issues
+then
+	echo "First parameter - input file with extension .c, second - name of executable output file" >&2
+else
+	if [ -r "$1" ]		#input file issues
+	then
+		gcc "$1" -o "$2" && "./$2"
+	else
+		echo "There's no such file .c (or permissions to read it)" >&2
+	fi
+fi

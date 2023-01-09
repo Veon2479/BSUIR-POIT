@@ -1,0 +1,38 @@
+#!/bin/bash
+
+errState="0"
+if [[ -z "$3" || -n "$4" ]]  #number of param-s
+then
+	errState="1"
+	{
+	echo "First parameter - output file"
+	echo "Second parameter - extension (without a dot)"
+	echo "Third parameter - searching directory"
+	} >&2
+fi
+
+if [[ "0" -eq "$errState" ]]		#no permissions for writing into a file
+then
+	touch "$1" > /dev/null
+	if [ "0" -ne "$?" ]
+	then
+		errState="1"
+		echo "Missing permissions for writing into specified file.." >&2
+	fi
+fi
+
+state=""
+if [[ "0" -eq "$errState" ]]		#missing directory		сделать нормально!
+then
+	if [ ! -d "$3" ]
+	then
+		errState="1"
+		echo "No such file or directory.." >&2
+	fi
+fi
+
+if [[ "0" -eq "$errState" ]]
+then
+	find "$3" -name "*.$2"	| sort -i
+	find "$3" -name "*.$2" | sort -i > "$1"
+fi
