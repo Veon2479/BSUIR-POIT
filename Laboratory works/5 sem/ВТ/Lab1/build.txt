@@ -1,0 +1,6 @@
+javac -sourcepath ./src -d bin src/Task9/Task9.java
+java -classpath ./bin Task9.Task9
+
+running jar:
+java -jar ./Lab1.jar
+

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="18.0.2" class="java.beans.XMLDecoder">
+ <object class="java.util.HashMap">
+  <void method="put">
+   <object class="Item">
+    <void property="color">
+     <object class="java.lang.Enum" id="MyColor0" method="valueOf">
+      <class>MyColor</class>
+      <string>Red</string>
+     </object>
+    </void>
+    <void property="name">
+     <string>1</string>
+    </void>
+    <void property="price">
+     <int>1</int>
+    </void>
+    <void property="type">
+     <object class="java.lang.Enum" id="ItemType0" method="valueOf">
+      <class>ItemType</class>
+      <string>Book</string>
+     </object>
+    </void>
+   </object>
+   <int>1</int>
+  </void>
+  <void method="put">
+   <object class="Item">
+    <void property="color">
+     <object idref="MyColor0"/>
+    </void>
+    <void property="name">
+     <string>1</string>
+    </void>
+    <void property="price">
+     <int>1</int>
+    </void>
+    <void property="type">
+     <object class="java.lang.Enum" id="ItemType1" method="valueOf">
+      <class>ItemType</class>
+      <string>Fridge</string>
+     </object>
+    </void>
+   </object>
+   <int>1</int>
+  </void>
+  <void method="put">
+   <object class="Item">
+    <void property="color">
+     <object class="java.lang.Enum" id="MyColor1" method="valueOf">
+      <class>MyColor</class>
+      <string>Black</string>
+     </object>
+    </void>
+    <void property="name">
+     <string>3</string>
+    </void>
+    <void property="price">
+     <int>3</int>
+    </void>
+    <void property="type">
+     <object idref="ItemType0"/>
+    </void>
+   </object>
+   <int>3</int>
+  </void>
+  <void method="put">
+   <object class="Item">
+    <void property="color">
+     <object idref="MyColor0"/>
+    </void>
+    <void property="name">
+     <string>1</string>
+    </void>
+    <void property="price">
+     <int>1</int>
+    </void>
+    <void property="type">
+     <object idref="ItemType1"/>
+    </void>
+   </object>
+   <int>1</int>
+  </void>
+  <void method="put">
+   <object class="Item">
+    <void property="color">
+     <object class="java.lang.Enum" id="MyColor2" method="valueOf">
+      <class>MyColor</class>
+      <string>White</string>
+     </object>
+    </void>
+    <void property="name">
+     <string>5</string>
+    </void>
+    <void property="price">
+     <int>5</int>
+    </void>
+    <void property="type">
+     <object class="java.lang.Enum" id="ItemType2" method="valueOf">
+      <class>ItemType</class>
+      <string>Kettle</string>
+     </object>
+    </void>
+   </object>
+   <int>5</int>
+  </void>
+  <void method="put">
+   <object class="Item">
+    <void property="color">
+     <object idref="MyColor1"/>
+    </void>
+    <void property="name">
+     <string>3</string>
+    </void>
+    <void property="price">
+     <int>3</int>
+    </void>
+    <void property="type">
+     <object idref="ItemType2"/>
+    </void>
+   </object>
+   <int>3</int>
+  </void>
+  <void method="put">
+   <object class="Item">
+    <void property="color">
+     <object idref="MyColor2"/>
+    </void>
+    <void property="name">
+     <string>2</string>
+    </void>
+    <void property="price">
+     <int>2</int>
+    </void>
+    <void property="type">
+     <object idref="ItemType0"/>
+    </void>
+   </object>
+   <int>2</int>
+  </void>
+ </object>
+</java>
