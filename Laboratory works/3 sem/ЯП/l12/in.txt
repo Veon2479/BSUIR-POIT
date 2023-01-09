@@ -1,0 +1,12 @@
+start:
+	mov ax, bx
+.awful :
+	@@:
+	jmp @B
+fool :
+.aaa:
+	loop start
+end:
+	int 21h
+	
+buffer dd 0, 0, 0

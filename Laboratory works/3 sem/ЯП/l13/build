@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "bison part.."
+bison -d ./bison.y
+echo "flexing part.."
+flex ./flex.l
+echo "building part.."
+gcc -o test ./lex.yy.c ./bison.tab.c
+echo "parsing part.."
+./test < ./in.txt

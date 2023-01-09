@@ -1,0 +1,9 @@
+Started working!
+
+	mov ax, bx
+
+	jmp @B
+	loop start
+
+	int 21h
+Anon. labels: 1, Global: 2, Local: 0

@@ -1,0 +1,8 @@
+; some prog in lisp..
+(defvar myVar (0 9))
+
+(defvar a1 8)
+    (defvar b2 ceg19)
+(setq a1 0
+(setq c (/ b2 tcgta1))
+

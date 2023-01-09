@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "flexing part.."
+flex ./analyze.l
+echo "building part.."
+gcc -o test ./lex.yy.c
+echo "parsing part.."
+echo "code is:"
+echo "/////////////////"
+cat ./in.txt
+echo "/////////////////"
+./test < ./in.txt
