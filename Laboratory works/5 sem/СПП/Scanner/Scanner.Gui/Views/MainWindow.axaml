@@ -1,0 +1,60 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Scanner.App.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Scanner.App.Views.MainWindow"
+        MaxHeight="450" MinHeight="450"
+        MaxWidth="800" MinWidth="800"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Directory Scanner">
+    
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+
+    <StackPanel Spacing="5" Margin="5">
+        
+        <DockPanel>
+            <TextBlock Width="585" Margin="5" Text="{Binding TbPath}"/>
+            <Button Margin="5" Name="BtnSelect" 
+                    Command="{Binding SelectFolderOnCLick}">Select</Button>
+            <Button Margin="5" Name="BtnStart" 
+                    Command="{Binding StartScanningOnClick}"
+                    IsEnabled="{Binding !IsRunning}">Start</Button>
+            <Button Margin="5" Name="BtnAbort" 
+                    Command="{Binding AbortScanningOnClick}" 
+                    IsEnabled="{Binding IsRunning}">Abort</Button>
+        </DockPanel>
+        
+        <Border BorderBrush="Gainsboro"
+                Padding="4"
+                BorderThickness="1"
+                CornerRadius="3">
+                <TreeView Items="{Binding ScannerResult.Children}"
+                          Margin="5" Width="700" Height="370">
+                    <TreeView.ItemTemplate>
+                        <TreeDataTemplate ItemsSource="{Binding Children}">
+                            <DockPanel>
+                                <Image Width="20" Height="15" IsVisible="{Binding IsFile}" Source="../Assets/file.png"/>
+                                <Image Width="20" Height="15" IsVisible="{Binding !IsFile}" Source="../Assets/folder.png"/>
+                                <TextBlock Text="{Binding Name}"/>
+                                <TextBlock Text=" ( "/>
+                                <TextBlock Text="{Binding AbsoluteSize}"/>
+                                <TextBlock Text=" bytes, "/>
+                                <TextBlock Text="{Binding RelativeSize}"/>
+                                <TextBlock Text="% )"/>
+                            </DockPanel>
+                        </TreeDataTemplate>
+                    </TreeView.ItemTemplate>
+                </TreeView>
+        </Border>
+        
+            
+    </StackPanel>
+        
+    
+</Window>

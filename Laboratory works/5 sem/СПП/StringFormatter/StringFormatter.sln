@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringFormatter.Core", "StringFormatter.Core\StringFormatter.Core.csproj", "{88CB57C3-AA48-409C-B67F-B294D24E0005}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringFormatter.Tests", "StringFormatter.Tests\StringFormatter.Tests.csproj", "{79CFD169-E38F-47A6-85BD-F33CD1C42C60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringFormatter.Abstractions", "StringFormatter.Abstractions\StringFormatter.Abstractions.csproj", "{BA948302-E9C2-46C7-8302-9FDEB07DB596}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88CB57C3-AA48-409C-B67F-B294D24E0005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88CB57C3-AA48-409C-B67F-B294D24E0005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88CB57C3-AA48-409C-B67F-B294D24E0005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88CB57C3-AA48-409C-B67F-B294D24E0005}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79CFD169-E38F-47A6-85BD-F33CD1C42C60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79CFD169-E38F-47A6-85BD-F33CD1C42C60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79CFD169-E38F-47A6-85BD-F33CD1C42C60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79CFD169-E38F-47A6-85BD-F33CD1C42C60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA948302-E9C2-46C7-8302-9FDEB07DB596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA948302-E9C2-46C7-8302-9FDEB07DB596}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA948302-E9C2-46C7-8302-9FDEB07DB596}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA948302-E9C2-46C7-8302-9FDEB07DB596}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
