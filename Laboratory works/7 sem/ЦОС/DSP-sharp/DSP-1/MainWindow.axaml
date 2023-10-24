@@ -1,0 +1,89 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:avalonia="http://oxyplot.org/avalonia"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="DSP_1.MainWindow"
+        Title="DSP_1">
+    <TabControl>
+        <TabItem Header="Plain Signals">
+            <Grid ColumnDefinitions="*, *" RowDefinitions="*, *, *">
+                <avalonia:PlotView Model="{Binding SinPlot.PlotModel, Mode=OneWay}" Grid.Column="0" Grid.Row="0"/>
+                <avalonia:PlotView Model="{Binding RandomPlot.PlotModel, Mode=OneWay}" Grid.Column="1" Grid.Row="0"/>
+                <avalonia:PlotView Model="{Binding SawPlot.PlotModel, Mode=OneWay}" Grid.Column="0" Grid.Row="1"/>
+                <avalonia:PlotView Model="{Binding ImpulsePlot.PlotModel, Mode=OneWay}" Grid.Column="1" Grid.Row="1"/>
+                <avalonia:PlotView Model="{Binding TrianglePlot.PlotModel, Mode=OneWay}" Grid.Column="0" Grid.Row="2"/>
+                <StackPanel Grid.Row="2" Grid.Column="1">
+                    <WrapPanel>
+                        <Label Margin="10">Y_min</Label>
+                        <TextBox x:Name="YminField" Text="{Binding Ymin, Mode=OneWay}" Width="200" Margin="10" />
+                        <Label Margin="10">Y_max</Label>
+                        <TextBox x:Name="YmaxField" Text="{Binding Ymax, Mode=OneWay}" Width="200" Margin="10" />
+                    </WrapPanel>
+                    <WrapPanel>
+                        <Label Margin="10">Impulse percentage</Label>
+                        <TextBox x:Name="ImpPercField" Text="{Binding PercImp, Mode=OneWay}" Width="200" Margin="10" />
+                    </WrapPanel>
+                    <Button Content="Submit" Click="SubmitButtonT1_Click" Width="100" Margin="10" />
+                </StackPanel>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Polyphonic Signal Generation">
+            <Grid ColumnDefinitions="*" RowDefinitions="*, *">
+                <avalonia:PlotView Model="{Binding MultPlotter.PlotModel, Mode=OneWay}" Margin="10" Grid.Column="0" Grid.Row="0"/>
+                <StackPanel Grid.Row="1" Grid.Column="0">
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox Margin="10" IsChecked="{Binding MultPlotter.IsEnabled[0]}" Content="Saw Signal"/>
+                        <Label Margin="10">Y_min</Label>
+                        <TextBox Text="{Binding MultPlotter.Generators[0].Ymin}" Width="200" Margin="10" />
+                        <Label Margin="10">Y_max</Label>
+                        <TextBox Text="{Binding MultPlotter.Generators[0].Ymax}" Width="200" Margin="10" />
+                        <Label Margin="10">Dy</Label>
+                        <TextBox Text="{Binding MultPlotter.Generators[0].Dy}" Width="200" Margin="10" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox Margin="10" IsChecked="{Binding MultPlotter.IsEnabled[1]}" Content="Random Signal"/>
+                        <Label Margin="10">Y_min</Label>
+                        <TextBox Text="{Binding MultPlotter.Generators[1].Ymin}" Width="200" Margin="10" />
+                        <Label Margin="10">Y_max</Label>
+                        <TextBox Text="{Binding MultPlotter.Generators[1].Ymax}" Width="200" Margin="10" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox Margin="10" IsChecked="{Binding MultPlotter.IsEnabled[2]}" Content="Triangle Signal"/>
+                        <Label Margin="10">Y_min</Label>
+                        <TextBox Text="{Binding MultPlotter.Generators[2].Ymin}" Width="200" Margin="10" />
+                        <Label Margin="10">Y_max</Label>
+                        <TextBox Text="{Binding MultPlotter.Generators[2].Ymax}" Width="200" Margin="10" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox Margin="10" IsChecked="{Binding MultPlotter.IsEnabled[3]}" Content="Impulse Signal"/>
+                        <Label Margin="10">Y_min</Label>
+                        <TextBox Text="{Binding MultPlotter.Generators[3].Ymin}" Width="200" Margin="10" />
+                        <Label Margin="10">Y_max</Label>
+                        <TextBox Text="{Binding MultPlotter.Generators[3].Ymax}" Width="200" Margin="10" />
+                        <Label Margin="10">Perc_Imp</Label>
+                        <TextBox Text="{Binding MultPlotter.Generators[3].PercImp}" Width="200" Margin="10" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox Margin="10" IsChecked="{Binding MultPlotter.IsEnabled[4]}" Content="Sin Signal"/>
+                        <Label Margin="10">Y_min</Label>
+                        <TextBox Text="{Binding MultPlotter.Generators[4].Ymin}" Width="200" Margin="10" />
+                        <Label Margin="10">Y_max</Label>
+                        <TextBox Text="{Binding MultPlotter.Generators[4].Ymax}" Width="200" Margin="10" />
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Modulated Signals Generation">
+            <Grid ColumnDefinitions="*, *" RowDefinitions="*, *, *">
+                <avalonia:PlotView Model="{Binding SinPlotMod.PlotModel, Mode=OneWay}" Grid.Column="0" Grid.Row="0"/>
+                <avalonia:PlotView Model="{Binding RandomPlotMod.PlotModel, Mode=OneWay}" Grid.Column="1" Grid.Row="0"/>
+                <avalonia:PlotView Model="{Binding SawPlotMod.PlotModel, Mode=OneWay}" Grid.Column="0" Grid.Row="1"/>
+                <avalonia:PlotView Model="{Binding ImpulsePlotMod.PlotModel, Mode=OneWay}" Grid.Column="1" Grid.Row="1"/>
+                <avalonia:PlotView Model="{Binding TrianglePlotMod.PlotModel, Mode=OneWay}" Grid.Column="0" Grid.Row="2"/>
+            </Grid>
+        </TabItem>
+    </TabControl>
+    
+</Window>

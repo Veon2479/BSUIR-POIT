@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%=title %></title>
+    <meta charset="utf-8" />
+
+    <style>
+        .menu {
+            position: fixed;
+            left: 10px;
+            /*top: 20%;*/
+        }
+        .noteList {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="menu">
+    <h1><%=title %> in EJS</h1><br>
+    <h2>Total notes: <%=count%></h2><br>
+    <h3>Add new note</h3>
+    <form method="post" accept-charset="utf-8" name="addNewNote" action='/newNote' id="newNoteForm">
+        <p>Enter new note title:</p>
+        <label>
+            <input type="text" pattern=".{1,}" id="newNoteName" name="noteName">
+        </label><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<ul class="noteList">
+    <% for (let i = 0; i < count; i++) { %>
+    <% item = JSON.parse(notes[i]);%>
+    <li>
+        <h3><%=item["name"]%></h3>
+        <p><%=item["preview"]%></p>
+        <p><%=item["id"]%></p>
+        <form action='<%= /editNote/ + item["id"]%>' method="post">
+            <button type="submit">Show</button>
+        </form>
+        <form action='<%= /duplicateNote/ + item["id"]%>' method="post">
+            <button type="submit">Duplicate</button>
+        </form>
+        <form action='<%= /deleteNote/ + item["id"]%>' method="POST">
+            <button type="submit">Delete</button>
+        </form>
+    </li>
+    <% } %>
+</ul>
+
+</body>
+</html>

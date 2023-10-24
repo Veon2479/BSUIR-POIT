@@ -1,0 +1,6 @@
+Dot
+Segment
+Triangle
+Rectangle
+Rhombus
+Ellipse

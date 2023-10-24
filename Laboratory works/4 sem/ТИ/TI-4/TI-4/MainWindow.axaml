@@ -1,0 +1,46 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        MinWidth="410" MinHeight="310"
+        MaxWidth="410" MaxHeight="310"
+        FontSize="15"
+        Background="LightBlue"
+        x:Class="TI_4.MainWindow"
+        Title="TI_4">
+    <Canvas>
+        <DockPanel Margin="10, 10, 10, 0" Height="40" Canvas.Top="0">
+            <Label DockPanel.Dock="Left" Height="40">Q:</Label>
+            <TextBox DockPanel.Dock="Left" Width="168" Height="40" Name="TbQ">0</TextBox>
+            <Label DockPanel.Dock="Left" Height="40" Margin="10, 0, 0,0">P:</Label>
+            <TextBox DockPanel.Dock="Left" Width="168" Height="40" Name="TbP">0</TextBox>
+        </DockPanel>
+        <DockPanel Margin="10, 10, 10, 0" Height="40" Canvas.Top="50">
+            <Label DockPanel.Dock="Left" Height="40">H:</Label>
+            <TextBox DockPanel.Dock="Left" Width="168" Height="40" Name="TbH">0</TextBox>
+            <Label DockPanel.Dock="Left" Height="40" Margin="10, 0, 0,0">X:</Label>
+            <TextBox DockPanel.Dock="Left" Width="168" Height="40" Name="TbX">0</TextBox>
+        </DockPanel>
+        <DockPanel Margin="10, 10, 10, 0" Height="40" Canvas.Top="100">
+            <Label DockPanel.Dock="Left" Height="40">K:</Label>
+            <TextBox DockPanel.Dock="Left" Width="168" Height="40" Name="TbK">0</TextBox>
+            <Label DockPanel.Dock="Left" Height="40">Hash:</Label>
+            <TextBox DockPanel.Dock="Left" Width="153" Height="40" IsReadOnly="True" Name="TbHash">0</TextBox>
+        </DockPanel>
+        <DockPanel Margin="10, 10, 10, 0" Height="40" Canvas.Top="150">
+            <Label DockPanel.Dock="Left" Height="40">R:</Label>
+            <TextBox DockPanel.Dock="Left" Width="168" Height="40" IsReadOnly="True" Name="TbR">0</TextBox>
+            <Label DockPanel.Dock="Left" Height="40" Margin="10, 0, 0,0">S:</Label>
+            <TextBox DockPanel.Dock="Left" Width="168" Height="40" IsReadOnly="True" Name="TbS">0</TextBox>
+        </DockPanel>
+        <DockPanel Margin="10, 10, 10, 0" Canvas.Top="200" Width="390">
+            <Button IsEnabled="False" DockPanel.Dock="Left"  Margin="0, 0, 10, 0" Height="40" Width="185"
+                    Click="btnCheckEDS_click" Name="BtnCheckEds" >Check EDS</Button>
+            <Button IsEnabled="False" DockPanel.Dock="Right" Margin="10, 0,0,0" Height="40" Width="185"
+                    Click="btnCreateEDS_click" Name="BtnCreateEds" >Create EDS</Button>
+        </DockPanel>
+        <Button Canvas.Top="250" Width="390" Height="40" Margin="10, 10, 10, 10"
+                Click="btnOpenFile_click">Open File</Button>
+    </Canvas>
+</Window>
