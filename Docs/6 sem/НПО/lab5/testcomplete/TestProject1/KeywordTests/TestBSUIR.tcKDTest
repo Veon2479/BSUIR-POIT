@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{B9D9273E-7266-43E0-BF02-97F168593604}" version="15.0">
+	<TestData Description="" Key="{47F16937-B61D-4B83-ADBF-DF37D012A3B6}" Type="{79147B28-EE20-4294-B773-1D3787FBF37B}">
+		<Data>
+			<Extenders>
+				<NodeBitmaps />
+			</Extenders>
+		</Data>
+		<Children>
+			<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+				<Data Description="Runs a script routine." TestName="test_sign_BSUIR" Unit="TestSignature" />
+			</Operation>
+			<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+				<Data Description="Runs a script routine." TestName="test_check_sign_BSUIR" Unit="TestSignature" />
+			</Operation>
+		</Children>
+	</TestData>
+	<Parameters Key="{06A63FAD-B567-4490-ABF8-59B1402AAB27}" />
+</Root>

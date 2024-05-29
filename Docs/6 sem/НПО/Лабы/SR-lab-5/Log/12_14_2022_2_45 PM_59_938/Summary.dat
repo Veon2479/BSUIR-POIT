@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test0">
+						<Node name="warnings">
+							<Node name="warning0">
+								<Prp name="msg" type="S" value="There is (are) 1 running instance(s) of &quot;D:\Workspace\General\TI-4\TI-4\bin\Debug\net6.0\TI-4.exe&quot;. New instances will not be launched."/>
+							</Node>
+						</Node>
+						<Node name="errors"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA4AEMANgBCADAARgAxADMALQA4ADQANQA1AC0ANAAwADAAOAAtADkAOAA1AEUALQA1AEYAQwAwAEIARABEADkARgBGADgANAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="status" type="I" value="1"/>
+						<Prp name="name" type="S" value="ProjectTestItem1"/>
+						<Prp name="starttime" type="D" value="44909.6152772917"/>
+						<Prp name="durationwithoutchildren" type="I" value="280"/>
+						<Prp name="duration" type="I" value="280"/>
+					</Node>
+					<Node name="test1">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="AttributeError: 'int' object has no attribute 'Visible'"/>
+							</Node>
+						</Node>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA4ADEAQgAyAEYAQwA3AEMALQA0ADAARAA1AC0ANABGAEIAOAAtAEEAQwBFAEIALQBDADcARQA4ADcANQA3ADIAMAAwADEAQQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="name" type="S" value="ProjectTestItem3"/>
+						<Prp name="starttime" type="D" value="44909.6152805324"/>
+						<Prp name="durationwithoutchildren" type="I" value="10221"/>
+						<Prp name="duration" type="I" value="10221"/>
+					</Node>
+					<Node name="test2">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAxAEIARQBFADUANwA4ADUALQA4ADcARABGAC0ANAAxAEQAQwAtAEEANwAzADAALQBCAEIAMgBGADMANwA3AEYARAA5ADQAMAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="name" type="S" value="ProjectTestItem2"/>
+						<Prp name="starttime" type="D" value="44909.6153990625"/>
+						<Prp name="durationwithoutchildren" type="I" value="20"/>
+						<Prp name="duration" type="I" value="20"/>
+					</Node>
+				</Node>
+				<Prp name="incompletedtests" type="I" value="0"/>
+				<Prp name="failedtests" type="I" value="1"/>
+				<Prp name="name" type="S" value="SR-lab-5"/>
+				<Prp name="starttime" type="D" value="44909.6152772917"/>
+				<Prp name="warningtests" type="I" value="1"/>
+				<Prp name="duration" type="I" value="10521"/>
+			</Node>
+		</Node>
+		<Prp name="failedtests" type="I" value="1"/>
+		<Prp name="warningtestwithretries" type="I" value="0"/>
+		<Prp name="name" type="S" value="SR-lab-5"/>
+		<Prp name="tests" type="I" value="3"/>
+		<Prp name="executionstatus" type="I" value="2"/>
+		<Prp name="user" type="S" value="Andmin"/>
+		<Prp name="incompletedtests" type="I" value="0"/>
+		<Prp name="stop" type="D" value="44909.6154005671"/>
+		<Prp name="host" type="S" value="GRAENN"/>
+		<Prp name="successtestwithretries" type="I" value="0"/>
+		<Prp name="warningtests" type="I" value="1"/>
+		<Prp name="key" type="S" value="{5AD05DED-D6A9-4273-8E29-12134973E56F}"/>
+		<Prp name="starttime" type="D" value="44909.6152771759"/>
+		<Prp name="testname" type="S" value="SR-lab-5"/>
+	</Node>
+</Nodes>

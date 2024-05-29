@@ -1,0 +1,6 @@
+﻿def startLFSR():
+  TestedApps["LFSR"]["Run"]()
+  pass
+def stopLFSR():
+  TestedApps["LFSR"]["Close"]()
+  pass

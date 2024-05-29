@@ -1,0 +1,3543 @@
+From: "Saved by Windows Internet Explorer 10"
+Subject: Example I/O Request - The Details (Windows Drivers)
+Date: Fri, 6 Dec 2013 22:43:11 +0300
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0009_01CEF2D4.8ADE5C20"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.1.7601.17609
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0009_01CEF2D4.8ADE5C20
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://msdn.microsoft.com/en-us/library/windows/hardware/ff544536(v=vs.85).aspx
+
+=EF=BB=BF<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE html PUBLIC "" ""><HTML lang=3D"en" dir=3D"ltr" =
+xmlns=3D"http://www.w3.org/1999/xhtml"><HEAD><META=20
+content=3D"IE=3D10.000" http-equiv=3D"X-UA-Compatible">
+<LINK =
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff544536=
+(v=3Dvs.85).aspx"=20
+rel=3D"canonical">        =20
+<META http-equiv=3D"Content-Type"=20
+content=3D"text/html; charset=3Dutf-8"><TITLE>Example I/O Request - The =
+Details=20
+(Windows Drivers)</TITLE>=20
+<META name=3D"DCS.dcsuri" =
+content=3D"/en-us/library/windows/hardware/ff544536(d=3Ddefault,l=3Den-us=
+,v=3Dvs.85).aspx">=20
+<META name=3D"NormalizedUrl" =
+content=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff544=
+536(d=3Ddefault,l=3Den-us,v=3Dvs.85).aspx">=20
+<META name=3D"VotingContextUrl" =
+content=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff544=
+536(d=3Ddefault,l=3Den-us,v=3Dvs.85).aspx">=20
+<META name=3D"MN" content=3D"EE4293C2-11:43:11 AM">=20
+<META name=3D"Search.ShortId" content=3D"ff544536">=20
+<META name=3D"Ms.Locale" content=3D"en-us">             <LINK =
+href=3D"/Areas/Epx/Themes/Windows/Content/Winlogo_favicon.ico"=20
+rel=3D"shortcut icon">     <LINK =
+href=3D"http://i3.msdn.microsoft.com/Combined.css?resources=3D0:Topic,0:C=
+odeSnippet,0:ExpandableCollapsibleArea,0:CommunityContent,0:TopicNotInSco=
+pe,0:FeedViewerBasic,0:ImageSprite,1:Header,1:sprite,2:Toc,2:LibraryMembe=
+rFilter,1:Footer,3:DetailedLinkList,3:LinkList,1:Windows;/Areas/Epx/Conte=
+nt/Css:0,/Areas/Epx/Themes/Windows/Content:1,/Areas/Epx/Library/Content:2=
+,/Areas/Epx/Themes/Base/Content:3&amp;amp;hashKey=3DD176179CA80A7A27C8973=
+F0C86E2FAA8"=20
+rel=3D"stylesheet" type=3D"text/css">
+<META name=3D"GENERATOR" content=3D"MSHTML 10.00.9200.16736"></HEAD>     =
+
+<BODY class=3D"library IE">
+<DIV id=3D"page">
+<DIV class=3D"IE ltr" id=3D"ux-header">
+<DIV id=3D"headerContainer">
+<DIV id=3D"logoAndSearchBox">
+<DIV id=3D"logo"><A title=3D"Windows" =
+href=3D"http://msdn.microsoft.com/windows/hardware/"><IMG=20
+alt=3D"Windows" =
+src=3D"http://i.msdn.microsoft.com/Areas/Epx/Themes/Windows/Content/Windo=
+ws_logo.png"></A>=20
+                      </DIV>
+<DIV id=3D"selectedTab"><A class=3D"dropDownToggle" =
+href=3D"javascript:void(0);">Dev=20
+Center - Hardware</A>            </DIV>
+<DIV id=3D"toclevel1_menu" style=3D"display: none;">
+<UL>
+  <LI><A title=3D"Dev Center Home" =
+href=3D"http://msdn.microsoft.com/windows/">Dev=20
+  Center Home</A></LI>
+  <LI><A title=3D"Windows Store apps" =
+href=3D"http://msdn.microsoft.com/windows/apps/">Windows=20
+  Store apps</A></LI>
+  <LI><A title=3D"Internet Explorer" =
+href=3D"http://msdn.microsoft.com/ie/">Internet=20
+  Explorer</A></LI>
+  <LI><A title=3D"Desktop"=20
+  href=3D"http://msdn.microsoft.com/windows/desktop/">Desktop</A></LI>
+  <LI><A title=3D"Hardware"=20
+  =
+href=3D"http://msdn.microsoft.com/windows/hardware/">Hardware</A></LI></U=
+L>
+<DIV style=3D"clear: both;"></DIV></DIV>
+<DIV class=3D"SearchBox">
+<FORM name=3D"HeaderSearchForm" id=3D"HeaderSearchForm" =
+onsubmit=3D"return Epx.Controls.SearchBox.searchBoxOnSubmit(this, =
+this.title);"=20
+action=3D"http://social.msdn.microsoft.com/Search" method=3D"get"><INPUT =
+name=3D"query"=20
+id=3D"HeaderSearchTextBox" =
+onfocus=3D"Epx.Controls.SearchBox.watermarkFocus(this, this.title, =
+'SearchBoxOnFocus')"=20
+onblur=3D"Epx.Controls.SearchBox.watermarkBlur(this, this.title, =
+'SearchBoxOnFocus')"=20
+type=3D"text" maxlength=3D"200">             <INPUT name=3D"refinement" =
+id=3D"RefinementId"=20
+type=3D"hidden" value=3D"182">             <BUTTON =
+class=3D"header-search-button" id=3D"HeaderSearchButton"=20
+type=3D"submit" value=3D""></BUTTON>         </FORM></DIV>
+<DIV class=3D"Clear"></DIV></DIV>
+<DIV class=3D"Clear"></DIV>
+<DIV class=3D"ux-internav">
+<DIV class=3D"toclevel2"><A title=3D"Dashboard" class=3D"normal" =
+href=3D"https://sysdev.microsoft.com/en-us/hardware/">Dashboard</A>=20
+            <A title=3D"Get Started " class=3D"normal" =
+href=3D"http://msdn.microsoft.com/windows/hardware/gg507680">Get=20
+Started </A>             <A title=3D"Design" class=3D"normal" =
+href=3D"http://msdn.microsoft.com/windows/hardware/gg462970">Design</A>=20
+            <A title=3D"Develop" class=3D"active" =
+href=3D"http://msdn.microsoft.com/windows/hardware/ff960953">Develop</A> =
+
+            <A title=3D"Certify" class=3D"normal" =
+href=3D"http://msdn.microsoft.com/windows/hardware/gg463010">Certify</A> =
+
+    </DIV>
+<DIV class=3D"clear"></DIV></DIV>
+<DIV id=3D"signIn"><A title=3D"Sign in" class=3D"scarabLink" =
+href=3D"https://login.live.com/login.srf?wa=3Dwsignin1.0&amp;rpsnv=3D11&a=
+mp;ct=3D1386358991&amp;rver=3D6.0.5276.0&amp;wp=3DMCLBI&amp;wlcxt=3DMSDN%=
+24MSDN%24MSDN&amp;wreply=3Dhttp%3a%2f%2fmsdn.microsoft.com%2fen-us%2flibr=
+ary%2fwindows%2fhardware%2fff544536%2528v%3dvs.85%2529.aspx&amp;lc=3D1033=
+&amp;id=3D254354&amp;mkt=3Den-US">Sign=20
+in</A></DIV></DIV>
+<DIV id=3D"blackBar">
+<DIV class=3D"toclevel3"><A title=3D"Systems" class=3D"normal" =
+href=3D"http://msdn.microsoft.com/library/windows/hardware/gg454504">Syst=
+ems</A>=20
+            <A title=3D"Devices" class=3D"normal" =
+href=3D"http://msdn.microsoft.com/library/windows/hardware/gg454505">Devi=
+ces</A>=20
+            <A title=3D"Drivers" class=3D"active" =
+href=3D"http://msdn.microsoft.com/library/windows/hardware/ff557573">Driv=
+ers</A>=20
+            <A title=3D"Debugging" class=3D"normal" =
+href=3D"http://msdn.microsoft.com/library/windows/hardware/ff551063(v=3Dv=
+s.85).aspx">Debugging</A>=20
+            <A title=3D"Downloads" class=3D"normal" =
+href=3D"http://msdn.microsoft.com/windows/hardware/gg454513">Downloads</A=
+>=20
+            <A title=3D"Samples" class=3D"normal" =
+href=3D"http://msdn.microsoft.com/windows/hardware/dn433227.aspx">Samples=
+</A>=20
+            <A title=3D"Community" class=3D"normal" =
+href=3D"http://msdn.microsoft.com/windows/hardware/gg454517">Community</A=
+>=20
+            <A title=3D"Archives" class=3D"normal" =
+href=3D"http://msdn.microsoft.com/windows/hardware/gg566938">Archives</A>=
+=20
+    </DIV>
+<DIV class=3D"clear"></DIV></DIV></DIV>
+<DIV id=3D"body">
+<DIV id=3D"leftNav">
+<DIV id=3D"tocnav">
+<DIV class=3D"toclevel0" data-toclevel=3D"0"><A title=3D"Kernel-Mode =
+Driver Architecture"=20
+id=3D"ff576020_VS.85_en-us" =
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff557560=
+(v=3Dvs.85).aspx"=20
+mtpsshortid=3D"ff557560_VS.85_en-us" =
+mtpsassetid=3D"dd284fb0-6fa6-4f10-ac82-aa3f48847631_VS.85_en-us"=20
+mtpsaliasid=3D"" data-tochassubtree=3D"true">Kernel-Mode Driver=20
+Architecture</A></DIV>
+<DIV class=3D"toclevel0" data-toclevel=3D"0"><A title=3D"Design Guide" =
+id=3D"ff572732_VS.85_en-us"=20
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff553208=
+(v=3Dvs.85).aspx"=20
+mtpsshortid=3D"ff553208_VS.85_en-us" =
+mtpsassetid=3D"21c199f3-abc3-4607-a674-eb84b6c3c25a_VS.85_en-us"=20
+mtpsaliasid=3D"" data-tochassubtree=3D"true">Design Guide</A></DIV>
+<DIV class=3D"toclevel0" data-toclevel=3D"0"><A title=3D"Writing WDM =
+Drivers" id=3D"ff572754_VS.85_en-us"=20
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff566412=
+(v=3Dvs.85).aspx"=20
+mtpsshortid=3D"ff566412_VS.85_en-us" =
+mtpsassetid=3D"379305f0-3caa-4c8d-add5-17e8c83f2429_VS.85_en-us"=20
+mtpsaliasid=3D"" data-tochassubtree=3D"true">Writing WDM =
+Drivers</A></DIV>
+<DIV class=3D"toclevel0" data-toclevel=3D"0"><A title=3D"Managing =
+Input/Output for Drivers"=20
+id=3D"ff572860_VS.85_en-us" =
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff554373=
+(v=3Dvs.85).aspx"=20
+mtpsshortid=3D"ff554373_VS.85_en-us" =
+mtpsassetid=3D"09f23775-8c98-4344-9f68-43297ef50849_VS.85_en-us"=20
+mtpsaliasid=3D"" data-tochassubtree=3D"true">Managing Input/Output for=20
+Drivers</A></DIV>
+<DIV class=3D"toclevel0" data-toclevel=3D"0"><A title=3D"Handling IRPs" =
+id=3D"ff572864_VS.85_en-us"=20
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff546847=
+(v=3Dvs.85).aspx"=20
+mtpsshortid=3D"ff546847_VS.85_en-us" =
+mtpsassetid=3D"5fb6d2b9-17ee-4e76-95e9-dd5a7d1e79de_VS.85_en-us"=20
+mtpsaliasid=3D"" data-tochassubtree=3D"true">Handling IRPs</A></DIV>
+<DIV class=3D"toclevel1" data-toclevel=3D"1"><A title=3D"The Life of an =
+I/O Request"=20
+id=3D"ff572872_VS.85_en-us" =
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff564617=
+(v=3Dvs.85).aspx"=20
+mtpsshortid=3D"ff564617_VS.85_en-us" =
+mtpsassetid=3D"3198e96c-3794-4736-b7e8-d2704abf1aca_VS.85_en-us"=20
+mtpsaliasid=3D"" data-tochassubtree=3D"true">The Life of an I/O =
+Request</A></DIV>
+<DIV class=3D"toclevel2" data-toclevel=3D"2"><A title=3D"Example I/O =
+Request - An Overview"=20
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff544531=
+(v=3Dvs.85).aspx"=20
+mtpsshortid=3D"" mtpsassetid=3D"" mtpsaliasid=3D"">Example I/O Request - =
+An=20
+Overview</A></DIV>
+<DIV class=3D"toclevel2 current" data-toclevel=3D"2"><A title=3D"Example =
+I/O Request - The Details"=20
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff544536=
+(v=3Dvs.85).aspx"=20
+mtpsshortid=3D"" mtpsassetid=3D"" mtpsaliasid=3D"">Example I/O Request - =
+The=20
+Details</A></DIV>
+<DIV class=3D"toclevel2" data-toclevel=3D"2"><A title=3D"Driver Thread =
+Context" =
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff544209=
+(v=3Dvs.85).aspx"=20
+mtpsshortid=3D"" mtpsassetid=3D"" mtpsaliasid=3D"">Driver Thread =
+Context</A></DIV>
+<DIV class=3D"toclevel2" data-toclevel=3D"2"><A title=3D"Points to =
+Consider about User I/O Requests"=20
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff559681=
+(v=3Dvs.85).aspx"=20
+mtpsshortid=3D"" mtpsassetid=3D"" mtpsaliasid=3D"">Points to Consider =
+about User I/O=20
+Requests</A></DIV></DIV>
+<DIV class=3D"toc-resizable-ew" id=3D"toc-resizable-ew"></DIV></DIV>
+<DIV class=3D"content" id=3D"content">
+<DIV class=3D"topic" xmlns=3D"http://www.w3.org/1999/xhtml">
+<H1 class=3D"title">Example I/O Request - The Details</H1>
+<DIV id=3D"mainSection">
+<DIV class=3D"clsServerSDKContent"></DIV>
+<H2><A id=3D"ddk_example_i_o_request___the_details_kg"></A><A =
+id=3D"DDK_EXAMPLE_I_O_REQUEST___THE_DETAILS_KG"></A></H2>
+<P>The figure illustrating opening a file object shows an IRP with two =
+I/O stack=20
+locations, but an IRP can have any number of I/O stack locations, =
+depending on=20
+how many layered drivers will handle a given request.</P>
+<P>The following figure illustrates in more detail how the drivers in =
+the <A=20
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff544531=
+(v=3Dvs.85).aspx">Opening=20
+a File Object</A> figure use I/O support routines=20
+(<STRONG>Io<EM>Xxx</EM></STRONG> routines) to process the IRP for a read =
+or=20
+write request.  </P><IMG title=3D"Diagram illustrating processing IRPs =
+in layered drivers"=20
+id=3D"2GIRPEG" alt=3D"Diagram illustrating processing IRPs in layered =
+drivers" src=3D"http://i.msdn.microsoft.com/dynimg/IC500844.png"=20
+xmlns=3D"">
+<OL>=20
+  <LI>
+  <P>The I/O manager calls the file system driver (FSD) with the IRP it =
+has=20
+  allocated for the subsystem's read/write request. The FSD accesses its =
+I/O=20
+  stack location in the IRP to determine what operation it should carry=20
+  out.</P></LI>
+  <LI>
+  <P>The FSD can break the original request into smaller requests =
+(possibly for=20
+  more than one device driver) by calling an I/O support routine (<A =
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff548257=
+(v=3Dvs.85).aspx"><STRONG=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">IoAllocateIrp</STRONG></A>) one =
+or more=20
+  times to allocate additional IRPs. The additional IRPs are returned to =
+the FSD=20
+  with zero-filled I/O stack location(s) for lower-level driver(s). At =
+its=20
+  discretion, the FSD can reuse the original IRP, rather than allocating =
+
+  additional IRPs as shown in the previous figure, by setting up the =
+next-lower=20
+  driver's I/O stack location in the original IRP and passing it on to =
+lower=20
+  drivers.</P></LI>
+  <LI>
+  <P>For each driver-allocated IRP, the FSD in the previous figure calls =
+an I/O=20
+  support routine to register an FSD-supplied completion routine; in the =
+
+  completion routine, the FSD can determine whether lower drivers =
+satisfied the=20
+  request and can free each driver-allocated IRP when lower drivers have =
+
+  completed it. The I/O manager will call the FSD-supplied completion =
+routine=20
+  whether each driver-allocated IRP was completed successfully, =
+completed with=20
+  an error status, or canceled. A higher-level driver is responsible for =
+freeing=20
+  any IRPs it allocates and sets up on its own behalf for lower-level =
+drivers.=20
+  The I/O manager frees the IRPs that it allocates after all drivers =
+have=20
+  completed them.</P>
+  <P>Next, the FSD calls an I/O support routine (<A =
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff549266=
+(v=3Dvs.85).aspx"><STRONG=20
+  =
+xmlns=3D"http://www.w3.org/1999/xhtml">IoGetNextIrpStackLocation</STRONG>=
+</A>)=20
+  to access the next-lower-level driver's I/O stack location in order to =
+set up=20
+  the request for the next-lower driver. (In the previous figure, the =
+next lower=20
+  driver happens to be the lowest-level driver.) The FSD then calls an =
+I/O=20
+  support routine (<A =
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff548336=
+(v=3Dvs.85).aspx"><STRONG=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">IoCallDriver</STRONG></A>) to =
+pass that=20
+  IRP on to the next-lower driver.</P></LI>
+  <LI>
+  <P>When it is called with the IRP, the lowest-level driver checks its =
+I/O=20
+  stack location to determine what operation (indicated by the=20
+  <STRONG>IRP_MJ_<EM>XXX</EM></STRONG> function code) it should carry =
+out on the=20
+  target device. The target device is represented by the device object =
+in its=20
+  designated I/O stack location and is passed with the IRP to the =
+driver. The=20
+  lowest-level driver can assume that the I/O manager has routed the IRP =
+to an=20
+  entry point that the driver defined for the=20
+  <STRONG>IRP_MJ_<EM>XXX</EM></STRONG> operation (here <A =
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff550794=
+(v=3Dvs.85).aspx"><STRONG=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">IRP_MJ_READ</STRONG></A> or <A =
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff550819=
+(v=3Dvs.85).aspx"><STRONG=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">IRP_MJ_WRITE</STRONG></A>) and =
+that the=20
+  higher-level driver has checked the validity of other parameters for =
+the=20
+  request.</P>
+  <P>If there were no higher-level driver, the lowest-level driver would =
+check=20
+  whether the input parameters for an =
+<STRONG>IRP_MJ_<EM>XXX</EM></STRONG>=20
+  operation are valid. If they are, the driver usually calls I/O support =
+
+  routines to tell the I/O manager that a device operation is pending on =
+the IRP=20
+  and to either queue the IRP or pass it on to another driver-supplied =
+routine=20
+  that accesses the target device (here, a physical or logical device: =
+the disk=20
+  or a partition on the disk).</P></LI>
+  <LI>
+  <P>The I/O manager determines whether the driver is already busy =
+processing=20
+  another IRP for the target device, queues the IRP if it is, and =
+returns.=20
+  Otherwise, the I/O manager routes the IRP to a driver-supplied routine =
+that=20
+  starts the I/O operation on its device. (At this stage, both drivers =
+in the=20
+  previous figure and the I/O manager return control.)</P></LI>
+  <LI>
+  <P>When the device interrupts, the driver's interrupt service routine =
+(ISR)=20
+  does only as much work as it must to stop the device from interrupting =
+and to=20
+  save necessary context about the operation. The ISR then calls an I/O =
+support=20
+  routine (<A =
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff549657=
+(v=3Dvs.85).aspx"><STRONG=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">IoRequestDpc</STRONG></A>) with =
+the IRP=20
+  to queue a driver-supplied DPC (Deferred Procedure Call) routine to =
+complete=20
+  the requested operation at a lower hardware priority than the =
+ISR.</P></LI>
+  <LI>
+  <P>When the driver's DPC gets control, it uses the context (passed in =
+the=20
+  ISR's call to <A =
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff549657=
+(v=3Dvs.85).aspx"><STRONG=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">IoRequestDpc</STRONG></A>) to =
+complete=20
+  the I/O operation. The DPC calls a support routine to dequeue the next =
+IRP (if=20
+  any) and to pass that IRP on to the driver-supplied routine that =
+starts I/O=20
+  operations on the device (see Step 5). The DPC then sets status about =
+the=20
+  just-completed operation in the IRP's I/O status block and returns it =
+to the=20
+  I/O manager with <A =
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff548343=
+(v=3Dvs.85).aspx"><STRONG=20
+  =
+xmlns=3D"http://www.w3.org/1999/xhtml">IoCompleteRequest</STRONG></A>.</P=
+></LI>
+  <LI>
+  <P>The I/O manager zeros the lowest-level driver's I/O stack location =
+in the=20
+  IRP and calls the file system's registered completion routine (see =
+Step 3)=20
+  with the FSD-allocated IRP. This completion routine checks the I/O =
+status=20
+  block to determine whether to retry the request or to update any =
+internal=20
+  state maintained about the original request and to free its =
+driver-allocated=20
+  IRP. The file system can collect status information for all =
+driver-allocated=20
+  IRPs it sends to lower-level drivers so that it can set I/O status and =
+
+  complete the original IRP. When the file system has completed the =
+original=20
+  IRP, the I/O manager returns and NTSTATUS value to the original =
+requester (the=20
+  subsystem's native function) of the I/O operation.</P></LI></OL>
+<P>Like the file system driver shown in the <A =
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff544536=
+(v=3Dvs.85).aspx#ddk_example_i_o_request___the_details_kg">Processing=20
+IRPs in Layered Drivers</A> figure, any new driver that is added to a =
+chain of=20
+existing drivers can do all of the following:</P>
+<UL>
+  <LI>
+  <P>Set its own completion routine into an IRP. The <A =
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff548354=
+(v=3Dvs.85).aspx"><EM=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">IoCompletion</EM></A> routine =
+checks the=20
+  I/O status block to determine whether lower drivers completed the IRP=20
+  successfully, canceled the IRP, and/or completed it with an error. The =
+
+  completion routine can also update any IRP-specific state the driver =
+might=20
+  have saved, release any operation-specific resources the driver might =
+have=20
+  allocated, and so forth, before completing the IRP. In addition, the=20
+  completion routine can postpone IRP completion (by informing the I/O =
+manager=20
+  that more processing is required on the IRP), and can send another =
+request to=20
+  the next-lower-level driver before allowing the IRP to =
+complete.</P></LI>
+  <LI>
+  <P>Set up the next-lower-level driver's I/O stack location in the IRPs =
+it=20
+  allocates and send requests to the next-lower-level driver.</P></LI>
+  <LI>
+  <P>Pass any incoming requests on to lower drivers by setting up the =
+next-lower=20
+  driver's I/O stack location in each IRP and calling <A =
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff548336=
+(v=3Dvs.85).aspx"><STRONG=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">IoCallDriver</STRONG></A>. =
+(Note that for=20
+  IRPs with major function code <A =
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff550784=
+(v=3Dvs.85).aspx"><STRONG=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">IRP_MJ_POWER</STRONG></A>, =
+drivers must=20
+  use <A =
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff559654=
+(v=3Dvs.85).aspx"><STRONG=20
+  =
+xmlns=3D"http://www.w3.org/1999/xhtml">PoCallDriver</STRONG></A>.)</P></L=
+I></UL>
+<P>Each driver-created device object represents a physical, logical, or =
+virtual=20
+device for which a particular driver carries out I/O requests. For =
+detailed=20
+information about creating and setting up a device object, see <A =
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff543153=
+(v=3Dvs.85).aspx">Device=20
+Objects and Device Stacks</A>.</P>
+<P>As the <A =
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff544536=
+(v=3Dvs.85).aspx#ddk_example_i_o_request___the_details_kg">Processing=20
+IRPs in Layered Drivers</A> figure also shows, most drivers process each =
+IRP in=20
+stages through a driver-supplied set of system-defined <EM>standard=20
+routines</EM>, but drivers at different levels in a chain necessarily =
+have=20
+different standard routines. For example, only lowest-level drivers =
+handle=20
+interrupts from a physical device, so only a lowest-level driver would =
+have an=20
+ISR and a DPC that completes interrupt-driven I/O operations. On the =
+other hand,=20
+because such a driver knows that I/O is complete when it receives an =
+interrupt=20
+from its device, it has no need for a completion routine. Only a =
+higher-level=20
+driver would have one or more completion routines like the FSD in this=20
+figure.</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P><A title=3D"Send comments about this topic to Microsoft" =
+href=3D"mailto:wsddocfb@microsoft.com?subject=3DDocumentation%20feedback =
+[kernel\kernel]:%20Example I/O Request - The Details%20 =
+RELEASE:%20(11/16/2013)&amp;body=3D%0A%0APRIVACY STATEMENT%0A%0AWe use =
+your feedback to improve the documentation. We don't use your email =
+address for any other purpose, and we'll remove your email address from =
+our system after the issue that you're reporting is fixed. While we're =
+working to fix this issue, we might send you an email message to ask for =
+more info. Later, we might also send you an email message to let you =
+know that we've addressed your feedback.%0A%0AFor more info about =
+Microsoft's privacy policy, see =
+http://privacy.microsoft.com/en-us/default.aspx.">Send=20
+comments about this topic to Microsoft</A></P>
+<P>Build date: 11/16/2013</P></DIV></DIV>
+<DIV class=3D"libraryMemberFilter">
+<DIV class=3D"filterContainer"><SPAN>Show:</SPAN>         <LABEL><INPUT =
+class=3D"libraryFilterInherited"=20
+type=3D"checkbox" checked=3D"checked" value=3D"Inherit">Inherited        =
+ </LABEL>    =20
+    <LABEL><INPUT class=3D"libraryFilterProtected" type=3D"checkbox" =
+checked=3D"checked"=20
+value=3D"Protected">Protected         </LABEL>     </DIV></DIV><INPUT =
+id=3D"libraryMemberFilterEmptyWarning"=20
+type=3D"hidden" value=3D"There are no members available with your =
+current filter settings.">=20
+ </DIV></DIV>
+<DIV class=3D"clear"></DIV><INPUT name=3D"__RequestVerificationToken" =
+type=3D"hidden"=20
+value=3D"8V7iTnQBzoGGsh8hHxhVhqRkuTphZxBsRLjEDiVIL11MUFDBH8Xmh4PBYJD4qTEE=
+lPr0k2j78ml9IstjywDHF7vCTeGHjQx-r_z0Qjmn3R51ellGuXdo0rb54EIAb0K2Y23eeA2">=
+=20
+<INPUT id=3D"ratingSubmitUrl" type=3D"hidden" =
+value=3D"http://msdn.microsoft.com/en-us/library/feedback/add/ff544536(v=3D=
+vs.85).aspx">=20
+<INPUT id=3D"isTopicRated" type=3D"hidden" value=3D"false">        =20
+<DIV class=3D"Chrome ltr" id=3D"ux-footer">
+<DIV id=3D"footerSock">
+<DIV id=3D"footerSockInner"><A name=3D"feedback"></A>                    =
+=20
+<DIV id=3D"Fragment_Survey" xmlns=3D"http://www.w3.org/1999/xhtml"=20
+data-fragmentname=3D"Survey">
+<DIV class=3D"DetailedLink">
+<DIV class=3D"Content">
+<DIV class=3D"title">Help us help you</DIV>
+<DIV class=3D"RichText">Answer questions that we=E2=80=99ll use to make =
+the Dev Center=20
+better.</DIV>
+<DIV class=3D"link"><A id=3D"Survey_35509_1" =
+href=3D"http://go.microsoft.com/fwlink/?LinkId=3D316293"=20
+target=3D"_blank" xmlns=3D"http://www.w3.org/1999/xhtml">Take the =
+survey</A>      =20
+</DIV></DIV></DIV></DIV>
+<DIV class=3D"rating">
+<DIV id=3D"ratingSection1">
+<DIV class=3D"title">            Was this page helpful?         </DIV>
+<DIV class=3D"description">            Your feedback about this content =
+is=20
+important.<BR>Let us know what you think.         </DIV>
+<DIV class=3D"buttons"><BUTTON id=3D"ratingYes">Yes</BUTTON>             =
+<BUTTON id=3D"ratingNo">No</BUTTON>=20
+        </DIV><INPUT id=3D"ratingValue" type=3D"hidden">     </DIV>
+<DIV id=3D"ratingSection2">
+<DIV class=3D"title">            Additional feedback?         =
+</DIV><TEXTAREA id=3D"ratingText" rows=3D"6" cols=3D"20"></TEXTAREA>=20
+       =20
+<DIV class=3D"buttons"><BUTTON id=3D"ratingSubmit">Submit</BUTTON>       =
+     =20
+<BUTTON id=3D"ratingSkipThis">Skip this</BUTTON>         </DIV></DIV>
+<DIV id=3D"ratingSection3">
+<DIV class=3D"title">            Thank you!         </DIV>
+<DIV class=3D"description">            We appreciate your feedback.      =
+  =20
+</DIV></DIV>
+<DIV id=3D"contentFeedbackQAContainer" style=3D"display: =
+none;"></DIV></DIV>
+<DIV id=3D"Fragment_SockLinks" xmlns=3D"http://www.w3.org/1999/xhtml"=20
+data-fragmentname=3D"SockLinks">
+<DIV class=3D"LinkList">
+<DIV class=3D"Links">
+<UL class=3D"LinkColumn" style=3D"width: 100%;">
+  <LI><A id=3D"SockLinks_727_11" =
+href=3D"http://go.microsoft.com/fwlink/p/?LinkId=3D317805"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Find us on Facebook</A>         =
+</LI>
+  <LI><A id=3D"SockLinks_727_12" =
+href=3D"http://go.microsoft.com/fwlink/p/?LinkId=3D317806"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Follow us on Twitter</A>        =
+ </LI>
+  <LI><A id=3D"SockLinks_727_40" =
+href=3D"http://go.microsoft.com/fwlink/p/?linkid=3D285656"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Read the hardware blog</A>      =
+  =20
+</LI></UL></DIV></DIV></DIV>
+<DIV class=3D"clear"></DIV></DIV></DIV>
+<DIV id=3D"footerContainer">
+<DIV id=3D"fourColumnFooter">
+<DIV id=3D"Fragment_Column1" xmlns=3D"http://www.w3.org/1999/xhtml"=20
+data-fragmentname=3D"Column1">
+<DIV class=3D"ListOfLinkLists">
+<DIV class=3D"LinkList" xmlns=3D"http://www.w3.org/1999/xhtml">
+<DIV class=3D"LinkListTitle">Centers</DIV>
+<DIV class=3D"LinkListDescription"></DIV>
+<DIV class=3D"Links">
+<UL class=3D"LinkColumn" style=3D"width: 100%;">
+  <LI><A id=3D"Column1_727_13" =
+href=3D"http://msdn.microsoft.com/windows" =
+xmlns=3D"http://www.w3.org/1999/xhtml">Dev=20
+  Center Home</A>           </LI>
+  <LI><A id=3D"Column1_727_14" =
+href=3D"http://msdn.microsoft.com/windows/apps"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Windows Store apps</A>          =
+ </LI>
+  <LI><A id=3D"Column1_727_15" href=3D"http://msdn.microsoft.com/ie" =
+xmlns=3D"http://www.w3.org/1999/xhtml">Internet=20
+  Explorer</A>           </LI>
+  <LI><A id=3D"Column1_727_16" =
+href=3D"http://msdn.microsoft.com/windows/desktop"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Desktop</A>           </LI>
+  <LI><A id=3D"Column1_727_17" =
+href=3D"http://msdn.microsoft.com/windows/hardware"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Hardware</A>          =20
+</LI></UL></DIV></DIV></DIV></DIV>
+<DIV id=3D"Fragment_Column2" xmlns=3D"http://www.w3.org/1999/xhtml"=20
+data-fragmentname=3D"Column2">
+<DIV class=3D"ListOfLinkLists">
+<DIV class=3D"LinkList" xmlns=3D"http://www.w3.org/1999/xhtml">
+<DIV class=3D"LinkListTitle">Related developer sites</DIV>
+<DIV class=3D"LinkListDescription"></DIV>
+<DIV class=3D"Links">
+<UL class=3D"LinkColumn" style=3D"width: 100%;">
+  <LI><A id=3D"Column2_727_18" =
+href=3D"http://go.microsoft.com/fwlink/p/?linkid=3D285634"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Microsoft Connect</A>           =
+</LI>
+  <LI><A id=3D"Column2_727_19" =
+href=3D"http://go.microsoft.com/fwlink/p/?linkid=3D285635"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">OSR Online</A>           </LI>
+  <LI><A id=3D"Column2_727_42" =
+href=3D"http://go.microsoft.com/fwlink/p/?linkid=3D282089"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Visual Studio</A>           =
+</LI>
+  <LI><A id=3D"Column2_727_20" =
+href=3D"http://go.microsoft.com/fwlink/p/?linkid=3D280293"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Windows Phone</A>           =
+</LI>
+  <LI><A id=3D"Column2_727_43" =
+href=3D"http://go.microsoft.com/fwlink/p/?linkid=3D282087"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Windows Server</A>          =20
+</LI></UL></DIV></DIV>
+<DIV class=3D"LinkList" xmlns=3D"http://www.w3.org/1999/xhtml">
+<DIV class=3D"LinkListTitle">Other Windows sites</DIV>
+<DIV class=3D"LinkListDescription"></DIV>
+<DIV class=3D"Links">
+<UL class=3D"LinkColumn" style=3D"width: 100%;">
+  <LI><A id=3D"Column2_727_21" =
+href=3D"http://go.microsoft.com/fwlink/p/?linkid=3D285636"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Enterprise</A>           </LI>
+  <LI><A id=3D"Column2_727_22" =
+href=3D"http://go.microsoft.com/fwlink/p/?linkid=3D285637"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Small business</A>           =
+</LI>
+  <LI><A id=3D"Column2_727_23" =
+href=3D"http://go.microsoft.com/fwlink/p/?linkid=3D285638"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Students</A>           </LI>
+  <LI><A id=3D"Column2_727_24" =
+href=3D"http://go.microsoft.com/fwlink/p/?linkid=3D285639"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Home users</A>          =20
+</LI></UL></DIV></DIV></DIV></DIV>
+<DIV id=3D"Fragment_Column3" xmlns=3D"http://www.w3.org/1999/xhtml"=20
+data-fragmentname=3D"Column3">
+<DIV class=3D"ListOfLinkLists">
+<DIV class=3D"LinkList" xmlns=3D"http://www.w3.org/1999/xhtml">
+<DIV class=3D"LinkListTitle">Downloads</DIV>
+<DIV class=3D"LinkListDescription"></DIV>
+<DIV class=3D"Links">
+<UL class=3D"LinkColumn" style=3D"width: 100%;">
+  <LI><A id=3D"Column3_727_25" =
+href=3D"http://go.microsoft.com/fwlink/p/?linkid=3D285645"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Windows Driver Kit</A>          =
+ </LI>
+  <LI><A id=3D"Column3_727_26" =
+href=3D"http://go.microsoft.com/fwlink/p/?linkid=3D285646"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Windows Assessment and =
+Deployment Kit</A>=20
+            </LI>
+  <LI><A id=3D"Column3_727_27" =
+href=3D"http://go.microsoft.com/fwlink/p/?linkid=3D285647"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Windows Hardware Certification =
+Kit</A>   =20
+         </LI>
+  <LI><A id=3D"Column3_727_29" =
+href=3D"http://go.microsoft.com/fwlink/p/?LinkID=3D316548"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Visual Studio Professional =
+2013</A>      =20
+      </LI>
+  <LI><A id=3D"Column3_727_30" =
+href=3D"http://go.microsoft.com/fwlink/p/?linkid=3D285649"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">More downloads</A>          =20
+</LI></UL></DIV></DIV>
+<DIV class=3D"LinkList" xmlns=3D"http://www.w3.org/1999/xhtml">
+<DIV class=3D"LinkListTitle">Support</DIV>
+<DIV class=3D"LinkListDescription"></DIV>
+<DIV class=3D"Links">
+<UL class=3D"LinkColumn" style=3D"width: 100%;">
+  <LI><A id=3D"Column3_727_44" =
+href=3D"http://go.microsoft.com/fwlink/p/?linkid=3D285664"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Forums</A>           </LI>
+  <LI><A id=3D"Column3_727_45" =
+href=3D"http://go.microsoft.com/fwlink/p/?linkid=3D285663"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">More support options</A>        =
+  =20
+</LI></UL></DIV></DIV></DIV></DIV>
+<DIV id=3D"Fragment_Column4" xmlns=3D"http://www.w3.org/1999/xhtml"=20
+data-fragmentname=3D"Column4">
+<DIV class=3D"ListOfLinkLists">
+<DIV class=3D"LinkList" xmlns=3D"http://www.w3.org/1999/xhtml">
+<DIV class=3D"LinkListTitle">Essentials</DIV>
+<DIV class=3D"LinkListDescription"></DIV>
+<DIV class=3D"Links">
+<UL class=3D"LinkColumn" style=3D"width: 100%;">
+  <LI><A id=3D"Column4_727_46" =
+href=3D"http://go.microsoft.com/fwlink/p/?linkid=3D285650"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Recently published</A>          =
+ </LI>
+  <LI><A id=3D"Column4_727_47" =
+href=3D"http://go.microsoft.com/fwlink/p/?linkid=3D285651"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Debugging</A>           </LI>
+  <LI><A id=3D"Column4_727_48" =
+href=3D"http://go.microsoft.com/fwlink/p/?linkid=3D328186"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Samples</A>           </LI>
+  <LI><A id=3D"Column4_727_49" =
+href=3D"http://go.microsoft.com/fwlink/p/?linkid=3D285653"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Hardware dashboard</A>          =
+ </LI>
+  <LI><A id=3D"Column4_727_50" =
+href=3D"http://go.microsoft.com/fwlink/p/?linkid=3D317804"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Partner with Microsoft</A>      =
+    =20
+</LI></UL></DIV></DIV>
+<DIV class=3D"LinkList" xmlns=3D"http://www.w3.org/1999/xhtml">
+<DIV class=3D"LinkListTitle">Stay connected</DIV>
+<DIV class=3D"LinkListDescription"></DIV>
+<DIV class=3D"Links">
+<UL class=3D"LinkColumn" style=3D"width: 100%;">
+  <LI><A id=3D"Column4_727_36" =
+href=3D"http://go.microsoft.com/fwlink/p/?linkid=3D285658"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Microsoft events</A>           =
+</LI>
+  <LI><A id=3D"Column4_727_37" =
+href=3D"http://go.microsoft.com/fwlink/p/?linkid=3D313299"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Windows App Builder Blog</A>    =
+      =20
+  </LI></UL></DIV></DIV></DIV></DIV></DIV>
+<DIV id=3D"baseFooterLogos"><SPAN title=3D"Microsoft" =
+class=3D"microsoftlogo"></SPAN> =20
+               <A title=3D"MSDN" class=3D"msdnlogo" =
+href=3D"http://msdn.microsoft.com/en-us"></A>=20
+            </DIV>
+<DIV id=3D"baseFooter">
+<DIV id=3D"FooterCopyright">=C2=A9 2013 Microsoft</DIV>
+<DIV id=3D"Fragment_BaseFooterContent" =
+xmlns=3D"http://www.w3.org/1999/xhtml"=20
+data-fragmentname=3D"BaseFooterContent">
+<DIV xmlns=3D"http://www.w3.org/1999/xhtml">
+<DIV xmlns:mtps=3D"http://msdn2.microsoft.com/mtps">
+<DIV id=3D"Fragment_BaseFooter" data-fragmentname=3D"BaseFooter">
+<DIV class=3D"LinkList">
+<DIV class=3D"LinkListDescription"></DIV>
+<DIV class=3D"Links">
+<UL class=3D"LinkColumn horizontal">
+  <LI><A id=3D"BaseFooter_35351_1" =
+href=3D"http://msdn.microsoft.com/windows/apps/cc300389"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Terms of Use</A>               =
+</LI>
+  <LI><A id=3D"BaseFooter_35351_2" =
+href=3D"http://www.microsoft.com/library/toolbar/3.0/trademarks/en-us.msp=
+x"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Trademarks</A>               =
+</LI>
+  <LI><A id=3D"BaseFooter_35351_3" =
+href=3D"http://www.microsoft.com/info/privacy.mspx"=20
+  xmlns=3D"http://www.w3.org/1999/xhtml">Privacy and Cookies</A>         =
+     =20
+  </LI></UL></DIV></DIV></DIV>
+<DIV id=3D"Fragment_HelloText" data-fragmentname=3D"HelloText">Hello =
+from Seattle.=20
+</DIV></DIV></DIV></DIV>
+<FORM class=3D"selectLocale" id=3D"selectLocaleForm" =
+action=3D"http://msdn.microsoft.com/en-us/windows/hardware/SelectLocale">=
+<INPUT=20
+name=3D"fromPage" type=3D"hidden" =
+value=3D"http%3a%2f%2fmsdn.microsoft.com%2fen-us%2flibrary%2fwindows%2fha=
+rdware%2fff544536(v%3dvs.85).aspx">=20
+        <A title=3D"Change your language" =
+onclick=3D"$('#selectLocaleForm').submit();return false;"=20
+href=3D"http://msdn.microsoft.com/en-us/library/windows/hardware/ff544536=
+(v=3Dvs.85).aspx#">United=20
+States (English)</A>     </FORM>
+<DIV class=3D"clear"></DIV></DIV></DIV></DIV>
+<DIV class=3D"footerPrintView">
+<DIV class=3D"footerCopyrightPrintView">=C2=A9 2013 Microsoft. All =
+rights=20
+reserved.</DIV></DIV><INPUT id=3D"MtpsDevice" type=3D"hidden" =
+value=3D"Default"> <!--[CDATA[ Third party scripts and code linked to or =
+referenced from this website are licensed to you by the parties that own =
+such code, not by Microsoft.  See ASP.NET Ajax CDN Terms of Use =
+=E2=80=93 http://www.asp.net/ajaxlibrary/CDN.ashx. ]]-->=20
+                                                                         =
+  =20
+<NOSCRIPT>&lt;div&gt;&lt;img alt=3D"DCSIMG" id=3D"Img1" width=3D"1" =
+height=3D"1"=20
+src=3D"http://m.webtrends.com/dcsmgru7m99k7mqmgrhudo0k8_8c6m/njs.gif?dcsu=
+ri=3D/nojavascript&amp;amp;WT.js=3DNo"=20
+/&gt;&lt;/div&gt;</NOSCRIPT> <NOSCRIPT>  &lt;a =
+href=3D"http://www.omniture.com"=20
+title=3D"Web Analytics"&gt;    &lt;img=20
+src=3D"//msstonojsmsdn.112.2o7.net/b/ss/msstonojsmsdn/1/H.20.2--NS/0" =
+height=3D"1"=20
+width=3D"1" border=3D"0" alt=3D"" /&gt;  &lt;/a&gt; </NOSCRIPT>=20
+<DIV id=3D"globalRequestVerification"><INPUT =
+name=3D"__RequestVerificationToken"=20
+type=3D"hidden" =
+value=3D"8fW5ZdEhPVHcvjHLtObsGsSI36Z6xGtNMNsmbUMNkuq6mpQTaIJXo1EhyPsnydyx=
+KpI6232Aw_VafJld_yxu-beTlS_3b-p3Jk364pxgSQtPKkBHeL4_VeTGKs091vqR2sgqLw2">=
+=20
+</DIV></DIV>
+<SCRIPT class=3D"mtps-injected" type=3D"text/javascript">=0A=
+/*<![CDATA[*/=0A=
+(function(window,document){"use strict";function =
+preload(scripts){for(var =
+result=3D[],script,e,i=3D0;i<scripts.length;i++)script=3Dscripts[i],scrip=
+t.hasOwnProperty("url")&&(e=3Ddocument.createElement("script"),e.src=3Dsc=
+ript.url,script.throwaway=3De),result.push(script);return =
+result}function inject(scripts,index){var =
+script,elem;if(index>=3Dscripts.length){delete =
+mtps.injectScripts;return}script=3Dscripts[index];elem=3Ddocument.createE=
+lement("script");elem.className=3D"mtps-injected";elem.async=3D!1;var =
+isLoaded=3D!1,timeoutId=3D0,injectNextFnName=3D"",injectNext=3Delem.onerr=
+or=3Dfunction(){isLoaded||(isLoaded=3D!0,inject(scripts,index+1),window.c=
+learTimeout(timeoutId),elem.onload=3Delem.onerror=3Delem.onreadystatechan=
+ge=3Dnull,injectNextFnName&&delete =
+mtps[injectNextFnName],elem.removeEventListener&&elem.removeEventListener=
+("load",injectNext,!1))};elem.addEventListener?elem.addEventListener("loa=
+d",injectNext,!1):elem.readyState=3D=3D=3D"uninitialized"?elem.onreadysta=
+techange=3Dfunction(){(this.readyState=3D=3D=3D"loaded"||this.readyState=3D=
+=3D=3D"complete")&&injectNext()}:elem.onload=3DinjectNext;script.hasOwnPr=
+operty("url")?(timeoutId=3Dwindow.setTimeout(injectNext,12e4),elem.src=3D=
+script.url):(injectNextFnName=3D"_injectNextScript_"+index,mtps[injectNex=
+tFnName]=3DinjectNext,timeoutId=3Dwindow.setTimeout(injectNext,2e3),elem.=
+text=3D"try {\n"+script.txt+"\n} finally { MTPS."+injectNextFnName+" && =
+MTPS."+injectNextFnName+"(); }");parent.appendChild(elem)}var =
+mtps=3Dwindow.MTPS||(window.MTPS=3D{}),parent=3Ddocument.getElementsByTag=
+Name("head")[0];mtps.injectScripts=3Dfunction(scripts){inject(preload(scr=
+ipts),0)}})(window,document);=0A=
+MTPS.injectScripts([=0A=
+	{ txt: "/**/\r\n(window.MTPS || (window.MTPS =3D {})).cdnDomains || =
+(window.MTPS.cdnDomains =3D { \r\n\t\"image\": =
+\"http://i.msdn.microsoft.com\", \r\n\t\"js\": =
+\"http://i2.msdn.microsoft.com\", \r\n\t\"css\": =
+\"http://i3.msdn.microsoft.com\"\r\n});\r\n/**/" },=0A=
+	{ url: "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js" },=0A=
+	{ txt: "//\n  var literalNormalizedUrl =3D =
+\u0027/en-us/library/windows/hardware/ff544536(d=3Ddefault,l=3Den-us,v=3D=
+vs.85).aspx\u0027;\n  var wt_nvr_ru =3D \u0027WT_NVR_RU\u0027;\n  var =
+wt_fpcdom =3D \u0027.microsoft.com\u0027;\n  var wt_domlist =3D =
+\u0027msdn.microsoft.com\u0027;\n  var wt_pathlist =3D \u0027\u0027;\n  =
+var wt_paramlist =3D \u0027DCSext.mtps_devcenter\u0027;\n  var wt_siteid =
+=3D \u0027MSDN\u0027;\n  var gDomain =3D \u0027m.webtrends.com\u0027;\n  =
+var gDcsId =3D \u0027dcsmgru7m99k7mqmgrhudo0k8_8c6m\u0027;\n  var gFpc =
+=3D \u0027WT_FPC\u0027;\n\n\n\n  if (document.cookie.indexOf(gFpc + =
+\"=3D\") =3D=3D -1) {\n    var wtidJs =3D =
+document.createElement(\"script\");\n    wtidJs.src =3D \"//\" + gDomain =
++ \"/\" + gDcsId + \"/wtid.js\";\n    =
+document.getElementsByTagName(\"head\")[0].appendChild(wtidJs);\n  =
+}\n\n\n\n  var detectedLocale =3D \u0027en-us\u0027;\n  var wtsp =3D =
+\u0027_msdn_\u0027;\n  var gTrackEvents =3D \u00270\u0027;\n/**/" },=0A=
+	{ txt: "/**/\n  var omni_guid =3D =
+\"f24068a3-5793-49d8-8e8d-9fec797d75e0\";\n/**/" },=0A=
+	{ url: =
+"http://i2.msdn.microsoft.com/Combined.js?resources=3D0:Utilities,0:Topic=
+,1:webtrendsscript,2:omni_rsid_MSDN,3:SearchBox;/Areas/Epx/Content/Script=
+s:0,/Areas/Global/Content/Webtrends/resources:1,/Areas/Global/Content/Omn=
+iture/resources/MSDN:2,/Areas/Epx/Themes/Base/Content:3\u0026amp;hashKey=3D=
+9B53C4D2FC34522DCF65A603244675F2" },=0A=
+	{ url: =
+"http://i4.services.social.microsoft.com/search/Widgets/SearchBox.jss?box=
+id=3DHeaderSearchTextBox\u0026btnid=3DHeaderSearchButton\u0026brand=3DMSD=
+N\u0026loc=3Den-us\u0026Refinement=3D182\u0026focusOnInit=3Dfalse\u0026ir=
+oot=3Dwindows%2fhardware\u0026emptyWatermark=3Dtrue\u0026searchButtonTool=
+tip=3DSearch" },=0A=
+	{ url: =
+"http://i2.msdn.microsoft.com/Combined.js?resources=3D0:Header,1:Toc,1:Li=
+braryMemberFilter,1:Toc_Fixed,2:Rating,3:CodeSnippet,3:TopicNotInScope,3:=
+CollapsibleArea,3:VersionSelector,3:SurveyBroker;/Areas/Epx/Themes/Window=
+s/Content:0,/Areas/Epx/Library/Content:1,/Areas/Epx/Themes/Base/Content:2=
+,/Areas/Epx/Content/Scripts:3\u0026amp;hashKey=3DE47A73D19ECEB15A6B493E94=
+5949318A" },=0A=
+	{ txt: "$(document).ready(function() {\n        try {\n            var =
+token =3D $(\"#globalRequestVerification =
+input[name=3D\u0027__RequestVerificationToken\u0027]\").clone();\n       =
+     $(\"#siteFeedbackForm\").append(token);\n        } catch(err) {\n   =
+         \n        }\n    });" }=0A=
+]);=0A=
+=0A=
+/*]]>*/=0A=
+</SCRIPT>
+ </BODY></HTML>
+
+------=_NextPart_000_0009_01CEF2D4.8ADE5C20
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://i.msdn.microsoft.com/Areas/Epx/Themes/Windows/Content/Windows_logo.png
+
+iVBORw0KGgoAAAANSUhEUgAAAJ4AAAAgCAYAAADjRcF+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
+bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
+eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEz
+NDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo
+dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
+dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv
+IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS
+ZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD
+cmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlE
+PSJ4bXAuaWlkOkQzMzRCNDFFNUMzOTExRTJCMkFFRDM2NkM2NjVCRENBIiB4bXBNTTpEb2N1bWVu
+dElEPSJ4bXAuZGlkOkQzMzRCNDFGNUMzOTExRTJCMkFFRDM2NkM2NjVCRENBIj4gPHhtcE1NOkRl
+cml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RDMzNEI0MUM1QzM5MTFFMkIyQUVE
+MzY2QzY2NUJEQ0EiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RDMzNEI0MUQ1QzM5MTFFMkIy
+QUVEMzY2QzY2NUJEQ0EiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1l
+dGE+IDw/eHBhY2tldCBlbmQ9InIiPz7uKvDWAAAFnElEQVR42uxc3W3jRhCmD34NolQQXgXmAXm6
+F9EVkK7AUgXWVSCpAssVWFeBqQpMv+QpgHkVHFNBFKSAy67xrfx5MkuKhCxH1g5A0KR2Oavdb775
+WVon0R7lt9//ScxpYA53Hv7x+afzKMhRydXV5MfpjoEVmxMfZwJoQYI8yWkPcCWGpSpznpnLXwXQ
+ggTpDzwDqpSY6mecGVwn5piG6QvSG3hgLucS0zAlQfbFeIG5/sv4AxNOrPes84c9G70nIcb7/wDB
+MvE9LudmcWZNoDGnv3C5NG3HDW1zc7rDpW1XQE9iPluYvl+CGb6OfDiEQRoAlObkGGjY0jz3/K0J
+P6tELJvgehTgceTAI2BYScFq24BpgNqhT1xMWxlw1wC40xPY7thdLWRFDJbCLbYxnmtbKW42JnYr
+iV1DQTsw3gspPKzGYOJCdY1z1sJ2DtRBAuOpcd7aAKsCS+UeV+jYrgKYppG/RDQUMWSnrBcxYCbA
+u/Rlw+gzMcdl9FwPtcbx1RyLLXTaPlfE0lvp3XGSl2AMMes3uhfvFng0yU/FbLsQNi4Tn2fkOksA
+7ykrVsCVKkzqLWu4+0Y+IvONleddmnbnEgQA3b0CmhhjzFoW/Bqg9TH31LQZG70F2t/CMNbm3i8e
+AD26bN60WSog/47LC/tcc88+79ajvzPwPhwY8AqPq3SL6xb2QWTCmTKxDjgPHcdwi752sm08eEEx
+YuIByL2IJ8foO8cYky1BV4PpnV4HGPvd7yiRWlFypTH+pWKsahgC0MUEugq6efzvOrmIsEe8xkRn
+NPEvkgpn+VjkXHG3qQfM24jt+8mOhZ9hxvUIANlFnRFwRgQsWVcszeeudjhQQJcS6Kw+yaZW7w2x
+1zXaFDRPKSdPSgKmATMTc8PteQx2/ItewOtbKX/DCnsBN5J6YrZCyYQTsRvh2taKu26TpQCdkxti
+Q5Yr0jX2GNMXjxtjZrrQ4jj0n7t41r3EQUaXCUNwbF8BmDH1kWBcEaN6Y+9ewKPYpRPo+vTbEYBX
+AN5ATFiuuM5STKa04KLHkL967teehCIhYEbb9pVxaIuBFNHz1mdCyZVmdDl9jzPMZe5KTvSCCM8P
+g/LWGkoPgz3oGE+CKVfKKAWBuqZJy5S2Dz301x3uc+xWNTzT95ljz29tIYjSp/C41kv6fKXEeQ7s
+pQMrQhc28O82gQF7HgfwMBmlcJl5g+ssxYSmSizYRX/d5X6H7/Qa81TwPFHRvMJ4N0kR7QZlws1u
+YjsRU48AwOtjYTyeFLd9ljW4TsdqMSZ+qDDnm4on89yFPAjDTPm7CyPORWhQSCAjRv0oADjpA75D
+BZ50t4nPdQpWy5XA+TWl9rhdKYOW/mcdgFspGbvbs86UOHVFrLgpwDcxOwD4icY3OgrgIaapRdbY
+xGIFtR3si/GweGtlnJEn8/UZWN7ysoOL25jBZIyb46hFTFjS58NtjRLPmLdlve+N8RhMiQyGm9wt
+xYLVnsZ5Q67+VmGrSeTf1pvT33ca+NDfMc6NMgeO3aYeF+qMmN9ALxQ9s4bkp3OMenrAwLNgmigu
+o8017zu+WxDTjuAW7cL+DdeXYOEGGmParbDouT74iILzN0oEEnKxC4+BXitGKOdjBB0+o7Tbcpdo
++yfcv3PNy6NhPCUjLbd0zfuK7zi7PCf9MQxmSqC7aOhvF3VMrJKj75RAZ9ucewrMNeleezL5leJJ
+fOWdEXRvQNfnTe2TAywgH6xg+2yIBVyDfYptSjHIOPPo5c7Ietv+Oxh7DP3MzEWfkGXn/9AdpNXI
+ln3cEjHn8g3HXkc93kJpivHm8NdxS8ofJMjO5FT+xxZtIm9+3yQKvxQQZNfAawhGS8XP8z6nZcrw
+ExZBdgO8Fj9f0d+zBmDakoH20xdBgnQHXgdglp6sSLrw8AtSRyr/CjAAbyF5gam5QW0AAAAASUVO
+RK5CYII=
+
+------=_NextPart_000_0009_01CEF2D4.8ADE5C20
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://i.msdn.microsoft.com/dynimg/IC500844.png
+
+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
+s8b/D2vG9f//s62KAAAAAElFTkSuQmCC
+
+------=_NextPart_000_0009_01CEF2D4.8ADE5C20
+Content-Type: text/css;
+	charset="koi8-r"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://i3.msdn.microsoft.com/Combined.css?resources=0:Topic,0:CodeSnippet,0:ExpandableCollapsibleArea,0:CommunityContent,0:TopicNotInScope,0:FeedViewerBasic,0:ImageSprite,1:Header,1:sprite,2:Toc,2:LibraryMemberFilter,1:Footer,3:DetailedLinkList,3:LinkList,1:Windows;/Areas/Epx/Content/Css:0,/Areas/Epx/Themes/Windows/Content:1,/Areas/Epx/Library/Content:2,/Areas/Epx/Themes/Base/Content:3&amp;hashKey=D176179CA80A7A27C8973F0C86E2FAA8
+
+body {
+	font: 0.87em/1.35 "Segoe UI", "Lucida Grande", Verdana, Arial, =
+Helvetica, sans-serif; font-size-adjust: none; font-stretch: normal;
+}
+h1 {
+	font: 100 2.57em/1.167 "Segoe UI Light", "Segoe UI", "Lucida Grande", =
+Verdana, Arial, Helvetica, sans-serif; color: rgb(112, 112, 112); =
+margin-top: 0px; font-size-adjust: none; font-stretch: normal;
+}
+h2 {
+	margin: 0px; color: rgb(219, 113, 0); padding-top: 5px; padding-bottom: =
+5px; font-family: "Segoe UI Light","Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif; font-size: 1.28em; =
+font-weight: normal;
+}
+h3 {
+	margin: 0px; color: rgb(219, 113, 0); padding-top: 5px; padding-bottom: =
+5px; font-family: "Segoe UI Light","Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif; font-size: 1.28em; =
+font-weight: normal;
+}
+.contentWrapper h2 a {
+	margin: 0px; color: rgb(219, 113, 0); padding-top: 5px; padding-bottom: =
+5px; font-family: "Segoe UI Light","Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif; font-size: 1.28em; =
+font-weight: normal;
+}
+.contentWrapper h3 a {
+	margin: 0px; color: rgb(219, 113, 0); padding-top: 5px; padding-bottom: =
+5px; font-family: "Segoe UI Light","Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif; font-size: 1.28em; =
+font-weight: normal;
+}
+.heading {
+	margin: 0px; color: rgb(219, 113, 0); padding-top: 5px; padding-bottom: =
+5px; font-family: "Segoe UI Light","Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif; font-size: 1.28em; =
+font-weight: normal;
+}
+h4 {
+	margin: 0px; color: rgb(42, 42, 42); font-family: "Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif; font-size: 0.85em; =
+font-weight: bold;
+}
+.subheading {
+	margin: 0px; color: rgb(42, 42, 42); font-family: "Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif; font-size: 0.85em; =
+font-weight: bold;
+}
+h5 {
+	margin: 0px; line-height: 130%; font-size: 0.85em; font-weight: normal;
+}
+h6 {
+	margin: 0px; line-height: 130%; font-size: 0.85em; font-weight: normal;
+}
+a:link {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+img {
+	border: 0px currentColor;
+}
+div#body {
+	padding-top: 35px; clear: both;
+}
+div#content {
+	-ms-overflow-x: auto !important; -ms-word-wrap: break-word; min-height: =
+300px;
+}
+.BostonPostCard > div + div + div {
+	width: auto !important;
+}
+*:first-child + html .BostonPostCard > div + div + div {
+	width: 740px !important; height: 30px !important;
+}
+*:first-child + html #contentFeedback {
+	height: 20px !important;
+}
+*:first-child + html div#content {
+	overflow: hidden;
+}
+*:first-child + html div#nstext img[usemap=3D'#excel2'] {
+	border: currentColor;
+}
+div#nstext img[usemap=3D'#excel2'] {
+	border: 0px currentColor;
+}
+.clear {
+	clear: both;
+}
+.majorTitle {
+	display: none;
+}
+.parameter {
+	font-style: italic;
+}
+.multicol th {
+	padding: 0px 12px 0px 0px; border: currentColor;
+}
+.multicol td {
+	padding: 0px 12px 0px 0px; border: currentColor;
+}
+td.innercol {
+	padding: 0px 12px 0px 0px; border: currentColor;
+}
+.innercol table td {
+	padding: 0px 12px 0px 0px; border: currentColor;
+}
+#mainBody ul li {
+	list-style-image: none;
+}
+p {
+	color: rgb(42, 42, 42); line-height: 18px; padding-bottom: 15px; =
+margin-top: 0px; margin-bottom: 0px;
+}
+.topic a {
+	color: rgb(0, 112, 159); text-decoration: none;
+}
+.topic a:link {
+	color: rgb(0, 112, 159); text-decoration: none;
+}
+.topic a:visited {
+	color: rgb(3, 105, 122); text-decoration: none;
+}
+.topic a:active {
+	color: rgb(3, 105, 122); text-decoration: none;
+}
+.topic a:hover {
+	color: rgb(51, 144, 177); text-decoration: none;
+}
+.topic a.active {
+	color: rgb(42, 42, 42);
+}
+.topic a.active:link {
+	color: rgb(42, 42, 42);
+}
+.topic a.active:hover {
+	color: rgb(42, 42, 42);
+}
+.topic a.active:visited {
+	color: rgb(42, 42, 42);
+}
+.topic a.active:active {
+	color: rgb(42, 42, 42);
+}
+table {
+	padding-top: 20px; padding-bottom: 20px; border-collapse: collapse;
+}
+div#content table {
+	width: 100%;
+}
+td {
+	margin: 10px; padding: 10px 8px; border-bottom-color: rgb(219, 219, =
+219); border-bottom-width: 1px; border-bottom-style: solid;
+}
+th {
+	margin: 10px; padding: 10px 8px; border-bottom-color: rgb(219, 219, =
+219); border-bottom-width: 1px; border-bottom-style: solid;
+}
+th {
+	text-align: left; color: rgb(99, 99, 99); background-color: rgb(237, =
+237, 237);
+}
+td {
+	color: rgb(42, 42, 42); vertical-align: top;
+}
+table p {
+	padding-bottom: 0px;
+}
+.errorMessage {
+	color: rgb(112, 112, 112); font-family: "Segoe UI Light","Segoe =
+UI","Lucida Grande",Verdana,Arial,Helvetica,sans-serif; font-size: 36px;
+}
+.errormessageSpacing {
+	margin-top: 3px;
+}
+table .BostonPostCard p {
+	padding-bottom: 5px;
+}
+table.members {
+	width: 100%;
+}
+table.members td {
+	min-width: 72px;
+}
+span.sup {
+	vertical-align: super;
+}
+span.sub {
+	font-size: smaller; vertical-align: sub;
+}
+.summary {
+	margin-top: 15px;
+}
+div.mtps-table {
+	display: inline-table;
+}
+div.mtps-thead {
+	display: table-header-group;
+}
+span.mtps-caption {
+	padding: 4pt; display: table-caption;
+}
+div.mtps-row {
+	padding: 4pt; display: table-row;
+}
+span.mtps-cell {
+	padding: 4pt; display: table-cell;
+}
+span.mtps-th {
+	padding: 4pt; display: table-cell;
+}
+div.alert > table {
+	border-width: 0px;
+}
+div.alert th {
+	border-width: 0px; border-style: hidden; padding: 10px 11px 5px; =
+font-weight: bold; border-collapse: collapse; border-spacing: 0; =
+background-color: rgb(237, 237, 237);
+}
+div.alert td {
+	border-width: 0px; padding: 10px 8px;
+}
+div.alert img {
+	border: 0px currentColor; padding-right: 5px;
+}
+div.alert p {
+	margin: 0px;
+}
+div.FVB_date {
+	color: rgb(85, 85, 85); font-size: smaller; font-style: italic; =
+margin-bottom: 5px;
+}
+.controlPlaceholder {
+	padding: 10px; color: rgb(170, 170, 170); font-style: italic; =
+background-color: rgb(238, 238, 238);
+}
+.input {
+	font-weight: 700;
+}
+.label {
+	font-weight: 700;
+}
+div.footerPrintView {
+	padding-top: 10px; clear: both; font-family: "Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif; display: none;
+}
+.code {
+	color: rgb(0, 100, 0); font-family: Consolas,Courier,monospace;
+}
+.multiViewItemHeading {
+	font-style: italic; margin-top: 15px; margin-bottom: 3px;
+}
+.topic .title {
+	font-family: Segoe UI,Verdana,Arial;
+}
+#curversion {
+	color: rgb(93, 93, 93); font-size: 13px;
+}
+ol ol {
+	list-style-type: lower-alpha;
+}
+ol ol ol {
+	list-style-type: lower-roman;
+}
+.codeSnippetContainer {
+	clear: both; min-width: 260px;
+}
+.codeSnippetContainerTabs {
+	height: 23px; vertical-align: middle; position: relative; z-index: 1;
+}
+.codeSnippetContainerTab {
+	padding: 0px 15px; width: auto; height: 22px; color: rgb(42, 42, 42); =
+font-family: "Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif !important; font-size: 12px; =
+font-style: normal !important; vertical-align: baseline; float: left;
+}
+.codeSnippetContainerTabActive {
+	background: rgb(248, 248, 248); padding: 0px 15px; width: auto; height: =
+22px; color: rgb(112, 112, 112); font-family: "Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif !important; font-size: 12px; =
+font-style: normal !important; vertical-align: baseline; =
+border-top-color: rgb(147, 147, 147); border-right-color: rgb(147, 147, =
+147); border-left-color: rgb(147, 147, 147); border-top-width: 1px; =
+border-right-width: 1px; border-left-width: 1px; border-top-style: =
+solid; border-right-style: solid; border-left-style: solid; float: left;
+}
+.codeSnippetContainerTabPhantom {
+	background: rgb(248, 248, 248); padding: 0px 15px; width: auto; height: =
+22px; color: rgb(194, 194, 194); font-family: "Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif !important; font-size: 12px; =
+font-style: normal !important; vertical-align: baseline; =
+border-top-color: rgb(147, 147, 147); border-right-color: rgb(147, 147, =
+147); border-left-color: rgb(147, 147, 147); border-top-width: 1px; =
+border-right-width: 1px; border-left-width: 1px; border-top-style: =
+solid; border-right-style: solid; border-left-style: solid; float: left;
+}
+.codeSnippetContainerTabSingle {
+	padding: 0px 8px; left: 7px; top: 14px; width: auto; height: 22px; =
+color: rgb(112, 112, 112); font-family: "Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif !important; font-size: 12px; =
+font-style: normal !important; vertical-align: baseline; float: left; =
+position: relative; background-color: rgb(255, 255, 255);
+}
+.codeSnippetContainerTab a {
+	top: 2px; color: rgb(42, 42, 42); text-decoration: none; position: =
+relative;
+}
+.codeSnippetContainerTab a:link {
+	top: 2px; color: rgb(42, 42, 42); text-decoration: none; position: =
+relative;
+}
+.codeSnippetContainerTab a:visited {
+	top: 2px; color: rgb(42, 42, 42); text-decoration: none; position: =
+relative;
+}
+.codeSnippetContainerTab a:active {
+	top: 2px; color: rgb(42, 42, 42); text-decoration: none; position: =
+relative;
+}
+.codeSnippetContainerTabActive a {
+	top: 2px; color: rgb(112, 112, 112); text-decoration: none; position: =
+relative;
+}
+.codeSnippetContainerTabActive a:link {
+	top: 2px; color: rgb(112, 112, 112); text-decoration: none; position: =
+relative;
+}
+.codeSnippetContainerTabActive a:visited {
+	top: 2px; color: rgb(112, 112, 112); text-decoration: none; position: =
+relative;
+}
+.codeSnippetContainerTabActive a:active {
+	top: 2px; color: rgb(112, 112, 112); text-decoration: none; position: =
+relative;
+}
+.codeSnippetContainerTabPhantom a {
+	top: 2px; color: rgb(139, 139, 139) !important; text-decoration: none; =
+position: relative;
+}
+.codeSnippetContainerTabPhantom a:link {
+	top: 2px; color: rgb(139, 139, 139) !important; text-decoration: none; =
+position: relative;
+}
+.codeSnippetContainerTabPhantom a:visited {
+	top: 2px; color: rgb(139, 139, 139) !important; text-decoration: none; =
+position: relative;
+}
+.codeSnippetContainerTabPhantom a:active {
+	top: 2px; color: rgb(139, 139, 139) !important; text-decoration: none; =
+position: relative;
+}
+.codeSnippetContainerTabSingle a {
+	top: 2px; color: rgb(112, 112, 112); text-decoration: none; position: =
+relative;
+}
+.codeSnippetContainerTabSingle a:link {
+	top: 2px; color: rgb(112, 112, 112); text-decoration: none; position: =
+relative;
+}
+.codeSnippetContainerTabSingle a:visited {
+	top: 2px; color: rgb(112, 112, 112); text-decoration: none; position: =
+relative;
+}
+.codeSnippetContainerTabSingle a:active {
+	top: 2px; color: rgb(112, 112, 112); text-decoration: none; position: =
+relative;
+}
+.codeSnippetContainerTab a:hover {
+	top: 2px; color: rgb(112, 112, 112); position: relative;
+}
+.codeSnippetContainerTabActive a:hover {
+	top: 2px; color: rgb(112, 112, 112); position: relative;
+}
+.codeSnippetContainerTabPhantom a:hover {
+	top: 2px; color: rgb(194, 194, 194); position: relative;
+}
+.codeSnippetContainerTabSingle a:hover {
+	top: 2px; color: rgb(112, 112, 112); position: relative;
+}
+.codeSnippetContainerCodeContainer {
+	border: 1px solid rgb(147, 147, 147); top: -1px; clear: both; =
+margin-bottom: 12px; position: relative;
+}
+.codeSnippetToolBar {
+	width: auto; height: auto;
+}
+.codeSnippetToolBarText {
+	top: -8px; width: auto; height: 0px; padding-right: 0px; padding-left: =
+0px; vertical-align: top; float: right; position: relative; =
+background-color: rgb(255, 255, 255);
+}
+.codeSnippetToolBarText a:link {
+	color: rgb(42, 42, 42); padding-right: 8px; padding-left: 8px; =
+font-family: "Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif !important; font-size: 10px; =
+font-style: normal !important; text-decoration: none; margin-right: =
+15px; margin-left: 15px; background-color: rgb(255, 255, 255);
+}
+.codeSnippetToolBarText a:visited {
+	color: rgb(42, 42, 42); padding-right: 8px; padding-left: 8px; =
+font-family: "Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif !important; font-size: 10px; =
+font-style: normal !important; text-decoration: none; margin-right: =
+15px; margin-left: 15px; background-color: rgb(255, 255, 255);
+}
+.codeSnippetToolBarText a:active {
+	color: rgb(42, 42, 42); padding-right: 8px; padding-left: 8px; =
+font-family: "Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif !important; font-size: 10px; =
+font-style: normal !important; text-decoration: none; margin-right: =
+15px; margin-left: 15px; background-color: rgb(255, 255, 255);
+}
+.codeSnippetToolBarText a:hover {
+	color: rgb(112, 112, 112);
+}
+.codeSnippetContainerCode {
+	margin: 0px; padding: 10px 21px; width: auto;
+}
+.codeSnippetContainerCode div {
+	margin: 0px; padding: 0px;
+}
+.codeSnippetContainerCode pre {
+	margin: 0px; padding: 5px; overflow: auto; font-family: =
+Consolas,Courier,monospace !important; font-style: normal; font-weight: =
+normal; -ms-word-wrap: normal;
+}
+.highlight {
+	background: rgb(255, 255, 198);
+}
+.LW_CollapsibleArea_TitleDiv {
+	padding-top: 20px; padding-bottom: 5px; font-family: "Segoe UI =
+Light","Segoe UI","Lucida Grande",Verdana,Arial,Helvetica,sans-serif =
+!important; font-size: 18px; font-style: normal !important;
+}
+.LW_CollapsibleArea_TitleDiv_Collapsed {
+	padding-top: 20px; padding-bottom: 20px; font-family: "Segoe UI =
+Light","Segoe UI","Lucida Grande",Verdana,Arial,Helvetica,sans-serif =
+!important; font-size: 18px; font-style: normal !important;
+}
+.LW_CollapsibleArea_TitleDiv a:hover {
+	color: rgb(219, 113, 0); text-decoration: none;
+}
+.LW_CollapsibleArea_TitleDiv_Collapsed a:hover {
+	color: rgb(219, 113, 0); text-decoration: none;
+}
+.LW_CollapsibleArea_Title {
+	padding-left: 10px;
+}
+.LW_CollapsibleArea_HrDiv {
+	padding-top: 0px;
+}
+.LW_CollapsibleArea_Hr {
+	color: rgb(229, 229, 229);
+}
+.sectionblock {
+	padding-bottom: 20px; padding-left: 15px; display: block;
+}
+.sectionblock ol {
+	list-style-type: decimal;
+}
+.sectionblock ol ol {
+	list-style-type: lower-alpha;
+}
+.sectionblock ol ol ol {
+	list-style-type: lower-roman;
+}
+.sectionnone {
+	padding-left: 15px; display: none;
+}
+.LW_CollapsibleArea_TitleAhref {
+=09
+}
+.LW_CollapsibleArea_Img {
+	border-width: 0px; margin-top: 7px; margin-bottom: 0px; vertical-align: =
+middle; float: left; display: inline-block;
+}
+.LW_CollapsibleArea_TitleDiv div a:link {
+	color: rgb(219, 113, 0); text-decoration: none;
+}
+.LW_CollapsibleArea_TitleDiv div a:hover {
+	color: rgb(219, 113, 0); text-decoration: none;
+}
+.LW_CollapsibleArea_TitleDiv div a:visited {
+	color: rgb(219, 113, 0); text-decoration: none;
+}
+.LW_CollapsibleArea_TitleDiv div a:focus {
+	color: rgb(219, 113, 0); text-decoration: none;
+}
+.LW_CollapsibleArea_TitleDiv_Collapsed div a:link {
+	color: rgb(219, 113, 0); text-decoration: none;
+}
+.LW_CollapsibleArea_TitleDiv_Collapsed div a:hover {
+	color: rgb(219, 113, 0); text-decoration: none;
+}
+.LW_CollapsibleArea_TitleDiv_Collapsed div a:visited {
+	color: rgb(219, 113, 0); text-decoration: none;
+}
+.LW_CollapsibleArea_TitleDiv_Collapsed div a:focus {
+	color: rgb(219, 113, 0); text-decoration: none;
+}
+.LW_CollapsibleArea_TitleDiv a span {
+	overflow: hidden; display: block;
+}
+.communityContentContainer {
+	clear: both; margin-top: 34px; border-top-color: rgb(219, 219, 219); =
+border-top-width: 1px; border-top-style: solid; min-height: 40px;
+}
+.communityContentHeader {
+	padding: 16px 0px; border-bottom-color: rgb(213, 213, 213); =
+border-bottom-width: 1px; border-bottom-style: solid;
+}
+.communityContentHeaderTitle {
+	color: rgb(219, 113, 0); font-family: "Segoe UI Light","Segoe =
+UI","Lucida Grande",Verdana,Arial,Helvetica,sans-serif; font-size: 18px;
+}
+.communityContentAddButton {
+	padding: 12px 16px 0px; text-align: center; color: rgb(44, 114, 156); =
+float: left; cursor: pointer;
+}
+a.communityContentAddLink {
+	font-family: "Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif;
+}
+.communityContentAnnotationTitle {
+	font-family: "Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif;
+}
+.communityContentAnnotationBody {
+	font-family: "Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif;
+}
+.communityContentAnnotationUserContainer {
+	font-family: "Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif;
+}
+.communityContentAnnotationDateContainer {
+	font-family: "Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif;
+}
+a.communityContentCommentEditLink {
+	font-family: "Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif;
+}
+a.communityContentDeleteLink {
+	font-family: "Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif;
+}
+a.communityContentAddLink {
+	color: rgb(255, 255, 255); font-size: 12px; display: block; cursor: =
+pointer;
+}
+.communityContentAnnotation {
+	color: rgb(42, 42, 42); padding-top: 20px; padding-bottom: 10px; =
+border-bottom-color: rgb(219, 219, 219); border-bottom-width: 1px; =
+border-bottom-style: solid;
+}
+.communityContentAnnotationTitle {
+	padding-bottom: 5px; font-size: 14px;
+}
+.communityContentAnnotationBody {
+	line-height: 18px; padding-bottom: 10px; font-size: 12px; =
+-ms-word-wrap: break-word;
+}
+.communityContentAnnotationBody > pre {
+	white-space: pre-wrap;
+}
+.communityContentAnnotationAvatarContainer {
+	width: 34px; padding-right: 5px; float: left;
+}
+.communityContentAnnotationAvatar img {
+	border: 0px currentColor;
+}
+.communityContentAnnotationUserDateContainer {
+	padding-top: 3px;
+}
+.communityContentAnnotationUserContainer {
+	line-height: 1.35; padding-bottom: 5px; font-size: 10px;
+}
+.communityContentAnnotationUserContainer {
+	color: rgb(44, 114, 156);
+}
+.communityContentAnnotationUserContainer a {
+	color: rgb(44, 114, 156);
+}
+.communityContentAnnotationDateContainer {
+	line-height: 1.35; font-size: 10px;
+}
+a.communityContentCommentEditLink {
+	color: rgb(44, 114, 156); padding-left: 20px; font-size: 10px;
+}
+a.communityContentDeleteLink {
+	color: rgb(44, 114, 156); padding-left: 20px; font-size: 10px;
+}
+.communityContentHeaderTitleContainer h2 {
+	color: green; font-size: 18px; float: left;
+}
+.topicNotInScope {
+	padding-bottom: 10px; clear: both; position: relative;
+}
+.topicNotInScopeDisclaimer {
+	padding: 9px 10px; border: 1px solid rgb(147, 147, 147); color: rgb(42, =
+42, 42); font-family: "Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif; font-size: 12px; =
+background-color: rgb(239, 238, 239);
+}
+.topicNotInScopeDisclaimerText {
+	padding-right: 0px; padding-left: 26px;
+}
+.topicNotInScopeSwitchCollectionContainer {
+	float: right;
+}
+.topicNotInScopeSwitchCollection {
+	padding-right: 5px; padding-left: 5px; float: left;
+}
+.topicNotInScopeCollectionPicker {
+	margin: 0px; border: 1px solid rgb(147, 147, 147); top: 30px; width: =
+auto; right: 10px; padding-top: 5px; padding-right: 10px; padding-left: =
+10px; display: none; list-style-type: none; position: absolute; z-index: =
+2; background-color: rgb(255, 255, 255);
+}
+.topicNotInScopeCollectionPickerItem {
+	height: 20px; margin-bottom: 2px;
+}
+.topicNotInScopeImageContainer {
+	float: left;
+}
+.topicNotInScopeImageContainer2 {
+	margin-top: 5px; float: left;
+}
+.topicNotInScopeImageContainer > img {
+	max-width: none !important;
+}
+.feedViewerBulletList ul {
+	padding-top: 0px; padding-bottom: 0px;
+}
+.feedViewerBulletList ul li {
+	padding-bottom: 0px;
+}
+.feedViewerBasic {
+=09
+}
+.feedViewerItem {
+	padding-bottom: 15px;
+}
+a.feedViewerLink {
+	font-family: "Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif; font-size: 12px;
+}
+a.feedViewerLink {
+	color: rgb(0, 112, 159);
+}
+a.feedViewerLink:active {
+	color: rgb(0, 112, 159);
+}
+a.feedViewerLink:hover {
+	color: rgb(51, 144, 177);
+}
+a.feedViewerLink:visited {
+	color: rgb(3, 105, 122);
+}
+.feedViewerDescription {
+	padding-top: 5px;
+}
+.feedViewerDescription {
+	color: rgb(42, 42, 42); line-height: 18px; font-family: "Segoe =
+UI","Lucida Grande",Verdana,Arial,Helvetica,sans-serif; font-size: 12px; =
+margin-top: 0px; margin-bottom: 0px;
+}
+.feedViewerDateAuthor {
+	color: rgb(42, 42, 42); line-height: 18px; font-family: "Segoe =
+UI","Lucida Grande",Verdana,Arial,Helvetica,sans-serif; font-size: 12px; =
+margin-top: 0px; margin-bottom: 0px;
+}
+.feedViewerDate {
+=09
+}
+.feedViewerAuthor {
+=09
+}
+.clip10x10 {
+	overflow: hidden; position: relative;
+}
+.clip10x46 {
+	overflow: hidden; position: relative;
+}
+.clip11x6 {
+	overflow: hidden; position: relative;
+}
+.clip11x12 {
+	overflow: hidden; position: relative;
+}
+.clip16x16 {
+	overflow: hidden; position: relative;
+}
+.clip20x20 {
+	overflow: hidden; position: relative;
+}
+.clip20x21 {
+	overflow: hidden; position: relative;
+}
+.clip22x30 {
+	overflow: hidden; position: relative;
+}
+.clip23x23 {
+	overflow: hidden; position: relative;
+}
+.clip25x25 {
+	overflow: hidden; position: relative;
+}
+.clip26x23 {
+	overflow: hidden; position: relative;
+}
+.clip29x29 {
+	overflow: hidden; position: relative;
+}
+.clip30x24 {
+	overflow: hidden; position: relative;
+}
+.clip30x25 {
+	overflow: hidden; position: relative;
+}
+.clip31x24 {
+	overflow: hidden; position: relative;
+}
+.clip32x24 {
+	overflow: hidden; position: relative;
+}
+.clip38x23 {
+	overflow: hidden; position: relative;
+}
+.clip51x24 {
+	overflow: hidden; position: relative;
+}
+.clip10x10 {
+	width: 10px; height: 10px;
+}
+.clip10x46 {
+	width: 10px; height: 46px;
+}
+.clip11x6 {
+	width: 11px; height: 6px;
+}
+.clip11x12 {
+	width: 11px; height: 12px;
+}
+.clip16x16 {
+	width: 16px; height: 16px;
+}
+.clip20x20 {
+	width: 20px; height: 20px;
+}
+.clip20x21 {
+	width: 20px; height: 21px;
+}
+.clip22x30 {
+	width: 22px; height: 30px;
+}
+.clip23x23 {
+	width: 23px; height: 23px;
+}
+.clip25x25 {
+	width: 25px; height: 25px;
+}
+.clip26x23 {
+	width: 26px; height: 23px;
+}
+.clip29x29 {
+	width: 29px; height: 29px;
+}
+.clip30x24 {
+	width: 30px; height: 24px;
+}
+.clip30x25 {
+	width: 30px; height: 25px;
+}
+.clip31x24 {
+	width: 31px; height: 24px;
+}
+.clip32x24 {
+	width: 32px; height: 24px;
+}
+.clip38x23 {
+	width: 38px; height: 23px;
+}
+.clip51x24 {
+	width: 51px; height: 24px;
+}
+.clip10x10 img {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip10x10 input {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip10x46 img {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip10x46 input {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip11x6 img {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip11x6 input {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip11x12 img {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip11x12 input {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip16x16 img {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip16x16 input {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip20x20 img {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip20x20 input {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip20x21 img {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip20x21 input {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip22x30 img {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip22x30 input {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip23x23 img {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip23x23 input {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip25x25 img {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip25x25 input {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip26x23 img {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip26x23 input {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip29x29 img {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip29x29 input {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip30x24 img {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip30x24 input {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip30x25 img {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip30x25 input {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip31x24 img {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip31x24 input {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip32x24 img {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip32x24 input {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip38x23 img {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip38x23 input {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip51x24 img {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.clip51x24 input {
+	margin: 0px; padding: 0px; width: auto; height: auto; position: =
+absolute;
+}
+.cl_footer_logo {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-3px -3px; width: 90px; height: 16px; overflow: hidden;
+}
+.isd_search {
+	left: -99px; top: -3px;
+}
+.search_icon_technet {
+	left: -125px; top: -3px;
+}
+.search_gray {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-160px -3px; width: 17px; height: 17px; overflow: hidden;
+}
+.cl_footer_feedback_icon {
+	left: -183px; top: -3px;
+}
+.cl_ContentFallback_Alert {
+	left: -209px; top: -3px;
+}
+.cl_msdn_close {
+	left: -240px; top: -3px;
+}
+.cl_printhelp_logo {
+	left: -268px; top: -3px;
+}
+.cl_nav_resize_close {
+	left: -297px; top: -3px;
+}
+.cl_nav_resize_open {
+	left: -313px; top: -3px;
+}
+.toc_collapsed {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-329px -3px; width: 17px; height: 17px; overflow: hidden;
+}
+.toc_expanded {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-352px -3px; width: 17px; height: 17px; overflow: hidden;
+}
+.toc_empty {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-375px -3px; width: 17px; height: 17px; overflow: hidden;
+}
+.cl_rss_button {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-398px -3px; width: 17px; height: 17px; overflow: hidden;
+}
+.cl_CollapsibleArea_expanding {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-421px -3px; width: 9px; height: 12px; overflow: hidden;
+}
+.cl_CollapsibleArea_collapsing {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-436px -3px; width: 9px; height: 12px; overflow: hidden;
+}
+.topicNotInScopeInformationImage {
+	left: -451px; top: -3px;
+}
+.cl_lw_vs_seperator {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-473px -3px; width: 1px; height: 17px; overflow: hidden;
+}
+.cl_lw_vs_arrow {
+	left: -480px; top: -3px;
+}
+.isd_settings {
+	left: -496px; top: -3px;
+}
+.isd_print {
+	left: -528px; top: -3px;
+}
+.isd_print_arrow {
+	left: -560px; top: -3px;
+}
+.closedCaptionImage {
+	left: -604px; top: -3px;
+}
+.muteImage {
+	left: -642px; top: -3px;
+}
+.pausedImage {
+	left: -679px; top: -3px;
+}
+.playImage {
+	left: -736px; top: -3px;
+}
+.restartImage {
+	left: -793px; top: -3px;
+}
+.rewindImage {
+	left: -831px; top: -3px;
+}
+.skipImage {
+	left: -867px; top: -3px;
+}
+.soundImage {
+	left: -904px; top: -3px;
+}
+.tickImage {
+	left: -940px; top: -3px;
+}
+.topicNotInScopeDropdownImage {
+	left: -957px; top: -3px;
+}
+.cl_IC46226 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-974px -3px; width: 11px; height: 11px; overflow: hidden;
+}
+.cl_IC28506 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-991px -3px; width: 11px; height: 11px; overflow: hidden;
+}
+.cl_IC90381 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1008px -3px; width: 16px; height: 16px; overflow: hidden;
+}
+.cl_IC131682 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1030px -3px; width: 15px; height: 15px; overflow: hidden;
+}
+.cl_IC160177 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1051px -3px; width: 10px; height: 10px; overflow: hidden;
+}
+.cl_IC131792 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1067px -3px; width: 17px; height: 11px; overflow: hidden;
+}
+.cl_IC128933 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1090px -3px; width: 16px; height: 16px; overflow: hidden;
+}
+.cl_IC169559 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1112px -3px; width: 16px; height: 16px; overflow: hidden;
+}
+.cl_IC116110 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1134px -3px; width: 12px; height: 10px; overflow: hidden;
+}
+.cl_IC101471 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1152px -3px; width: 16px; height: 14px; overflow: hidden;
+}
+.cl_IC103139 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1174px -3px; width: 10px; height: 10px; overflow: hidden;
+}
+.cl_IC6709 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1190px -3px; width: 16px; height: 16px; overflow: hidden;
+}
+.cl_IC115567 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1212px -3px; width: 16px; height: 16px; overflow: hidden;
+}
+.cl_IC155188 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1234px -3px; width: 17px; height: 16px; overflow: hidden;
+}
+.cl_IC9948 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1257px -3px; width: 16px; height: 16px; overflow: hidden;
+}
+.cl_IC100399 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1279px -3px; width: 16px; height: 16px; overflow: hidden;
+}
+.cl_IC166620 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1301px -3px; width: 16px; height: 16px; overflow: hidden;
+}
+.cl_IC29808 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1323px -3px; width: 16px; height: 16px; overflow: hidden;
+}
+.cl_IC11304 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1345px -3px; width: 16px; height: 16px; overflow: hidden;
+}
+.cl_IC134134 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1367px -3px; width: 16px; height: 16px; overflow: hidden;
+}
+.cl_IC90369 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1389px -3px; width: 10px; height: 12px; overflow: hidden;
+}
+.cl_IC79755 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1405px -3px; width: 16px; height: 16px; overflow: hidden;
+}
+.cl_IC157541 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1427px -3px; width: 16px; height: 16px; overflow: hidden;
+}
+.cl_IC141795 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1449px -3px; width: 16px; height: 16px; overflow: hidden;
+}
+.cl_IC89523 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1471px -3px; width: 16px; height: 16px; overflow: hidden;
+}
+.cl_IC157062 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1493px -3px; width: 16px; height: 16px; overflow: hidden;
+}
+.cl_IC34952 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1515px -3px; width: 16px; height: 16px; overflow: hidden;
+}
+.cl_IC91302 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1537px -3px; width: 16px; height: 11px; overflow: hidden;
+}
+.cl_IC53205 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1559px -3px; width: 16px; height: 16px; overflow: hidden;
+}
+.cl_IC148674 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1581px -3px; width: 16px; height: 16px; overflow: hidden;
+}
+.cl_IC74937 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1603px -3px; width: 16px; height: 16px; overflow: hidden;
+}
+.cl_IC82306 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1625px -3px; width: 16px; height: 16px; overflow: hidden;
+}
+.cl_IC36774 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1647px -3px; width: 16px; height: 16px; overflow: hidden;
+}
+.cl_IC169559 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1669px -3px; width: 16px; height: 16px; overflow: hidden;
+}
+.cl_IC101171 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1691px -3px; width: 7px; height: 10px; overflow: hidden;
+}
+.cl_IC130242 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1704px -3px; width: 13px; height: 10px; overflow: hidden;
+}
+.cl_IC150820 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1723px -3px; width: 16px; height: 16px; overflow: hidden;
+}
+.cl_IC25161 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1745px -3px; width: 16px; height: 16px; overflow: hidden;
+}
+.cl_IC64394 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1767px -3px; width: 16px; height: 16px; overflow: hidden;
+}
+.cl_IC153696 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1789px -3px; width: 14px; height: 18px; overflow: hidden;
+}
+.cl_IC37116 {
+	background: url("/Areas/Epx/Content/Images/ImageSprite.png") no-repeat =
+-1809px -3px; width: 16px; height: 16px; overflow: hidden;
+}
+.Clear {
+	clear: both;
+}
+#ux-header {
+	color: rgb(207, 207, 207); line-height: 12px; font-size: 12px; =
+min-width: 998px; background-color: rgb(69, 69, 69);
+}
+#ux-header #headerContainer {
+	margin: auto; width: 998px; height: 105px; position: relative; z-index: =
+1000;
+}
+#ux-header li {
+	list-style-type: none; background-image: none;
+}
+#ux-header a {
+	color: rgb(207, 207, 207); background-image: none;
+}
+#ux-header a:hover {
+	color: rgb(255, 255, 255);
+}
+#ux-header a:focus {
+	outline: rgb(255, 255, 255) dotted 1px;
+}
+#ux-header .scarabLink {
+	padding: 0px; float: right;
+}
+#ux-header .createProfileLink {
+	padding: 0px 8px 0px 0px; float: right;
+}
+#ux-header #logo {
+	height: 32px; float: left; display: inline-block;
+}
+#ux-header #selectedTab {
+	margin-top: -1px; float: left;
+}
+#ux-header #logoAndSearchBox {
+	padding: 30px 0px 0px;
+}
+#ux-header div.SearchBox {
+	margin: 6px 0px 0px; border: currentColor; width: 227px; height: 24px; =
+float: right; background-color: rgb(40, 40, 40);
+}
+#ux-header div.SearchBox button {
+	border: currentColor; float: right; display: inline-block; cursor: =
+pointer;
+}
+#ux-header div.SearchBoxOnFocus button {
+	background-color: rgb(0, 204, 255);
+}
+.IE7#ux-header div.SearchBox button {
+	float: none;
+}
+#ux-header div.SearchBox input {
+	border-width: 0px; padding: 0px 0px 0px 8px; width: 191px; height: =
+24px; color: rgb(255, 255, 255); font-family: "Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif; font-size: 100%; =
+font-weight: 600; background-color: rgb(40, 40, 40);
+}
+#ux-header div.SearchBoxOnFocus input {
+	color: rgb(69, 69, 69); background-color: rgb(255, 255, 255);
+}
+#ux-header div.SearchBoxOnFocus {
+	padding: 0px; background-color: rgb(255, 255, 255);
+}
+#ux-header #SearchFlyoutContainer {
+	color: rgb(69, 69, 69) !important;
+}
+#ux-header div.ux-internav {
+	margin: 18px 0px 0px; padding: 0px; height: auto; font-size: 100%; =
+display: inline-block;
+}
+#ux-header div#selectedTab a.dropDownToggle::after {
+	margin: 15px 0px 0px 12px; float: right; display: block; content: " ";
+}
+#ux-header div#selectedTab a {
+	padding: 0px; line-height: 1.09; font-family: "Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif; font-size: 225%; =
+margin-left: 11px;
+}
+#ux-header div#selectedTab a:hover {
+	color: rgb(0, 204, 255);
+}
+#ux-header #toclevel1_menu {
+	font-size: 225%; position: absolute; z-index: 1001;
+}
+#ux-header #toclevel1_menu a {
+	font-family: "Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif;
+}
+#ux-header #toclevel1_menu ul {
+	margin: 0px; padding: 3px 13px 5px; line-height: 40px; min-width: =
+261px; background-color: rgb(40, 40, 40);
+}
+#ux-header #toclevel1_menu li {
+	padding: 0px; margin-bottom: 5px;
+}
+#ux-header a.active {
+	color: rgb(0, 204, 255);
+}
+#ux-header div.toclevel2 {
+	float: left; max-width: 741px;
+}
+#ux-header div.toclevel2 a {
+	padding: 0px 9px; font-family: "Segoe UI Semibold","Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif; font-weight: 600;
+}
+#ux-header div.toclevel3 a {
+	padding: 0px 9px; font-family: "Segoe UI Semibold","Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif; font-weight: 600;
+}
+#ux-header div.toclevel2 a:first-child {
+	padding: 0px 9px 0px 0px;
+}
+#ux-header div.toclevel3 a:first-child {
+	padding: 0px 9px 0px 0px;
+}
+#ux-header div.toclevel2 a {
+	margin: 1px 0px; height: auto; text-transform: uppercase; =
+letter-spacing: 1px; float: left;
+}
+#ux-header div.toclevel3 {
+	margin: auto; padding: 9px 0px 12px; width: 998px; overflow: hidden;
+}
+#ux-header div.toclevel3 a {
+	left: 25px; position: relative; opacity: 0;
+}
+#ux-header #blackBar {
+	min-height: 10px; background-color: rgb(40, 40, 40);
+}
+#ux-header #signIn {
+	margin-top: 19px; float: right;
+}
+div.IE7#ux-header #signIn {
+	max-width: 300px;
+}
+.rtl#ux-header .createProfileLink {
+	padding: 0px 0px 0px 8px; float: left;
+}
+.rtl#ux-header .scarabLink {
+	float: left;
+}
+.rtl#ux-header div.SearchBox {
+	float: left;
+}
+.rtl#ux-header div.SearchBox button {
+	float: left;
+}
+.rtl#ux-header #signIn {
+	float: left;
+}
+.rtl#ux-header #logo {
+	float: right;
+}
+.rtl#ux-header #selectedTab {
+	float: right;
+}
+.rtl#ux-header div#selectedTab a {
+	margin: 0px 11px 0px 0px;
+}
+.rtl#ux-header div#selectedTab a.dropDownToggle::after {
+	margin: 15px 12px 0px 0px; float: left;
+}
+.rtl#ux-header div.toclevel3 a {
+	left: -25px; float: right;
+}
+.rtl#ux-header div.toclevel2 a {
+	float: right;
+}
+.rtl#ux-header #toclevel1_menu ul {
+	padding: 3px 13px 5px 0px;
+}
+.microsoftlogo {
+	background: url("/Areas/Epx/Themes/Windows/Content/sprite.min.png") =
+no-repeat 0px 0px; width: 85px; height: 16px; overflow: hidden;
+}
+.msdnlogo {
+	background: url("/Areas/Epx/Themes/Windows/Content/sprite.min.png") =
+no-repeat -85px 0px; width: 46px; height: 16px; overflow: hidden;
+}
+.selectLocale a::after {
+	background: url("/Areas/Epx/Themes/Windows/Content/sprite.min.png") =
+no-repeat -131px 0px; width: 24px; height: 24px; overflow: hidden;
+}
+.header-search-button {
+	background: url("/Areas/Epx/Themes/Windows/Content/sprite.min.png") =
+no-repeat -155px 0px; width: 24px; height: 24px; overflow: hidden;
+}
+.SearchBoxOnFocus .header-search-button {
+	background: url("/Areas/Epx/Themes/Windows/Content/sprite.min.png") =
+no-repeat -179px 0px; width: 24px; height: 24px; overflow: hidden;
+}
+.dropDownToggle::after {
+	background: url("/Areas/Epx/Themes/Windows/Content/sprite.min.png") =
+no-repeat -203px 0px; width: 13px; height: 9px; overflow: hidden;
+}
+.dropDownToggle:hover::after {
+	background: url("/Areas/Epx/Themes/Windows/Content/sprite.min.png") =
+no-repeat -216px 0px; width: 13px; height: 9px; overflow: hidden;
+}
+div#leftNav {
+	margin: 0px 28px 0px 0px; width: 215px; float: left; position: =
+relative; min-height: 10px;
+}
+div#tocnav {
+	line-height: normal; font-family: "Segoe UI",Verdana,Arial; font-size: =
+1em; -ms-overflow-x: hidden;
+}
+div#tocnav > div {
+	width: auto; margin-bottom: 10px; white-space: normal; -ms-overflow-x: =
+hidden;
+}
+div#leftNav a {
+	color: rgb(19, 100, 196); text-decoration: none;
+}
+div#leftNav a:link {
+	color: rgb(19, 100, 196); text-decoration: none;
+}
+div#leftNav a:visited {
+	color: rgb(19, 100, 196); text-decoration: none;
+}
+div#tocnav > div > a {
+	overflow: hidden; margin-left: 22px; display: block;
+}
+div#tocnav > div > a:link {
+	overflow: hidden; margin-left: 22px; display: block;
+}
+div#tocnav > div > a:visited {
+	overflow: hidden; margin-left: 22px; display: block;
+}
+div#tocnav > div > span.emptyHref {
+	overflow: hidden; text-decoration: none; margin-left: 22px; display: =
+block;
+}
+div#tocnav > div.current > a {
+	color: rgb(230, 106, 56); text-decoration: none;
+}
+div#tocnav > div.current > a:link {
+	color: rgb(230, 106, 56); text-decoration: none;
+}
+div#tocnav > div.current > a:visited {
+	color: rgb(230, 106, 56); text-decoration: none;
+}
+div#tocnav > div > a.toc_expanded {
+	margin-left: 0px; vertical-align: top; float: left; display: =
+inline-block;
+}
+div#tocnav > div > a.toc_collapsed {
+	margin-left: 0px; vertical-align: top; float: left; display: =
+inline-block;
+}
+div#tocnav > div > span.toc_empty {
+	margin-left: 0px; vertical-align: top; float: left; display: =
+inline-block;
+}
+div#tocnav > div > span.toc_empty {
+=09
+}
+div#tocnav > div.toclevel1 {
+	padding-left: 13px;
+}
+div#tocnav > div.toclevel2 {
+	padding-left: 26px;
+}
+div#tocnav > div.toclevel3 {
+	padding-left: 39px;
+}
+div#tocnav > div.toclevel4 {
+	padding-left: 52px;
+}
+div#tocnav > div.toclevel5 {
+	padding-left: 65px;
+}
+div#tocnav > div.toclevel6 {
+	padding-left: 78px;
+}
+div#tocnav > div.toclevel7 {
+	padding-left: 91px;
+}
+div#tocnav > div.toclevel8 {
+	padding-left: 104px;
+}
+div#tocnav > div.toclevel9 {
+	padding-left: 117px;
+}
+div#tocnav > div.toclevel10 {
+	padding-left: 130px;
+}
+.libraryMemberFilter {
+	overflow: auto; margin-bottom: 5px; display: none;
+}
+.libraryMemberFilter .filterContainer {
+	float: right;
+}
+.libraryMemberFilter .filterContainer label {
+	display: inline;
+}
+.libraryMemberFilter .libraryFilterInherited {
+	margin: 0px 5px; vertical-align: middle;
+}
+.libraryMemberFilter .libraryFilterProtected {
+	margin: 0px 5px 0px 15px; vertical-align: middle;
+}
+html[dir=3D'rtl'] .libraryMemberFilter .filterContainer {
+	float: left;
+}
+#ux-footer {
+	padding: 0px; color: rgb(255, 255, 255); line-height: 15px; clear: =
+both; font-family: "Segoe UI Semibold","Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif; font-size: 12px; =
+font-weight: 600; border-top-color: rgb(40, 40, 40); border-top-width: =
+10px; border-top-style: solid; min-width: 998px; background-color: =
+rgb(69, 69, 69);
+}
+#ux-footer .clear {
+	clear: both;
+}
+#ux-footer #footerContainer {
+	margin: auto; width: 998px;
+}
+#ux-footer #footerSockInner {
+	margin: auto; width: 998px;
+}
+#ux-footer #footerSock {
+	background-color: rgb(40, 40, 40);
+}
+#ux-footer #footerSockInner {
+	padding: 42px 0px 52px;
+}
+#ux-footer #footerSock #Fragment_Survey {
+	width: 227px; margin-right: 30px; float: left;
+}
+#ux-footer #footerSock div.rating {
+	width: 484px; float: left; display: none;
+}
+#ux-footer #footerSock div.title {
+	color: rgb(255, 255, 255); font-size: 1.66em; margin-bottom: 8px;
+}
+#ux-footer #footerSock div.description {
+	font: 1.2em/1.4 "Segoe UI", "Lucida Grande", Verdana, Arial, Helvetica, =
+sans-serif; color: rgb(255, 255, 255); margin-bottom: 8px; =
+font-size-adjust: none; font-stretch: normal;
+}
+#ux-footer #footerSock #Fragment_Survey div.RichText {
+	font: 1.2em/1.4 "Segoe UI", "Lucida Grande", Verdana, Arial, Helvetica, =
+sans-serif; color: rgb(255, 255, 255); margin-bottom: 8px; =
+font-size-adjust: none; font-stretch: normal;
+}
+#ux-footer #footerSock div.buttons > button {
+	font: 1.2em "Segoe UI Semibold", "Lucida Grande", Verdana, Arial, =
+Helvetica, sans-serif; margin: 2px 5px 0px 0px; padding: 10px 18px; =
+color: rgb(255, 255, 255); cursor: pointer; font-size-adjust: none; =
+font-stretch: normal; background-color: rgb(0, 188, 242);
+}
+#ux-footer #footerSock #Fragment_Survey div.link a {
+	font: 1.2em "Segoe UI Semibold", "Lucida Grande", Verdana, Arial, =
+Helvetica, sans-serif; margin: 2px 5px 0px 0px; padding: 10px 18px; =
+color: rgb(255, 255, 255); cursor: pointer; font-size-adjust: none; =
+font-stretch: normal; background-color: rgb(0, 188, 242);
+}
+#ux-footer #footerSock #Fragment_Survey div.link a {
+	display: inline-block;
+}
+#ux-footer #footerSock div.buttons > button:hover {
+	background-color: rgb(30, 117, 187);
+}
+#ux-footer #footerSock #Fragment_Survey div.link a:hover {
+	background-color: rgb(30, 117, 187);
+}
+#ux-footer #ratingSection2 {
+	display: none;
+}
+#ux-footer #ratingSection3 {
+	display: none;
+}
+#ux-footer div.rating textarea {
+	font: 1.2em/1.4 "Segoe UI", "Lucida Grande", Verdana, Arial, Helvetica, =
+sans-serif; padding: 15px 24px; border: 0px currentColor; width: 436px; =
+height: 120px; margin-bottom: 10px; font-size-adjust: none; =
+font-stretch: normal; resize: none;
+}
+#ux-footer #fourColumnFooter {
+	overflow: hidden; margin-top: 30px;
+}
+#ux-footer a {
+	color: rgb(255, 255, 255); line-height: 15px;
+}
+#ux-footer a:focus {
+	outline: rgb(255, 255, 255) dotted 1px;
+}
+#ux-footer #Fragment_Column1 {
+	margin: 0px 0px 0px 30px; width: 227px; float: left;
+}
+#ux-footer #Fragment_Column2 {
+	margin: 0px 0px 0px 30px; width: 227px; float: left;
+}
+#ux-footer #Fragment_Column3 {
+	margin: 0px 0px 0px 30px; width: 227px; float: left;
+}
+#ux-footer #Fragment_Column4 {
+	margin: 0px 0px 0px 30px; width: 227px; float: left;
+}
+#ux-footer #Fragment_Column1 {
+	margin: 0px;
+}
+#ux-footer #fourColumnFooter .LinkListTitle {
+	line-height: 1.5; margin-bottom: 14px;
+}
+#ux-footer #fourColumnFooter #Fragment_Column1 .LinkListTitle {
+	line-height: 15px; margin-bottom: 5px;
+}
+#ux-footer #fourColumnFooter li {
+	margin-bottom: 4px;
+}
+#ux-footer #fourColumnFooter #Fragment_Column1 li {
+	margin-bottom: 0px;
+}
+#ux-footer #fourColumnFooter li a {
+	color: rgb(187, 189, 191);
+}
+#ux-footer #fourColumnFooter #Fragment_Column1 li a {
+	color: rgb(255, 255, 255); line-height: 40px; font-size: 20px;
+}
+#ux-footer #fourColumnFooter div.LinkList {
+	margin: 37px 0px 0px; padding: 0px;
+}
+#ux-footer .microsoftlogo {
+	margin-right: -4px; float: right; display: inline-block;
+}
+#ux-footer .msdnlogo {
+	margin-right: 44px; float: right; display: inline-block;
+}
+#ux-footer #FooterCopyright {
+	margin: 6px 0px 0px; float: right;
+}
+#ux-footer #Fragment_BaseFooter {
+	margin: 6px 16px 0px 0px; float: right; max-width: 520px;
+}
+#ux-footer #Fragment_BaseFooter a {
+	margin: 0px 16px 0px 0px;
+}
+#ux-footer .selectLocale {
+	height: 24px; margin-top: 3px; float: left; background-color: rgb(40, =
+40, 40);
+}
+#ux-footer .selectLocale a {
+	padding: 0px 0px 0px 10px; line-height: 20px; float: left;
+}
+#ux-footer .selectLocale a::after {
+	margin-left: 10px; float: right; display: block; content: " "; =
+background-color: rgb(0, 204, 255);
+}
+#ux-footer .selectLocale a:hover::after {
+	background-color: rgb(30, 117, 187);
+}
+#ux-footer #Fragment_HelloText {
+	margin: 3px 16px 0px 0px; padding: 3px 0px 6px; float: left; display: =
+inline-block;
+}
+#ux-footer #baseFooterLogos {
+	margin-top: 122px;
+}
+#ux-footer #baseFooter {
+	padding-bottom: 13px; clear: both;
+}
+#ux-footer #Fragment_SockLinks {
+	width: 227px; margin-left: 30px; float: left; display: inline-block;
+}
+#ux-footer #Fragment_SockLinks li {
+	margin-bottom: 14px;
+}
+#ux-footer #Fragment_SockLinks a {
+	color: rgb(0, 204, 255); line-height: 1.25em; font-size: 1.66em;
+}
+#ux-footer .LinkList ul {
+	padding: 0px;
+}
+.rtl#ux-footer #footerSock #Fragment_Survey {
+	margin-right: 0px; margin-left: 30px; float: right;
+}
+.rtl#ux-footer #footerSock div.rating {
+	float: right;
+}
+.rtl#ux-footer #Fragment_SockLinks {
+	margin-right: 30px; margin-left: 0px; float: right;
+}
+.rtl#ux-footer #FooterCopyright {
+	float: left;
+}
+.rtl#ux-footer .microsoftlogo {
+	margin-right: 0px; margin-left: -1px; float: left;
+}
+.rtl#ux-footer .msdnlogo {
+	margin: 0px 0px 0px 44px; float: left;
+}
+.rtl#ux-footer #Fragment_BaseFooter {
+	margin: 6px 0px 0px 16px; float: left;
+}
+.rtl#ux-footer #Fragment_BaseFooter a {
+	margin: 0px 0px 0px 16px;
+}
+.rtl#ux-footer #Fragment_Column1 {
+	float: right;
+}
+.rtl#ux-footer #Fragment_Column2 {
+	float: right;
+}
+.rtl#ux-footer #Fragment_Column3 {
+	float: right;
+}
+.rtl#ux-footer #Fragment_Column4 {
+	float: right;
+}
+.rtl#ux-footer .selectLocale {
+	float: right;
+}
+.rtl#ux-footer #Fragment_Column2 {
+	margin: 0px 30px 0px 0px;
+}
+.rtl#ux-footer #Fragment_Column3 {
+	margin: 0px 30px 0px 0px;
+}
+.rtl#ux-footer #Fragment_Column4 {
+	margin: 0px 30px 0px 0px;
+}
+.rtl#ux-footer .selectLocale a {
+	padding: 0px 10px 0px 0px;
+}
+.rtl#ux-footer .selectLocale a::after {
+	margin: 0px 10px 0px 0px; float: left;
+}
+.rtl#ux-footer #Fragment_HelloText {
+	margin: 3px 0px 0px 16px; float: right;
+}
+.DetailedLinkWithImage div.titleAndImage.leftImage div.image {
+	float: left;
+}
+.DetailedLinkWithImage div.titleAndImage.rightImage div.image {
+	float: right;
+}
+.DetailedLinkMetro a.tile {
+	display: block;
+}
+.DetailedLinkWithImageMetro a.tile {
+	display: block;
+}
+.leftImage.DetailedLinkWithImage div.textContent {
+	float: right;
+}
+.leftImage.DetailedLinkWithImageMetro div.textContent {
+	float: right;
+}
+.leftImage.DetailedLinkWithImage div.image {
+	float: right;
+}
+.leftImage.DetailedLinkWithImageMetro div.image {
+	float: right;
+}
+.leftImage.DetailedLinkWithImage div.media {
+	float: right;
+}
+.leftImage.DetailedLinkWithImageMetro div.media {
+	float: right;
+}
+.rightImage.DetailedLinkWithImage div.textContent {
+	float: left;
+}
+.rightImage.DetailedLinkWithImageMetro div.textContent {
+	float: left;
+}
+.rightImage.DetailedLinkWithImage div.image {
+	float: left;
+}
+.rightImage.DetailedLinkWithImageMetro div.image {
+	float: left;
+}
+.rightImage.DetailedLinkWithImage div.media {
+	float: left;
+}
+.rightImage.DetailedLinkWithImageMetro div.media {
+	float: left;
+}
+.leftImage.DetailedLinkWithImage {
+	display: inline-block;
+}
+.rightImage.DetailedLinkWithImage {
+	display: inline-block;
+}
+div.DetailedLinkWithImageMetro div.title {
+	display: inline-block;
+}
+div.DetailedLinkMetro div.title {
+	display: inline-block;
+}
+div.DetailedLinkWithImageList {
+	display: inline-block;
+}
+div.DetailedLinkListTextFormat {
+	display: inline-block;
+}
+div.DetailedLinkList {
+	display: inline-block;
+}
+.LinkList div.Bulleted a {
+	background: url("/Areas/Epx/Content/Images/Arrow.gif") no-repeat left; =
+padding-left: 24px;
+}
+.LinkList ul {
+	margin: 0px; padding: 0px; float: left; list-style-type: none;
+}
+.LinkList div:last-child.Links ul {
+	float: none;
+}
+.LinkList ul li {
+	margin: 0px; padding: 0px; list-style-type: none;
+}
+.LinkList ul.horizontal li {
+	float: left;
+}
+.rtl .LinkList ul.horizontal li {
+	float: right;
+}
+.LinkList .LinksDivider {
+	float: left;
+}
+body {
+	margin: 0px; color: rgb(69, 69, 69); line-height: 1.429; font-size: =
+0.87em;
+}
+#body {
+	margin: 0px auto; width: 998px;
+}
+div#content {
+	padding-left: 30px; margin-top: 15px;
+}
+div#leftNav {
+	margin: 25px -1px 0px 0px;
+}
+p {
+	margin: 0px; color: rgb(69, 69, 69); line-height: 1.42em !important;
+}
+ol {
+	margin: 5px 0px 20px; padding: 0px 0px 0px 1px; list-style-position: =
+inside;
+}
+ul {
+	margin: 5px 0px 20px; padding: 0px 0px 0px 1px; list-style-position: =
+inside;
+}
+body.IE ul {
+	padding-right: 1em; padding-left: 1em; list-style-position: outside;
+}
+body.FF ul {
+	padding-right: 1.1em; padding-left: 1.1em; list-style-position: =
+outside;
+}
+body.FF ol {
+	padding-right: 1.4em; padding-left: 1.4em; list-style-position: =
+outside;
+}
+body.IE ol {
+	padding-right: 1.4em; padding-left: 1.4em; list-style-position: =
+outside;
+}
+body.FF ol .codeSnippetContainer {
+	margin-right: -20px; margin-left: -20px;
+}
+body.FF ul .codeSnippetContainer {
+	margin-right: -20px; margin-left: -20px;
+}
+ul ul {
+	margin-left: 18px;
+}
+ol ol {
+	margin-left: 18px;
+}
+ul ol {
+	margin-left: 18px;
+}
+ol ul {
+	margin-left: 18px;
+}
+th {
+	background-color: inherit;
+}
+a {
+	line-height: 1.42em; font-family: "Segoe UI Semibold","Segoe =
+UI","Lucida Grande",Verdana,Arial,Helvetica,sans-serif; font-size: 1em; =
+text-decoration: none;
+}
+a:link {
+	line-height: 1.42em; font-family: "Segoe UI Semibold","Segoe =
+UI","Lucida Grande",Verdana,Arial,Helvetica,sans-serif; font-size: 1em; =
+text-decoration: none;
+}
+a:hover {
+	line-height: 1.42em; font-family: "Segoe UI Semibold","Segoe =
+UI","Lucida Grande",Verdana,Arial,Helvetica,sans-serif; font-size: 1em; =
+text-decoration: none;
+}
+a:active {
+	line-height: 1.42em; font-family: "Segoe UI Semibold","Segoe =
+UI","Lucida Grande",Verdana,Arial,Helvetica,sans-serif; font-size: 1em; =
+text-decoration: none;
+}
+a:visited {
+	line-height: 1.42em; font-family: "Segoe UI Semibold","Segoe =
+UI","Lucida Grande",Verdana,Arial,Helvetica,sans-serif; font-size: 1em; =
+text-decoration: none;
+}
+a {
+	color: rgb(30, 117, 187);
+}
+a:link {
+	color: rgb(30, 117, 187);
+}
+a:hover {
+	color: rgb(0, 188, 242);
+}
+a:visited {
+	color: rgb(0, 24, 143);
+}
+a:active {
+	color: rgb(0, 24, 143);
+}
+.topic a {
+	color: rgb(30, 117, 187);
+}
+.topic a:link {
+	color: rgb(30, 117, 187);
+}
+.topic a:hover {
+	color: rgb(0, 188, 242);
+}
+.topic a:active {
+	color: rgb(0, 24, 143);
+}
+.topic a:visited {
+	color: rgb(0, 24, 143);
+}
+#TopicTitle {
+	font: 3em/1.2 "Segoe UI Light", "Segoe UI", "Lucida Grande", Verdana, =
+Arial, Helvetica, sans-serif; margin: 54px auto 0px; width: 998px; =
+font-size-adjust: none; font-stretch: normal;
+}
+h1 {
+	margin: 0px 0px 0px -3px; padding: 0px 0px 20px; color: rgb(69, 69, =
+69); line-height: 1.2em; clear: both; font-family: "Segoe UI =
+Light","Segoe UI","Lucida Grande",Verdana,Arial,Helvetica,sans-serif; =
+font-size: 3em; font-weight: normal;
+}
+.topic h1.title {
+	margin: 0px 0px 0px -3px; padding: 0px 0px 20px; color: rgb(69, 69, =
+69); line-height: 1.2em; clear: both; font-family: "Segoe UI =
+Light","Segoe UI","Lucida Grande",Verdana,Arial,Helvetica,sans-serif; =
+font-size: 3em; font-weight: normal;
+}
+h1.api_ref {
+	line-height: 1.35em; font-size: 2em; margin-left: -2px;
+}
+h2 {
+	color: rgb(69, 69, 69) !important; line-height: 1.24em !important; =
+padding-top: 0px; padding-bottom: 0px; font-family: "Segoe UI =
+Semibold","Segoe UI","Lucida Grande",Verdana,Arial,Helvetica,sans-serif; =
+font-size: 1.45em !important; margin-bottom: 15px; margin-left: -1px =
+!important;
+}
+.communityContentHeaderTitleContainer h2 {
+	margin: 0px; padding-top: 5px; padding-bottom: 5px;
+}
+h3 {
+	margin: 0px 0px 5px -1px !important; padding: 0px !important; color: =
+rgb(69, 69, 69) !important; line-height: 1.45em !important; font-family: =
+"Segoe UI bold","Segoe UI","Lucida =
+Grande",Verdana,Arial,Helvetica,sans-serif; font-size: 1em !important; =
+font-weight: bold !important;
+}
+h4 {
+	margin: 0px 0px 5px -1px !important; padding: 0px !important;
+}
+h2 > a {
+	color: rgb(30, 117, 187) !important;
+}
+h2 > a:link {
+	color: rgb(30, 117, 187) !important;
+}
+h2 > a:active {
+	color: rgb(30, 117, 187) !important;
+}
+h2 > a:visited {
+	color: rgb(30, 117, 187) !important;
+}
+div#tocnav {
+	font-size: 0.85em !important;
+}
+.TestCaseList pre {
+	font-size: 1.18em;
+}
+.breadCrumb {
+	margin: 0px; line-height: 0.917;
+}
+.breadCrumb > a {
+	color: rgb(42, 42, 42); font-size: 10px;
+}
+.breadCrumb > a:link {
+	color: rgb(42, 42, 42); font-size: 10px;
+}
+.breadCrumb > a:visited {
+	color: rgb(42, 42, 42); font-size: 10px;
+}
+.breadCrumb > span {
+	font-size: 10px;
+}
+.breadCrumb > a:hover {
+	color: rgb(112, 112, 112); text-decoration: none;
+}
+div#leftNav {
+	width: 227px;
+}
+div.leftNavResize1#leftNav {
+	width: 227px;
+}
+div.leftNavResize2#leftNav {
+	width: 327px;
+}
+div.leftNavResize3#leftNav {
+	width: 427px;
+}
+div#tocnav > div.current > a {
+	color: rgb(30, 117, 187);
+}
+div#tocnav > div.current > a:link {
+	color: rgb(30, 117, 187);
+}
+div#tocnav > div.current > a:visited {
+	color: rgb(30, 117, 187);
+}
+div#tocnav > div > a {
+	color: rgb(112, 112, 112);
+}
+div#tocnav > div > a:link {
+	color: rgb(112, 112, 112);
+}
+div#tocnav > div > a:visited {
+	color: rgb(112, 112, 112);
+}
+div#tocnav > div {
+	margin-left: -6px;
+}
+.Nav_Sidebar .sidebar_heading {
+	font: 1.45em/normal "Segoe UI Semibold", "Segoe UI", "Lucida Grande", =
+Verdana, Arial, Helvetica, sans-serif; color: rgb(69, 69, 69); =
+font-size-adjust: none; font-stretch: normal;
+}
+.win8LinkList > p {
+	padding-top: 0px; padding-bottom: 0px;
+}
+.win8LinkList > p > a:link {
+	font: 1em/28px "Segoe UI Semibold", "Segoe UI", "Lucida Grande", =
+Verdana, Arial, Helvetica, sans-serif; color: rgb(30, 117, 187) =
+!important; font-size-adjust: none; font-stretch: normal;
+}
+.win8LinkList > p > a:active {
+	font: 1em/28px "Segoe UI Semibold", "Segoe UI", "Lucida Grande", =
+Verdana, Arial, Helvetica, sans-serif; color: rgb(30, 117, 187) =
+!important; font-size-adjust: none; font-stretch: normal;
+}
+.win8LinkList > p > a:visited {
+	font: 1em/28px "Segoe UI Semibold", "Segoe UI", "Lucida Grande", =
+Verdana, Arial, Helvetica, sans-serif; color: rgb(30, 117, 187) =
+!important; font-size-adjust: none; font-stretch: normal;
+}
+.buttonBlue a {
+	font: 1em "Segoe UI Semibold", "Segoe UI", "Lucida Grande", Verdana, =
+Arial, Helvetica, sans-serif; padding: 10px 18px; color: rgb(255, 255, =
+255) !important; display: inline-block; min-width: 50px; =
+font-size-adjust: none; font-stretch: normal;
+}
+.buttonGray a {
+	font: 1em "Segoe UI Semibold", "Segoe UI", "Lucida Grande", Verdana, =
+Arial, Helvetica, sans-serif; padding: 10px 18px; color: rgb(255, 255, =
+255) !important; display: inline-block; min-width: 50px; =
+font-size-adjust: none; font-stretch: normal;
+}
+.buttonCyan a {
+	font: 1em "Segoe UI Semibold", "Segoe UI", "Lucida Grande", Verdana, =
+Arial, Helvetica, sans-serif; padding: 10px 18px; color: rgb(255, 255, =
+255) !important; display: inline-block; min-width: 50px; =
+font-size-adjust: none; font-stretch: normal;
+}
+.buttonCyan a {
+	color: rgb(69, 69, 69);
+}
+.buttonBlue a {
+	background-color: rgb(30, 117, 187);
+}
+.buttonBlue a:hover {
+	background-color: rgb(0, 188, 242);
+}
+.buttonBlue a:active {
+	background-color: rgb(0, 24, 143);
+}
+.buttonGray a {
+	background-color: rgb(69, 69, 69);
+}
+.buttonGray a:hover {
+	background-color: rgb(81, 81, 81);
+}
+.buttonGray a:active {
+	background-color: rgb(42, 42, 42);
+}
+.buttonCyan a {
+	background-color: rgb(0, 188, 242);
+}
+.buttonCyan a:hover {
+	background-color: rgb(30, 117, 187);
+}
+.buttonCyan a:active {
+	background-color: rgb(0, 24, 143);
+}
+.LW_CollapsibleArea_TitleDiv {
+	padding-top: 15px;
+}
+.LW_CollapsibleArea_TitleDiv div a:link {
+	color: rgb(30, 117, 187);
+}
+.LW_CollapsibleArea_TitleDiv div a:hover {
+	color: rgb(30, 117, 187);
+}
+.LW_CollapsibleArea_TitleDiv div a:visited {
+	color: rgb(30, 117, 187);
+}
+.LW_CollapsibleArea_TitleDiv div a:focus {
+	color: rgb(30, 117, 187);
+}
+hr {
+	border-width: 1px; border-style: solid; color: rgb(237, 237, 240);
+}
+hr.horizontalRule {
+	margin-top: 0px; margin-bottom: 20px;
+}
+.libraryMemberFilter .filterContainer span {
+	font-weight: bold;
+}
+
+------=_NextPart_000_0009_01CEF2D4.8ADE5C20--

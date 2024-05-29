@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StudentGroup>
+  <Student Id="0">
+    <FirstName>Андрей</FirstName>
+    <SecondName>Иванов</SecondName>
+    <Sex>М</Sex>
+    <Birthday>1.1.1985</Birthday>
+    <Rating>9</Rating>
+  </Student>
+  <Student Id="1">
+    <FirstName>Елена</FirstName>
+    <SecondName>Петрова</SecondName>
+    <Sex>Ж</Sex>
+    <Birthday>31.12.1986</Birthday>
+    <Rating>9</Rating>
+  </Student>
+</StudentGroup>

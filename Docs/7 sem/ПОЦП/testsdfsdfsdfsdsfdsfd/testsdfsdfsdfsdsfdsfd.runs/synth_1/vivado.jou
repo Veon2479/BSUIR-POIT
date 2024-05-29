@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Oct 12 11:04:44 2022
+# Process ID: 7888
+# Current directory: D:/Work/testsdfsdfsdfsdsfdsfd/testsdfsdfsdfsdsfdsfd.runs/synth_1
+# Command line: vivado.exe -log MY_LUT5.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MY_LUT5.tcl
+# Log file: D:/Work/testsdfsdfsdfsdsfdsfd/testsdfsdfsdfsdsfdsfd.runs/synth_1/MY_LUT5.vds
+# Journal file: D:/Work/testsdfsdfsdfsdsfdsfd/testsdfsdfsdfsdsfdsfd.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source MY_LUT5.tcl -notrace

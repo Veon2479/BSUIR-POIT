@@ -1,0 +1,26 @@
+abcdefghijkl    3
+a   e   i       4
+ b d f h j l    2/2
+  c   g   k     4
+
+aeibdfhjlcgk
+
+
+abcdefghijkl    4
+a     g         6
+ b   f h   l    4/2
+  c e   i k     2/4
+   d     j      6
+
+agbfhlceikdj
+
+abcdefghijklm   5
+a       i       8
+ b     h j      6/2
+  c   g   k     4/4
+   d f     l    2/5
+    e       m   8
+
+aibhjcgkdflem
+
+    (2*key-1)-1 = 2*key-2

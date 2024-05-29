@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.mycompany.com/whether/2010/05/24" elementFormDefault="qualified" targetNamespace="http://www.mycompany.com/whether/2010/05/24" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8731/Design_Time_Addresses/WcfServiceLibrary1/WhetherService/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfServiceLibrary1" />
+  <xs:element name="GetTemprature">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="location" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTempratureResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTempratureResult" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWhetherInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="location" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWhetherInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WcfServiceLibrary1" minOccurs="0" name="GetWhetherInfoResult" nillable="true" type="q1:WhetherInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

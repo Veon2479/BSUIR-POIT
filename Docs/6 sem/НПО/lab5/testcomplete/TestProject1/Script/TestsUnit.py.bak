@@ -1,0 +1,8 @@
+﻿def startLFSR():
+  TestedApps.LFSR.Run(1)
+
+def stopLFSR():
+  TestedApps.LFSR.Close()
+
+def charsInSequence():
+  DDT.ExcelDriver("\Resources\TestSequence.xlsx", "KeyNone")

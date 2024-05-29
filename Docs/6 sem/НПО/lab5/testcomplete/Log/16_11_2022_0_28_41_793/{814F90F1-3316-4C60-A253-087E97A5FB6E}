@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row2">
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="start time" type="D" value="44881.0199414931"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="end time" type="D" value="44881.0199414931"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="details" type="S" value=""/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="name" type="S" value="The execution process was interrupted."/>
+			</Node>
+			<Node name="row0">
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="start time" type="D" value="44881.0199340856"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="end time" type="D" value="44881.0199340856"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="details" type="S" value=""/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="name" type="S" value="Element to be run"/>
+			</Node>
+			<Node name="row1">
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="start time" type="D" value="44881.0199340856"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="end time" type="D" value="44881.0199340856"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="details" type="S" value=""/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="name" type="S" value="The element to be run specified in the 'ProjectTestItem1' test item was not found."/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>

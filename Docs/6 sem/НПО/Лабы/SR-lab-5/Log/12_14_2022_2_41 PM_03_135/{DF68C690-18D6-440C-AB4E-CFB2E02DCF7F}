@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row1">
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="start time" type="D" value="44909.6118435764"/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="details" type="S" value="{322B15EE-6EAF-40A5-AABA-E5971356558B}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="name" type="S" value="ProjectTestItem3 [Script\TestSamples - test_parameters_sign]"/>
+				<Prp name="end time" type="D" value="44909.6122761227"/>
+				<Prp name="extended message" type="S" value=""/>
+			</Node>
+			<Node name="row0">
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="status" type="I" value="1"/>
+				<Prp name="start time" type="D" value="44909.611841956"/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="details" type="S" value="{8733FC2E-20CD-4259-BD7A-9E4FEA84D70B}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="name" type="S" value="ProjectTestItem1 [Script\TestSamples - startTI_4]"/>
+				<Prp name="end time" type="D" value="44909.6118435764"/>
+				<Prp name="extended message" type="S" value=""/>
+			</Node>
+			<Node name="row2">
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="name" type="S" value="The execution process was interrupted."/>
+				<Prp name="start time" type="D" value="44909.6122761227"/>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="details" type="S" value=""/>
+				<Prp name="end time" type="D" value="44909.6122761227"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>

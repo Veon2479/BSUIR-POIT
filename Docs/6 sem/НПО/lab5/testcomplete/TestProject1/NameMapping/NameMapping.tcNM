@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root Signature="{5DCBAC3B-D39C-497C-9BE8-744CBADD37AA}" NameMappingVersion="7" SaveImages="0">
+	<Storages Current="0">
+		<Child Name="Default Configuration" />
+	</Storages>
+	<Nodes Name="NameMapping" Key="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Children>
+			<Child Name="Sys" Key="{56DAAE4E-6C99-4FE3-9B92-46EEBC0F0522}">
+				<Properties>
+					<Property Name="Name">
+						<Value Value="Sys" />
+					</Property>
+				</Properties>
+				<Children>
+					<Child Name="browser" Key="{464A23A6-7DA3-4D65-B3AD-574C62E0E21A}">
+						<Properties>
+							<Property Name="ObjectType">
+								<Value Value="Browser" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="BrowserWindow" Key="{385A103D-8400-436F-8906-C1A351AC595B}">
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="BrowserWindow" />
+									</Property>
+									<Property Name="ObjectIdentifier">
+										<Value Value="0" Type="0" />
+									</Property>
+								</Properties>
+							</Child>
+						</Children>
+					</Child>
+					<Child Name="Dsa" Key="{094552C1-C6EE-4DC7-9499-8735E1F4D18D}">
+						<Properties>
+							<Property Name="ProcessName">
+								<Value Value="Dsa" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="frmDsa" Key="{5FDEA55B-6318-49BE-87AE-10C89E118EE0}">
+								<Image FileName="-1035874203" Left="0" Top="0" Right="1038" Bottom="914" />
+								<TypeInfo Item0="{07EE505B-1FA3-497E-8A4B-964A13AD0F65}" />
+								<Properties>
+									<Property Name="WinFormsControlName">
+										<Value Value="frmDsa" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="gbPrecount" Key="{6466EDEE-3005-4FD0-8343-135DE2CAAA90}">
+										<Image FileName="-1197543410" Left="30" Top="50" Right="736" Bottom="264" />
+										<Properties>
+											<Property Name="WinFormsControlName">
+												<Value Value="gbPrecount" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="tbP" Key="{4133A3BA-AAEE-4009-A5D9-729FE31A29BF}">
+												<Image FileName="-1197543410" Left="96" Top="92" Right="245" Bottom="119" />
+												<TypeInfo Item0="{CE1C8A76-6BC1-41B8-9AE3-4A99E7F749C4}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="tbP" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="tbQ" Key="{613FC3B4-B447-48DC-A872-0D86EDA01225}">
+												<Image FileName="-224945885" Left="96" Top="142" Right="245" Bottom="169" />
+												<TypeInfo Item0="{CE1C8A76-6BC1-41B8-9AE3-4A99E7F749C4}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="tbQ" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="tbH" Key="{536061C4-B1E9-44A4-9C2B-38DF4931CEC6}">
+												<Image FileName="-1313678402" Left="96" Top="190" Right="245" Bottom="217" />
+												<TypeInfo Item0="{CE1C8A76-6BC1-41B8-9AE3-4A99E7F749C4}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="tbH" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="tbX" Key="{B8AEF773-92B8-4276-8B22-A9313BAD5994}">
+												<Image FileName="-900515652" Left="561" Top="92" Right="710" Bottom="119" />
+												<TypeInfo Item0="{CE1C8A76-6BC1-41B8-9AE3-4A99E7F749C4}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="tbX" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="tbK" Key="{73B268F7-C271-449E-8819-B1F0461FB4A5}">
+												<Image FileName="469966966" Left="561" Top="144" Right="710" Bottom="171" />
+												<TypeInfo Item0="{CE1C8A76-6BC1-41B8-9AE3-4A99E7F749C4}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="tbK" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+									<Child Name="gbRadiobtnSign" Key="{5EB39914-350E-46CE-87C5-10FAF55C9261}">
+										<Image FileName="816040711" Left="752" Top="50" Right="1001" Bottom="264" />
+										<Properties>
+											<Property Name="WinFormsControlName">
+												<Value Value="gbRadiobtnSign" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="btnChoice" Key="{32DA8487-A406-40EA-8EAB-7EED9D644DE9}">
+												<Image FileName="816040711" Left="773" Top="167" Right="922" Bottom="196" />
+												<TypeInfo Item0="{B981D139-1010-4179-BCCA-10029472110A}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="btnChoice" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="btnSave" Key="{50205B40-F9A5-4E0A-AD68-FA727CA99042}">
+												<Image FileName="1017246289" Left="773" Top="214" Right="922" Bottom="243" />
+												<TypeInfo Item0="{A028A088-D57E-41E7-91E7-D5DF9FD4EBBF}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="btnSave" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+									<Child Name="rtbText" Key="{AA80FA23-3174-4F2E-B57E-8FD216A804C5}">
+										<Image FileName="-74769364" Left="30" Top="512" Right="502" Bottom="893" />
+										<TypeInfo Item0="{CE1C8A76-6BC1-41B8-9AE3-4A99E7F749C4}" />
+										<Properties>
+											<Property Name="WinFormsControlName">
+												<Value Value="rtbText" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="rtbSignedText" Key="{50BB1A23-9AB1-47D1-A955-ED80154A7F3B}">
+										<Image FileName="-74769364" Left="529" Top="512" Right="1001" Bottom="893" />
+										<TypeInfo Item0="{CE1C8A76-6BC1-41B8-9AE3-4A99E7F749C4}" />
+										<Properties>
+											<Property Name="WinFormsControlName">
+												<Value Value="rtbSignedText" />
+											</Property>
+										</Properties>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="dlg_" Key="{C4712305-44A9-4A22-905A-CFCE88FA2116}">
+								<Image FileName="1408847495" Left="0" Top="0" Right="262" Bottom="216" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="#32770" />
+									</Property>
+									<Property Name="WndCaption">
+										<Value Value="Предупреждение" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="btn_" Key="{507E6CC3-D865-4478-BA3A-3D78145C1DE6}">
+										<Image FileName="1408847495" Left="131" Top="159" Right="231" Bottom="192" />
+										<TypeInfo Item0="{B981D139-1010-4179-BCCA-10029472110A}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Button" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="ОК" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="Static" Key="{B23ACECF-F2B4-4BF6-8CC5-915B0A7D07C5}">
+										<Image FileName="-1411025299" Left="87" Top="81" Right="153" Bottom="102" />
+										<TypeInfo Item0="{70955543-E44A-4508-A089-147BB055A537}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Static" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="Введите q" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="Static2" Key="{9D2D700F-E77C-4B09-A549-DAC4B0F1CDAD}">
+										<Image FileName="-959710548" Left="87" Top="81" Right="243" Bottom="102" />
+										<TypeInfo Item0="{70955543-E44A-4508-A089-147BB055A537}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Static" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="p не числовое значение" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="Static3" Key="{7C7FCAFD-398E-4860-A377-B48221DA1920}">
+										<Image FileName="1960077663" Left="87" Top="81" Right="213" Bottom="102" />
+										<TypeInfo Item0="{70955543-E44A-4508-A089-147BB055A537}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Static" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="p не простое число" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="Static4" Key="{4651EF9F-8760-4E71-A7F6-2F7CB330147B}">
+										<Image FileName="123717295" Left="87" Top="81" Right="213" Bottom="102" />
+										<TypeInfo Item0="{70955543-E44A-4508-A089-147BB055A537}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Static" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="q не простое число" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="Static5" Key="{633B7ACF-1F95-4CC1-9232-1D6347A226D9}">
+										<Image FileName="1371781627" Left="87" Top="81" Right="287" Bottom="102" />
+										<TypeInfo Item0="{70955543-E44A-4508-A089-147BB055A537}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Static" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="q не является делителем (p - 1)" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="Static6" Key="{7AC798D6-41D7-4BED-8E15-47A280272568}">
+										<Image FileName="-379931036" Left="87" Top="81" Right="253" Bottom="102" />
+										<TypeInfo Item0="{70955543-E44A-4508-A089-147BB055A537}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Static" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="h не в интервале (1, p - 1)" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="Static7" Key="{214ED2A9-1B34-44DF-93B3-9ABDDBE573B2}">
+										<Image FileName="676174383" Left="87" Top="81" Right="229" Bottom="102" />
+										<TypeInfo Item0="{70955543-E44A-4508-A089-147BB055A537}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Static" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="x не в интервале (0, q)" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="Static8" Key="{D7F9867D-148D-4C25-BE78-2141F7FDB387}">
+										<Image FileName="-2127856056" Left="87" Top="81" Right="231" Bottom="102" />
+										<TypeInfo Item0="{70955543-E44A-4508-A089-147BB055A537}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Static" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="k не в интервале (0, q)" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="Static9" Key="{D12C211C-9300-4B15-A05E-36B9AB44FCC6}">
+										<Image FileName="-30885655" Left="87" Top="81" Right="315" Bottom="102" />
+										<TypeInfo Item0="{70955543-E44A-4508-A089-147BB055A537}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Static" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="Подпись не может быть проверена" />
+											</Property>
+										</Properties>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="dlg_2" Key="{2FFE4E90-6137-42A3-BD91-9E05A7682A3E}">
+								<Image FileName="30346872" Left="0" Top="0" Right="960" Bottom="600" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="#32770" />
+									</Property>
+									<Property Name="WndCaption">
+										<Value Value="Открытие" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="WorkerW" Key="{62930B02-8E6E-4DF9-A170-E07B837808A7}">
+										<Image FileName="30346872" Left="9" Top="38" Right="951" Bottom="89" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="WorkerW" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="ReBarWindow32" Key="{284D0B6A-7C88-4A5D-8520-5AA7C7C04458}">
+												<Image FileName="30346872" Left="9" Top="38" Right="951" Bottom="89" />
+												<Properties>
+													<Property Name="WndClass">
+														<Value Value="ReBarWindow32" />
+													</Property>
+												</Properties>
+												<Children>
+													<Child Name="AddressBandRoot" Key="{CECDEFEF-8D77-4560-94CD-AFA1F05689CB}">
+														<Image FileName="30346872" Left="142" Top="38" Right="675" Bottom="86" />
+														<Properties>
+															<Property Name="WndClass">
+																<Value Value="Address Band Root" />
+															</Property>
+														</Properties>
+														<Children>
+															<Child Name="progress" Key="{466742DA-36E9-4086-99EE-C8C91C0733EC}">
+																<Image FileName="30346872" Left="144" Top="43" Right="673" Bottom="82" />
+																<Properties>
+																	<Property Name="WndClass">
+																		<Value Value="msctls_progress32" />
+																	</Property>
+																</Properties>
+																<Children>
+																	<Child Name="BreadcrumbParent" Key="{CBD53F22-DF04-4E53-8D0D-812032AFF5FB}">
+																		<Image FileName="30346872" Left="144" Top="43" Right="589" Bottom="82" />
+																		<Properties>
+																			<Property Name="WndClass">
+																				<Value Value="Breadcrumb Parent" />
+																			</Property>
+																		</Properties>
+																		<Children>
+																			<Child Name="toolbar" Key="{A6C0D811-0A33-46D0-9F52-6F818DCDC85A}">
+																				<Image FileName="30346872" Left="144" Top="43" Right="589" Bottom="82" />
+																				<TypeInfo Item0="{AB969A2F-69F9-43A3-98BB-1FC9C4780652}" />
+																				<Properties>
+																					<Property Name="WndClass">
+																						<Value Value="ToolbarWindow32" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																		</Children>
+																	</Child>
+																</Children>
+															</Child>
+														</Children>
+													</Child>
+												</Children>
+											</Child>
+										</Children>
+									</Child>
+									<Child Name="DUIViewWndClassName" Key="{DB8422A0-005C-4519-8FF0-7D92BC0BCDF5}">
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="DUIViewWndClassName" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="Item" Key="{2896C90C-B9B8-4DB5-B6CA-F31CDBEF8323}">
+												<Properties>
+													<Property Name="FrameworkId">
+														<Value Value="DirectUI" />
+													</Property>
+													<Property Name="ClassName">
+														<Value Value="HWNDView" />
+													</Property>
+													<Property Name="LocalizedControlType">
+														<Value Value="панель" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value Value="Панель_проводника" />
+													</Property>
+													<Property Name="ObjectGroupIndex">
+														<Value Value="1" Type="0" />
+													</Property>
+												</Properties>
+												<Children>
+													<Child Name="CtrlNotifySink" Key="{85262AC6-0AD7-466A-93B4-790F3623941D}">
+														<Properties>
+															<Property Name="WndClass">
+																<Value Value="CtrlNotifySink" />
+															</Property>
+															<Property Name="WndCaption">
+																<Value Value="" />
+															</Property>
+															<Property Name="Index">
+																<Value Value="3" Type="0" />
+															</Property>
+														</Properties>
+														<Children>
+															<Child Name="ShellView" Key="{E258455C-053F-41D0-A795-A0C6810909AD}" ExtendedFind="True">
+																<Properties>
+																	<Property Name="WndClass">
+																		<Value Value="SHELLDLL_DefView" />
+																	</Property>
+																	<Property Name="WndCaption">
+																		<Value Value="ShellView" />
+																	</Property>
+																</Properties>
+																<Children>
+																	<Child Name="Item" Key="{88A84C34-A1C3-4391-91F7-EC536BBAA444}">
+																		<Properties>
+																			<Property Name="FrameworkId">
+																				<Value Value="DirectUI" />
+																			</Property>
+																			<Property Name="ClassName">
+																				<Value Value="UIItemsView" />
+																			</Property>
+																			<Property Name="LocalizedControlType">
+																				<Value Value="список" />
+																			</Property>
+																			<Property Name="ObjectIdentifier">
+																				<Value Value="Просмотр_элементов" />
+																			</Property>
+																			<Property Name="ObjectGroupIndex">
+																				<Value Value="1" Type="0" />
+																			</Property>
+																		</Properties>
+																		<Children>
+																			<Child Name="ice_age" Key="{D9EFBF4E-B3A8-49F5-B100-AB362BB3602D}">
+																				<TypeInfo Item0="{1EE6A22E-3DD2-4B39-83CC-F471CDB95BED}" />
+																				<Properties>
+																					<Property Name="FrameworkId">
+																						<Value Value="DirectUI" />
+																					</Property>
+																					<Property Name="ClassName">
+																						<Value Value="UIItem" />
+																					</Property>
+																					<Property Name="LocalizedControlType">
+																						<Value Value="элемент списка" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value Value="ice_age" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Embarcadero_RAD_Studio_10_4_Sydney_Architect_27_0_37889_9797" Key="{34FA16FF-F79B-4102-99EE-E30043433668}">
+																				<Properties>
+																					<Property Name="FrameworkId">
+																						<Value Value="DirectUI" />
+																					</Property>
+																					<Property Name="ClassName">
+																						<Value Value="UIItem" />
+																					</Property>
+																					<Property Name="LocalizedControlType">
+																						<Value Value="элемент списка" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value Value="Embarcadero_RAD_Studio_10_4_Sydney_Architect_27_0_37889_9797" />
+																					</Property>
+																				</Properties>
+																				<Children>
+																					<Child Name="Item" Key="{3A8A69EA-9C49-4346-84D9-4F283DABCAF8}">
+																						<TypeInfo Item0="{1EE6A22E-3DD2-4B39-83CC-F471CDB95BED}" />
+																						<Properties>
+																							<Property Name="FrameworkId">
+																								<Value Value="DirectUI" />
+																							</Property>
+																							<Property Name="ClassName">
+																								<Value Value="UIProperty" />
+																							</Property>
+																							<Property Name="LocalizedControlType">
+																								<Value Value="поле" />
+																							</Property>
+																							<Property Name="ObjectIdentifier">
+																								<Value Value="Имя" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																				</Children>
+																			</Child>
+																			<Child Name="DeliveryOptimization" Key="{B5212344-82A7-4FDA-AD52-74F5AD485D8D}">
+																				<Properties>
+																					<Property Name="FrameworkId">
+																						<Value Value="DirectUI" />
+																					</Property>
+																					<Property Name="ClassName">
+																						<Value Value="UIItem" />
+																					</Property>
+																					<Property Name="LocalizedControlType">
+																						<Value Value="элемент списка" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value Value="DeliveryOptimization" />
+																					</Property>
+																				</Properties>
+																				<Children>
+																					<Child Name="Item" Key="{1B4D8D3E-5263-4723-9131-E5610A46FB2F}">
+																						<TypeInfo Item0="{1EE6A22E-3DD2-4B39-83CC-F471CDB95BED}" />
+																						<Properties>
+																							<Property Name="FrameworkId">
+																								<Value Value="DirectUI" />
+																							</Property>
+																							<Property Name="ClassName">
+																								<Value Value="UIProperty" />
+																							</Property>
+																							<Property Name="LocalizedControlType">
+																								<Value Value="поле" />
+																							</Property>
+																							<Property Name="ObjectIdentifier">
+																								<Value Value="Имя" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																				</Children>
+																			</Child>
+																			<Child Name="delphi" Key="{07049ED6-BAC7-49E8-BF33-36270F52E985}">
+																				<TypeInfo Item0="{1EE6A22E-3DD2-4B39-83CC-F471CDB95BED}" />
+																				<Properties>
+																					<Property Name="FrameworkId">
+																						<Value Value="DirectUI" />
+																					</Property>
+																					<Property Name="ClassName">
+																						<Value Value="UIItem" />
+																					</Property>
+																					<Property Name="LocalizedControlType">
+																						<Value Value="элемент списка" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value Value="delphi" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Adobe" Key="{6D3BBB9A-C09E-453E-9384-004ED9961012}">
+																				<TypeInfo Item0="{1EE6A22E-3DD2-4B39-83CC-F471CDB95BED}" />
+																				<Properties>
+																					<Property Name="FrameworkId">
+																						<Value Value="DirectUI" />
+																					</Property>
+																					<Property Name="ClassName">
+																						<Value Value="UIItem" />
+																					</Property>
+																					<Property Name="LocalizedControlType">
+																						<Value Value="элемент списка" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value Value="Adobe" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="sem" Key="{151AA66F-1974-4A05-90A3-23CD641FC6D1}">
+																				<Image FileName="171573417" Left="647" Top="136" Right="778" Bottom="283" />
+																				<TypeInfo Item0="{1EE6A22E-3DD2-4B39-83CC-F471CDB95BED}" />
+																				<Properties>
+																					<Property Name="FrameworkId">
+																						<Value Value="DirectUI" />
+																					</Property>
+																					<Property Name="ClassName">
+																						<Value Value="UIItem" />
+																					</Property>
+																					<Property Name="LocalizedControlType">
+																						<Value Value="элемент списка" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value Value="sem" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Item" Key="{B2C87246-2223-4495-BD32-26446B0E94A7}">
+																				<Image FileName="566399464" Left="227" Top="276" Right="974" Bottom="304" />
+																				<Properties>
+																					<Property Name="FrameworkId">
+																						<Value Value="DirectUI" />
+																					</Property>
+																					<Property Name="ClassName">
+																						<Value Value="UIItem" />
+																					</Property>
+																					<Property Name="LocalizedControlType">
+																						<Value Value="элемент списка" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value Value="НПО" />
+																					</Property>
+																				</Properties>
+																				<Children>
+																					<Child Name="Item" Key="{C90FBC8D-9DAA-41AF-A137-E047E2542677}">
+																						<Image FileName="566399464" Left="255" Top="276" Right="549" Bottom="304" />
+																						<TypeInfo Item0="{1EE6A22E-3DD2-4B39-83CC-F471CDB95BED}" />
+																						<Properties>
+																							<Property Name="FrameworkId">
+																								<Value Value="DirectUI" />
+																							</Property>
+																							<Property Name="ClassName">
+																								<Value Value="UIProperty" />
+																							</Property>
+																							<Property Name="LocalizedControlType">
+																								<Value Value="поле" />
+																							</Property>
+																							<Property Name="ObjectIdentifier">
+																								<Value Value="Имя" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																				</Children>
+																			</Child>
+																			<Child Name="Item2" Key="{08791E1F-5A3D-4715-A122-6B4266EFDCE0}">
+																				<Image FileName="2136740961" Left="227" Top="195" Right="974" Bottom="223" />
+																				<Properties>
+																					<Property Name="FrameworkId">
+																						<Value Value="DirectUI" />
+																					</Property>
+																					<Property Name="ClassName">
+																						<Value Value="UIItem" />
+																					</Property>
+																					<Property Name="LocalizedControlType">
+																						<Value Value="элемент списка" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value Value="ЛР" />
+																					</Property>
+																				</Properties>
+																				<Children>
+																					<Child Name="Item" Key="{82CA371B-29AB-4086-8554-A06F6CEF3395}">
+																						<Image FileName="2136740961" Left="255" Top="195" Right="549" Bottom="223" />
+																						<TypeInfo Item0="{1EE6A22E-3DD2-4B39-83CC-F471CDB95BED}" />
+																						<Properties>
+																							<Property Name="FrameworkId">
+																								<Value Value="DirectUI" />
+																							</Property>
+																							<Property Name="ClassName">
+																								<Value Value="UIProperty" />
+																							</Property>
+																							<Property Name="LocalizedControlType">
+																								<Value Value="поле" />
+																							</Property>
+																							<Property Name="ObjectIdentifier">
+																								<Value Value="Имя" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																				</Children>
+																			</Child>
+																			<Child Name="Item3" Key="{ACFDE445-19EF-4698-B755-86D53FC50574}">
+																				<Image FileName="975069037" Left="227" Top="168" Right="974" Bottom="196" />
+																				<Properties>
+																					<Property Name="FrameworkId">
+																						<Value Value="DirectUI" />
+																					</Property>
+																					<Property Name="ClassName">
+																						<Value Value="UIItem" />
+																					</Property>
+																					<Property Name="LocalizedControlType">
+																						<Value Value="элемент списка" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value Value="лр1" />
+																					</Property>
+																				</Properties>
+																				<Children>
+																					<Child Name="Item" Key="{B2C13F64-6984-4AC4-8834-D03D019EC0D9}">
+																						<Image FileName="975069037" Left="255" Top="168" Right="549" Bottom="196" />
+																						<TypeInfo Item0="{1EE6A22E-3DD2-4B39-83CC-F471CDB95BED}" />
+																						<Properties>
+																							<Property Name="FrameworkId">
+																								<Value Value="DirectUI" />
+																							</Property>
+																							<Property Name="ClassName">
+																								<Value Value="UIProperty" />
+																							</Property>
+																							<Property Name="LocalizedControlType">
+																								<Value Value="поле" />
+																							</Property>
+																							<Property Name="ObjectIdentifier">
+																								<Value Value="Имя" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																				</Children>
+																			</Child>
+																			<Child Name="Item4" Key="{8202E40B-E0CB-4574-A568-FDC20E8207F6}">
+																				<Image FileName="989167909" Left="227" Top="195" Right="974" Bottom="223" />
+																				<Properties>
+																					<Property Name="FrameworkId">
+																						<Value Value="DirectUI" />
+																					</Property>
+																					<Property Name="ClassName">
+																						<Value Value="UIItem" />
+																					</Property>
+																					<Property Name="LocalizedControlType">
+																						<Value Value="элемент списка" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value Value="лр2" />
+																					</Property>
+																				</Properties>
+																				<Children>
+																					<Child Name="Item" Key="{F04FBD3E-DC91-4394-852A-DA7524986E51}">
+																						<Image FileName="989167909" Left="255" Top="195" Right="549" Bottom="223" />
+																						<TypeInfo Item0="{1EE6A22E-3DD2-4B39-83CC-F471CDB95BED}" />
+																						<Properties>
+																							<Property Name="FrameworkId">
+																								<Value Value="DirectUI" />
+																							</Property>
+																							<Property Name="ClassName">
+																								<Value Value="UIProperty" />
+																							</Property>
+																							<Property Name="LocalizedControlType">
+																								<Value Value="поле" />
+																							</Property>
+																							<Property Name="ObjectIdentifier">
+																								<Value Value="Имя" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																				</Children>
+																			</Child>
+																		</Children>
+																	</Child>
+																</Children>
+															</Child>
+														</Children>
+													</Child>
+												</Children>
+											</Child>
+										</Children>
+									</Child>
+									<Child Name="cbx_" Key="{08A2F4CE-0BE0-4BF1-8E98-D622DCE2608F}">
+										<Image FileName="-600729997" Left="696" Top="507" Right="931" Bottom="535" />
+										<TypeInfo Item0="{E33EB90A-6B5D-4650-93A3-B8E4CAFB2BD1}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="ComboBox" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="cbx_2" Key="{CFBB551B-E050-4CC4-842A-BD48C5E9083B}">
+										<Image FileName="1172702941" Left="243" Top="507" Right="681" Bottom="536" />
+										<TypeInfo Item0="{0C423408-6B58-4693-8081-0966539DAB6A}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="ComboBoxEx32" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="ComboBox" Key="{339778C6-CA85-4B88-92B0-05E6119D3351}">
+												<Image FileName="1172702941" Left="243" Top="507" Right="681" Bottom="536" />
+												<TypeInfo Item0="{0C423408-6B58-4693-8081-0966539DAB6A}" />
+												<Properties>
+													<Property Name="WndClass">
+														<Value Value="ComboBox" />
+													</Property>
+												</Properties>
+												<Children>
+													<Child Name="Edit" Key="{286D34D9-1AA2-4372-A8C8-CE4BFFC14557}">
+														<Image FileName="1172702941" Left="247" Top="511" Right="657" Bottom="531" />
+														<TypeInfo Item0="{7A023637-5A92-4A3A-8F1F-FDDD293D00F6}" />
+														<Properties>
+															<Property Name="WndClass">
+																<Value Value="Edit" />
+															</Property>
+														</Properties>
+													</Child>
+												</Children>
+											</Child>
+										</Children>
+									</Child>
+									<Child Name="btn_" Key="{F3D78536-9152-465C-89BB-A319985BB982}">
+										<Image FileName="-1159070117" Left="696" Top="543" Right="806" Bottom="576" />
+										<TypeInfo Item0="{741EDF7E-0C0E-490F-A842-5F4600505476}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Button" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="&amp;Открыть" />
+											</Property>
+										</Properties>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="wndDSA" Key="{E5400066-3FE5-4FCB-85C3-74E2F707A09C}">
+								<Image FileName="700843804" Left="0" Top="0" Right="1038" Bottom="914" />
+								<TypeInfo Item0="{4B6E456C-FDBC-4A84-ABD6-6FB605361B24}" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="WindowsForms10.Window.8.app.0.378734a_r3_ad1" />
+									</Property>
+									<Property Name="WndCaption">
+										<Value Value="Алгоритм DSA" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="gbSignResult" Key="{1F1EF997-0B3C-4712-A009-65CB50C7D2EF}">
+										<Image FileName="700843804" Left="30" Top="270" Right="502" Bottom="476" />
+										<TypeInfo Item0="{70955543-E44A-4508-A089-147BB055A537}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="WindowsForms10.Window.8.app.0.378734a_r3_ad1" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="Подпись" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="tbHM" Key="{715B3261-4143-45B3-B859-631895A58158}">
+												<Image FileName="700843804" Left="113" Top="324" Right="262" Bottom="351" />
+												<TypeInfo Item0="{7A023637-5A92-4A3A-8F1F-FDDD293D00F6}" />
+												<Properties>
+													<Property Name="WndClass">
+														<Value Value="WindowsForms10.Edit.app.0.378734a_r3_ad1" />
+													</Property>
+													<Property Name="Index">
+														<Value Value="1" Type="0" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="tbR" Key="{14E5E35F-4F16-4A24-B305-82C3DE7BBCC8}">
+												<Image FileName="-1861493967" Left="317" Top="324" Right="466" Bottom="351" />
+												<TypeInfo Item0="{11E31E68-8284-40DC-AB83-108284FBD900}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="tbR" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="tbS" Key="{292547B9-B4F8-44A1-B320-976B54DC1ED7}">
+												<Image FileName="1696598082" Left="317" Top="377" Right="466" Bottom="404" />
+												<TypeInfo Item0="{11E31E68-8284-40DC-AB83-108284FBD900}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="tbS" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+									<Child Name="gbCheckSign" Key="{7D3DACB7-CEF6-471E-8143-59E2C0E57390}">
+										<Image FileName="-1581461407" Left="526" Top="270" Right="1001" Bottom="476" />
+										<TypeInfo Item0="{D5BA839A-D6A7-48C0-81E0-AFAF6BFD6C7C}" />
+										<Properties>
+											<Property Name="WinFormsControlName">
+												<Value Value="gbCheckSign" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="tbHMC" Key="{2056376F-4FFB-4E95-BC1A-C94CC0838ED2}">
+												<Image FileName="80471138" Left="605" Top="321" Right="754" Bottom="348" />
+												<TypeInfo Item0="{11E31E68-8284-40DC-AB83-108284FBD900}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="tbHMC" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="tbRC" Key="{49A3A9B5-3D52-4A40-B941-C7EB458BA6F9}">
+												<Image FileName="-216906583" Left="605" Top="370" Right="754" Bottom="397" />
+												<TypeInfo Item0="{11E31E68-8284-40DC-AB83-108284FBD900}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="tbRC" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="tbW" Key="{15763FC6-C40E-4E48-905F-F0E8517BBF2A}">
+												<Image FileName="-351268672" Left="826" Top="321" Right="975" Bottom="348" />
+												<TypeInfo Item0="{11E31E68-8284-40DC-AB83-108284FBD900}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="tbW" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="tbV" Key="{930DBF80-3FDA-4A82-AFE6-7A2186E6406D}">
+												<Image FileName="-1531228378" Left="826" Top="371" Right="975" Bottom="398" />
+												<TypeInfo Item0="{11E31E68-8284-40DC-AB83-108284FBD900}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="tbV" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="tbSC" Key="{37182E2D-4423-4265-9F0A-C27DDD8789B3}">
+												<Image FileName="1071343559" Left="605" Top="415" Right="754" Bottom="442" />
+												<TypeInfo Item0="{11E31E68-8284-40DC-AB83-108284FBD900}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="tbSC" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="lblResult" Key="{05771650-4F6A-47FB-B807-1A572C4480B5}">
+												<Image FileName="-1675835815" Left="544" Top="293" Right="810" Bottom="313" />
+												<TypeInfo Item0="{D5BA839A-D6A7-48C0-81E0-AFAF6BFD6C7C}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="lblResult" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+								</Children>
+							</Child>
+						</Children>
+					</Child>
+				</Children>
+			</Child>
+		</Children>
+	</Nodes>
+	<LogicalNodes Name="Aliases" Owner="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Child Name="browser" Owner="{464A23A6-7DA3-4D65-B3AD-574C62E0E21A}">
+			<Child Name="BrowserWindow" Owner="{385A103D-8400-436F-8906-C1A351AC595B}" />
+		</Child>
+		<Child Name="Dsa" Owner="{094552C1-C6EE-4DC7-9499-8735E1F4D18D}">
+			<Child Name="frmDsa" Owner="{5FDEA55B-6318-49BE-87AE-10C89E118EE0}">
+				<Child Name="gbPrecount" Owner="{6466EDEE-3005-4FD0-8343-135DE2CAAA90}">
+					<Child Name="tbP" Owner="{4133A3BA-AAEE-4009-A5D9-729FE31A29BF}" />
+					<Child Name="tbQ" Owner="{613FC3B4-B447-48DC-A872-0D86EDA01225}" />
+					<Child Name="tbH" Owner="{536061C4-B1E9-44A4-9C2B-38DF4931CEC6}" />
+					<Child Name="tbX" Owner="{B8AEF773-92B8-4276-8B22-A9313BAD5994}" />
+					<Child Name="tbK" Owner="{73B268F7-C271-449E-8819-B1F0461FB4A5}" />
+				</Child>
+				<Child Name="gbRadiobtnSign" Owner="{5EB39914-350E-46CE-87C5-10FAF55C9261}">
+					<Child Name="btnChoice" Owner="{32DA8487-A406-40EA-8EAB-7EED9D644DE9}" />
+					<Child Name="btnSave" Owner="{50205B40-F9A5-4E0A-AD68-FA727CA99042}" />
+				</Child>
+				<Child Name="rtbText" Owner="{AA80FA23-3174-4F2E-B57E-8FD216A804C5}" />
+				<Child Name="rtbSignedText" Owner="{50BB1A23-9AB1-47D1-A955-ED80154A7F3B}" />
+			</Child>
+			<Child Name="dlg_" Owner="{C4712305-44A9-4A22-905A-CFCE88FA2116}">
+				<Child Name="btn_" Owner="{507E6CC3-D865-4478-BA3A-3D78145C1DE6}" />
+				<Child Name="Static" Owner="{B23ACECF-F2B4-4BF6-8CC5-915B0A7D07C5}" />
+				<Child Name="Static2" Owner="{9D2D700F-E77C-4B09-A549-DAC4B0F1CDAD}" />
+				<Child Name="Static3" Owner="{7C7FCAFD-398E-4860-A377-B48221DA1920}" />
+				<Child Name="Static4" Owner="{4651EF9F-8760-4E71-A7F6-2F7CB330147B}" />
+				<Child Name="Static5" Owner="{633B7ACF-1F95-4CC1-9232-1D6347A226D9}" />
+				<Child Name="Static6" Owner="{7AC798D6-41D7-4BED-8E15-47A280272568}" />
+				<Child Name="Static7" Owner="{214ED2A9-1B34-44DF-93B3-9ABDDBE573B2}" />
+				<Child Name="Static8" Owner="{D7F9867D-148D-4C25-BE78-2141F7FDB387}" />
+				<Child Name="Static9" Owner="{D12C211C-9300-4B15-A05E-36B9AB44FCC6}" />
+			</Child>
+			<Child Name="dlg_2" Owner="{2FFE4E90-6137-42A3-BD91-9E05A7682A3E}">
+				<Child Name="WorkerW" Owner="{62930B02-8E6E-4DF9-A170-E07B837808A7}">
+					<Child Name="ReBarWindow32" Owner="{284D0B6A-7C88-4A5D-8520-5AA7C7C04458}">
+						<Child Name="AddressBandRoot" Owner="{CECDEFEF-8D77-4560-94CD-AFA1F05689CB}">
+							<Child Name="progress" Owner="{466742DA-36E9-4086-99EE-C8C91C0733EC}">
+								<Child Name="BreadcrumbParent" Owner="{CBD53F22-DF04-4E53-8D0D-812032AFF5FB}">
+									<Child Name="toolbar" Owner="{A6C0D811-0A33-46D0-9F52-6F818DCDC85A}" />
+								</Child>
+							</Child>
+						</Child>
+					</Child>
+				</Child>
+				<Child Name="DUIViewWndClassName" Owner="{DB8422A0-005C-4519-8FF0-7D92BC0BCDF5}">
+					<Child Name="Item" Owner="{2896C90C-B9B8-4DB5-B6CA-F31CDBEF8323}">
+						<Child Name="CtrlNotifySink" Owner="{85262AC6-0AD7-466A-93B4-790F3623941D}">
+							<Child Name="ShellView" Owner="{E258455C-053F-41D0-A795-A0C6810909AD}">
+								<Child Name="Item" Owner="{88A84C34-A1C3-4391-91F7-EC536BBAA444}">
+									<Child Name="ice_age" Owner="{D9EFBF4E-B3A8-49F5-B100-AB362BB3602D}" />
+									<Child Name="Embarcadero_RAD_Studio_10_4_Sydney_Architect_27_0_37889_9797" Owner="{34FA16FF-F79B-4102-99EE-E30043433668}">
+										<Child Name="Item" Owner="{3A8A69EA-9C49-4346-84D9-4F283DABCAF8}" />
+									</Child>
+									<Child Name="DeliveryOptimization" Owner="{B5212344-82A7-4FDA-AD52-74F5AD485D8D}">
+										<Child Name="Item" Owner="{1B4D8D3E-5263-4723-9131-E5610A46FB2F}" />
+									</Child>
+									<Child Name="delphi" Owner="{07049ED6-BAC7-49E8-BF33-36270F52E985}" />
+									<Child Name="Adobe" Owner="{6D3BBB9A-C09E-453E-9384-004ED9961012}" />
+									<Child Name="sem" Owner="{151AA66F-1974-4A05-90A3-23CD641FC6D1}" />
+									<Child Name="Item" Owner="{B2C87246-2223-4495-BD32-26446B0E94A7}">
+										<Child Name="Item" Owner="{C90FBC8D-9DAA-41AF-A137-E047E2542677}" />
+									</Child>
+									<Child Name="Item2" Owner="{08791E1F-5A3D-4715-A122-6B4266EFDCE0}">
+										<Child Name="Item" Owner="{82CA371B-29AB-4086-8554-A06F6CEF3395}" />
+									</Child>
+									<Child Name="Item3" Owner="{ACFDE445-19EF-4698-B755-86D53FC50574}">
+										<Child Name="Item" Owner="{B2C13F64-6984-4AC4-8834-D03D019EC0D9}" />
+									</Child>
+									<Child Name="Item4" Owner="{8202E40B-E0CB-4574-A568-FDC20E8207F6}">
+										<Child Name="Item" Owner="{F04FBD3E-DC91-4394-852A-DA7524986E51}" />
+									</Child>
+								</Child>
+							</Child>
+						</Child>
+					</Child>
+				</Child>
+				<Child Name="cbx_" Owner="{08A2F4CE-0BE0-4BF1-8E98-D622DCE2608F}" />
+				<Child Name="cbx_2" Owner="{CFBB551B-E050-4CC4-842A-BD48C5E9083B}">
+					<Child Name="ComboBox" Owner="{339778C6-CA85-4B88-92B0-05E6119D3351}">
+						<Child Name="Edit" Owner="{286D34D9-1AA2-4372-A8C8-CE4BFFC14557}" />
+					</Child>
+				</Child>
+				<Child Name="btn_" Owner="{F3D78536-9152-465C-89BB-A319985BB982}" />
+			</Child>
+			<Child Name="wndDSA" Owner="{E5400066-3FE5-4FCB-85C3-74E2F707A09C}">
+				<Child Name="gbSignResult" Owner="{1F1EF997-0B3C-4712-A009-65CB50C7D2EF}">
+					<Child Name="tbHM" Owner="{715B3261-4143-45B3-B859-631895A58158}" />
+					<Child Name="tbR" Owner="{14E5E35F-4F16-4A24-B305-82C3DE7BBCC8}" />
+					<Child Name="tbS" Owner="{292547B9-B4F8-44A1-B320-976B54DC1ED7}" />
+				</Child>
+				<Child Name="gbCheckSign" Owner="{7D3DACB7-CEF6-471E-8143-59E2C0E57390}">
+					<Child Name="tbHMC" Owner="{2056376F-4FFB-4E95-BC1A-C94CC0838ED2}" />
+					<Child Name="tbRC" Owner="{49A3A9B5-3D52-4A40-B941-C7EB458BA6F9}" />
+					<Child Name="tbW" Owner="{15763FC6-C40E-4E48-905F-F0E8517BBF2A}" />
+					<Child Name="tbV" Owner="{930DBF80-3FDA-4A82-AFE6-7A2186E6406D}" />
+					<Child Name="tbSC" Owner="{37182E2D-4423-4265-9F0A-C27DDD8789B3}" />
+					<Child Name="lblResult" Owner="{05771650-4F6A-47FB-B807-1A572C4480B5}" />
+				</Child>
+			</Child>
+		</Child>
+	</LogicalNodes>
+</Root>

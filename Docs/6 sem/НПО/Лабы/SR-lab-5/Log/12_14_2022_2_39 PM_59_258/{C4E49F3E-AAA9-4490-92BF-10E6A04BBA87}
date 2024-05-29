@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row1">
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="name" type="S" value="ProjectTestItem3 [Script\TestSamples - test_parameters_sign]"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="details" type="S" value="{E18FA8C1-B7F3-4F99-B567-B82DA4FCADDF}"/>
+				<Prp name="end time" type="D" value="44909.611286875"/>
+				<Prp name="start time" type="D" value="44909.6111294444"/>
+			</Node>
+			<Node name="row0">
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="name" type="S" value="ProjectTestItem1 [Script\TestSamples - startTI_4]"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="details" type="S" value="{75CCD08C-EECF-4396-92BC-CA92E22DDECC}"/>
+				<Prp name="end time" type="D" value="44909.6111293287"/>
+				<Prp name="start time" type="D" value="44909.6111026389"/>
+			</Node>
+			<Node name="row2">
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="name" type="S" value="The execution process was interrupted."/>
+				<Prp name="start time" type="D" value="44909.611286875"/>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="details" type="S" value=""/>
+				<Prp name="end time" type="D" value="44909.611286875"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="ownerid" type="I" value="-1"/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>

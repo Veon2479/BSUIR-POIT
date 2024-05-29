@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<child name="DDTWork" key="{4A16C98A-9FBE-46A0-A73B-42D0280167AF}" path="DDTWork.py" />
+		<child name="TestSamples" key="{C6CF8444-0874-48D2-AD5F-BAC30B3D9D6B}" path="TestSamples.py" />
+		<child name="Tests" key="{A9A7F1F4-A2BB-435F-9FA7-0848B470662E}" path="Tests.py" />
+		<child name="TestSignature" key="{93E227C9-42CF-46F3-97AE-8B1C5A48DBC8}" path="TestSignature.py" />
+	</children>
+</Root>

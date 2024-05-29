@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadStop", "ThreadStop.csproj", "{15FFB8F4-1F59-4CC1-9D67-B33C67798A65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15FFB8F4-1F59-4CC1-9D67-B33C67798A65}.Debug|x86.ActiveCfg = Debug|x86
+		{15FFB8F4-1F59-4CC1-9D67-B33C67798A65}.Debug|x86.Build.0 = Debug|x86
+		{15FFB8F4-1F59-4CC1-9D67-B33C67798A65}.Release|x86.ActiveCfg = Release|x86
+		{15FFB8F4-1F59-4CC1-9D67-B33C67798A65}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

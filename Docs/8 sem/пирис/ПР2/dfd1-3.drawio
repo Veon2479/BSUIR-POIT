@@ -1,0 +1,57 @@
+<mxfile host="Electron" modified="2024-02-22T14:07:16.996Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="4XHAheD0GyXgUqxJB3X8" version="23.1.5" type="device">
+  <diagram name="Page-1" id="b520641d-4fe3-3701-9064-5fc419738815">
+    <mxGraphModel dx="771" dy="551" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Qj9tnino2t696h2rmnrh-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Qj9tnino2t696h2rmnrh-1" target="Qj9tnino2t696h2rmnrh-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qj9tnino2t696h2rmnrh-14" value="Данные&lt;br&gt;счёта" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Qj9tnino2t696h2rmnrh-13">
+          <mxGeometry x="-0.1163" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qj9tnino2t696h2rmnrh-1" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="100" y="100" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Qj9tnino2t696h2rmnrh-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Qj9tnino2t696h2rmnrh-3" target="Qj9tnino2t696h2rmnrh-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qj9tnino2t696h2rmnrh-12" value="Валидные данные&lt;br&gt;счёта клиента" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Qj9tnino2t696h2rmnrh-11">
+          <mxGeometry x="-0.1332" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qj9tnino2t696h2rmnrh-3" value="валидация счёта клиента" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="420" y="90" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Qj9tnino2t696h2rmnrh-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Qj9tnino2t696h2rmnrh-4" target="Qj9tnino2t696h2rmnrh-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qj9tnino2t696h2rmnrh-10" value="Номер кредитной карты" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Qj9tnino2t696h2rmnrh-9">
+          <mxGeometry x="0.2471" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qj9tnino2t696h2rmnrh-4" value="получение номера кредитной карты" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="420" y="340" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Qj9tnino2t696h2rmnrh-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Qj9tnino2t696h2rmnrh-5" target="Qj9tnino2t696h2rmnrh-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qj9tnino2t696h2rmnrh-8" value="Данные кредитной&lt;br&gt;карты" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Qj9tnino2t696h2rmnrh-7">
+          <mxGeometry x="0.0689" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qj9tnino2t696h2rmnrh-5" value="Создание кредитной карты" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="750" y="345" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Qj9tnino2t696h2rmnrh-6" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="345" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

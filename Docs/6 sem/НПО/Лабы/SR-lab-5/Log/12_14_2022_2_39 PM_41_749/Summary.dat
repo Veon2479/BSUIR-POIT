@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test0">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="durationwithoutchildren" type="I" value="2313"/>
+						<Prp name="name" type="S" value="ProjectTestItem1"/>
+						<Prp name="duration" type="I" value="2313"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBEADAAMwBFADYANwA3ADAALQAzAEUANABDAC0ANAA0ADUARgAtADgANgA2AEYALQA0AEQANQAyADYAQgBBAEUANwA5ADUAMgB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="starttime" type="D" value="44909.6108999884"/>
+						<Prp name="status" type="I" value="0"/>
+					</Node>
+					<Node name="test1">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="List index out of bounds (-1)"/>
+							</Node>
+						</Node>
+						<Prp name="durationwithoutchildren" type="I" value="5214"/>
+						<Prp name="name" type="S" value="ProjectTestItem3"/>
+						<Prp name="duration" type="I" value="5214"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAyADMARgA4ADEAQQBFAEIALQBCADkAQwA3AC0ANAA2ADQANwAtADkANQAzADAALQBEADMAQQA2ADUAOQAwAEEAMQA1ADcARQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="starttime" type="D" value="44909.610926875"/>
+						<Prp name="status" type="I" value="2"/>
+					</Node>
+					<Node name="test2">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="durationwithoutchildren" type="I" value="320"/>
+						<Prp name="name" type="S" value="ProjectTestItem2"/>
+						<Prp name="duration" type="I" value="320"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBFAEQAMQAzAEUANQA0ADIALQBGAEMAQQAzAC0ANAAyADUARgAtAEEAMABGAEIALQBDAEUAMwBEADYAMQBEADcAQgBDAEUAMAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="starttime" type="D" value="44909.6109874537"/>
+						<Prp name="status" type="I" value="0"/>
+					</Node>
+				</Node>
+				<Prp name="incompletedtests" type="I" value="0"/>
+				<Prp name="failedtests" type="I" value="1"/>
+				<Prp name="name" type="S" value="SR-lab-5"/>
+				<Prp name="duration" type="I" value="7847"/>
+				<Prp name="warningtests" type="I" value="0"/>
+				<Prp name="starttime" type="D" value="44909.6108999884"/>
+			</Node>
+		</Node>
+		<Prp name="name" type="S" value="SR-lab-5"/>
+		<Prp name="warningtests" type="I" value="0"/>
+		<Prp name="host" type="S" value="GRAENN"/>
+		<Prp name="starttime" type="D" value="44909.6108998727"/>
+		<Prp name="stop" type="D" value="44909.6109924306"/>
+		<Prp name="warningtestwithretries" type="I" value="0"/>
+		<Prp name="successtestwithretries" type="I" value="0"/>
+		<Prp name="failedtests" type="I" value="1"/>
+		<Prp name="user" type="S" value="Andmin"/>
+		<Prp name="key" type="S" value="{0AE62AD0-CC4D-4BB3-941B-E416A9E757EC}"/>
+		<Prp name="executionstatus" type="I" value="2"/>
+		<Prp name="tests" type="I" value="3"/>
+		<Prp name="incompletedtests" type="I" value="0"/>
+		<Prp name="testname" type="S" value="SR-lab-5"/>
+	</Node>
+</Nodes>

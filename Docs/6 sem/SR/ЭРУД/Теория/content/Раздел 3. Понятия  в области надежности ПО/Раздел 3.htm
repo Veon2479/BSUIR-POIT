@@ -1,0 +1,1801 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<link rel=File-List href="Раздел%203.files/filelist.xml">
+<link rel=Edit-Time-Data href="Раздел%203.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Раздел 3. Основные понятия и определения в области надежности
+программного обеспечения компьютерных систем</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>user</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Admin</o:LastAuthor>
+  <o:Revision>22</o:Revision>
+  <o:TotalTime>50</o:TotalTime>
+  <o:Created>2011-12-21T16:44:00Z</o:Created>
+  <o:LastSaved>2016-04-06T13:54:00Z</o:LastSaved>
+  <o:Pages>4</o:Pages>
+  <o:Words>2260</o:Words>
+  <o:Characters>12882</o:Characters>
+  <o:Company>home</o:Company>
+  <o:Lines>107</o:Lines>
+  <o:Paragraphs>30</o:Paragraphs>
+  <o:CharactersWithSpaces>15112</o:CharactersWithSpaces>
+  <o:Version>14.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=themeData href="Раздел%203.files/themedata.thmx">
+<link rel=colorSchemeMapping href="Раздел%203.files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>TextFit</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>6 пт</w:DrawingGridHorizontalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>2</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>RU</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="267">
+  <w:LsdException Locked="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="99" Name="No List"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520092929 1073786111 9 0 415 0;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627400839 -2147483648 8 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	layout-grid-mode:char;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-update:auto;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Заголовок 1 Знак";
+	mso-style-next:"Заголовок 2";
+	margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:24.0pt;
+	margin-left:19.35pt;
+	text-align:center;
+	page-break-before:always;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	tab-stops:54.0pt;
+	layout-grid-mode:char;
+	font-size:20.0pt;
+	mso-bidi-font-size:24.0pt;
+	font-family:"Arial Black","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:Arial;
+	text-transform:uppercase;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Заголовок 2 Знак1";
+	mso-style-next:Обычный;
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	layout-grid-mode:char;
+	font-size:13.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;}
+h4
+	{mso-style-update:auto;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Заголовок 4 Знак";
+	mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	text-align:center;
+	page-break-before:always;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	layout-grid-mode:char;
+	font-size:16.0pt;
+	font-family:"Arial Black","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{mso-style-update:auto;
+	mso-style-unhide:no;
+	mso-style-next:Обычный;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:53.85pt;
+	mso-pagination:widow-orphan;
+	tab-stops:right dotted 480.3pt;
+	layout-grid-mode:char;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-no-proof:yes;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Название объекта Знак";
+	mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-weight:bold;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{mso-style-unhide:no;
+	mso-style-link:"Основной текст с отступом Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:54.0pt;
+	mso-pagination:widow-orphan;
+	layout-grid-mode:char;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-unhide:no;
+	mso-style-link:"Текст выноски Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	layout-grid-mode:char;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	mso-add-space:auto;
+	line-height:105%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:105%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:105%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	mso-add-space:auto;
+	line-height:105%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;}
+span.2
+	{mso-style-name:"Заголовок 2 Знак";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Заголовок 2";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;}
+span.1
+	{mso-style-name:"Заголовок 1 Знак";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Заголовок 1";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#365F91;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-weight:bold;}
+span.4
+	{mso-style-name:"Заголовок 4 Знак";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Заголовок 4";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;
+	font-style:italic;}
+span.a
+	{mso-style-name:"Название объекта Знак";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:"Название объекта";
+	mso-ansi-font-size:14.0pt;
+	mso-ansi-language:RU;
+	mso-fareast-language:RU;
+	mso-bidi-language:AR-SA;
+	mso-bidi-font-weight:bold;}
+span.a0
+	{mso-style-name:"Основной текст с отступом Знак";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Основной текст с отступом";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;}
+span.a1
+	{mso-style-name:"Текст выноски Знак";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Текст выноски";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+p.20, li.20, div.20
+	{mso-style-name:"Заголовок 2\,Заголовок 2 Знак";
+	mso-style-unhide:no;
+	mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	layout-grid-mode:char;
+	font-size:14.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-style:italic;}
+p.Punkt, li.Punkt, div.Punkt
+	{mso-style-name:Punkt;
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	mso-list:l10 level1 lfo2;
+	layout-grid-mode:char;
+	font-size:18.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.podPunkt1, li.podPunkt1, div.podPunkt1
+	{mso-style-name:podPunkt1;
+	mso-style-unhide:no;
+	mso-style-parent:Punkt;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:125.45pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	mso-list:l10 level2 lfo2;
+	tab-stops:list 125.45pt;
+	layout-grid-mode:char;
+	font-size:16.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.podPunkt2, li.podPunkt2, div.podPunkt2
+	{mso-style-name:podPunkt2;
+	mso-style-unhide:no;
+	mso-style-parent:podPunkt1;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:161.45pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-9.0pt;
+	mso-pagination:widow-orphan;
+	mso-list:l10 level3 lfo2;
+	tab-stops:list 161.45pt;
+	layout-grid-mode:char;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+span.StyleJustified
+	{mso-style-name:"Style Justified Знак";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:"Style Justified";
+	mso-ansi-font-size:14.0pt;
+	mso-ansi-language:RU;
+	mso-fareast-language:RU;
+	mso-bidi-language:AR-SA;}
+p.StyleJustified0, li.StyleJustified0, div.StyleJustified0
+	{mso-style-name:"Style Justified";
+	mso-style-unhide:no;
+	mso-style-link:"Style Justified Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+span.21
+	{mso-style-name:"Заголовок 2 Знак1";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Заголовок 2";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:70.9pt 42.5pt 62.35pt 70.9pt;
+	mso-header-margin:35.45pt;
+	mso-footer-margin:35.45pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:-2;
+	mso-list-type:simple;
+	mso-list-template-ids:1748689278;}
+@list l0:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:*;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l1
+	{mso-list-id:131795617;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1534168938 -1532704318 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l1:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:45.35pt;
+	text-indent:-18.0pt;}
+@list l1:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:81.35pt;
+	text-indent:-18.0pt;}
+@list l1:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:117.35pt;
+	text-indent:-9.0pt;}
+@list l1:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:153.35pt;
+	text-indent:-18.0pt;}
+@list l1:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:189.35pt;
+	text-indent:-18.0pt;}
+@list l1:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:225.35pt;
+	text-indent:-9.0pt;}
+@list l1:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:261.35pt;
+	text-indent:-18.0pt;}
+@list l1:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:297.35pt;
+	text-indent:-18.0pt;}
+@list l1:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:333.35pt;
+	text-indent:-9.0pt;}
+@list l2
+	{mso-list-id:171377687;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l3
+	{mso-list-id:284427162;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-841444578 68747279 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l3:level1
+	{mso-level-tab-stop:71.25pt;
+	mso-level-number-position:left;
+	margin-left:71.25pt;
+	text-indent:-18.0pt;}
+@list l3:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l4
+	{mso-list-id:918175866;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l5
+	{mso-list-id:1259757685;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1948815930 1443276712 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l5:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:71.45pt;
+	mso-level-number-position:left;
+	margin-left:17.45pt;
+	text-indent:36.0pt;}
+@list l5:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l6
+	{mso-list-id:1297905126;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-231293686 -1097939892 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l6:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l6:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l6:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l6:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l6:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l6:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l6:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l6:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l6:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l7
+	{mso-list-id:1592349601;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1673544182 68747265 68747267 68747269 68747265 68747267 68747269 68747265 68747267 68747269;}
+@list l7:level1
+	{mso-level-tab-stop:71.25pt;
+	mso-level-number-position:left;
+	margin-left:71.25pt;
+	text-indent:-18.0pt;}
+@list l7:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:107.25pt;
+	mso-level-number-position:left;
+	margin-left:107.25pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l7:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l7:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l7:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l7:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l7:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l7:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l7:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l8
+	{mso-list-id:1702507815;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l8:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l9
+	{mso-list-id:1741172296;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l9:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l10
+	{mso-list-id:1991057464;
+	mso-list-template-ids:-1944829078;}
+@list l10:level1
+	{mso-level-style-link:Punkt;
+	mso-level-suffix:space;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l10:level2
+	{mso-level-reset-level:level1;
+	mso-level-style-link:podPunkt1;
+	mso-level-suffix:space;
+	mso-level-text:"%1\.%2\.";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:39.6pt;
+	text-indent:-21.6pt;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	mso-ansi-font-weight:normal;}
+@list l10:level3
+	{mso-level-reset-level:level1;
+	mso-level-style-link:podPunkt2;
+	mso-level-suffix:space;
+	mso-level-text:"%1\.%2\.%3\.";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:88.2pt;
+	text-indent:-25.2pt;
+	mso-ansi-font-weight:normal;}
+@list l10:level4
+	{mso-level-text:"%1\.%2\.%3\.%4\.";
+	mso-level-tab-stop:162.0pt;
+	mso-level-number-position:left;
+	margin-left:86.4pt;
+	text-indent:-32.4pt;}
+@list l10:level5
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.";
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	margin-left:111.6pt;
+	text-indent:-39.6pt;}
+@list l10:level6
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.";
+	mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	margin-left:136.8pt;
+	text-indent:-46.8pt;}
+@list l10:level7
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.";
+	mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	margin-left:162.0pt;
+	text-indent:-54.0pt;}
+@list l10:level8
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.";
+	mso-level-tab-stop:342.0pt;
+	mso-level-number-position:left;
+	margin-left:187.2pt;
+	text-indent:-61.2pt;}
+@list l10:level9
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9\.";
+	mso-level-tab-stop:378.0pt;
+	mso-level-number-position:left;
+	margin-left:216.0pt;
+	text-indent:-72.0pt;}
+@list l0:level1 lfo22
+	{mso-level-numbering:continue;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:14.15pt;
+	mso-level-legacy-space:0cm;
+	margin-left:14.15pt;
+	text-indent:-14.15pt;
+	font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Обычная таблица";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=RU style='tab-interval:35.4pt'>
+
+<div class=WordSection1>
+
+<h1><a name="_Toc312255016"><span style='mso-fareast-font-family:"Times New Roman"'>Раздел
+3. Основные понятия и определения <br>
+в области надежности программного обеспечения <br>
+компьютерных систем</span></a><span style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h1>
+
+<p class=20 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:24.0pt;
+margin-left:35.45pt;mso-pagination:widow-orphan lines-together;tab-stops:81.0pt'><a
+name="_Toc312255017"><b><span style='font-size:18.0pt;mso-bidi-font-size:14.0pt;
+font-family:"Arial Black","sans-serif";mso-fareast-font-family:"Times New Roman";
+font-style:normal;mso-bidi-font-style:italic'>3.1. Проблема надежности
+программного обеспечения и её актуальность</span></b></a><b><span
+style='font-size:18.0pt;mso-bidi-font-size:14.0pt;font-family:"Arial Black","sans-serif";
+mso-fareast-font-family:"Times New Roman";font-style:normal;mso-bidi-font-style:
+italic'><o:p></o:p></span></b></p>
+
+<p class=StyleJustified0>Одним из важнейших аспектов повышения эффективности работы
+компьютерных систем является обеспечение высокой надежности протекающих в них
+вычислительных процессов. На первом этапе развития компьютерных систем (50-е &#8209;
+60-е годы <span lang=EN-US style='mso-ansi-language:EN-US'>XX</span> века)
+определяющим фактором ненадежности был аппаратный фактор.</p>
+
+<p class=StyleJustified0>Программное обеспечение (ПО) в то время находилось на
+очень низкой стадии развития и отличалось малой сложностью. Доля отказов за
+счёт ПО была очень незначительной. </p>
+
+<p class=StyleJustified0>Непрерывное усложнение ПО, наряду с отсутствием
+индустриальных технологий его производства, резкое повышение надёжности
+аппаратного обеспечения КС за счёт широкого использования интегральных
+микросхем и систем автоматизации проектирования привело к тому, что уже начиная
+с 70-х годов ХХ века ПО стало определяющим фактором надёжности КС.</p>
+
+<p class=StyleJustified0><o:p>&nbsp;</o:p></p>
+
+<p class=StyleJustified0><b style='mso-bidi-font-weight:normal'>Пример.<o:p></o:p></b></p>
+
+<p class=StyleJustified0>Программист в программе на языке Фортран, управляющей
+первым полетом американского космического корабля на Венеру, написал следующий
+оператор цикла <b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'>DO </i></b>[29]:</p>
+
+<p class=StyleJustified0><o:p>&nbsp;</o:p></p>
+
+<p class=StyleJustified0><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'>DO 3 I=1.3</i></b><span
+style='mso-spacerun:yes'>     </span></p>
+
+<p class=StyleJustified0><o:p>&nbsp;</o:p></p>
+
+<p class=StyleJustified0 style='text-indent:0cm'>(выполнять тело цикла до
+оператора с меткой 3 при изменении параметра цикла <b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'><span lang=EN-US
+style='mso-ansi-language:EN-US'>I</span></i></b> от 1 до 3).</p>
+
+<p class=StyleJustified0><o:p>&nbsp;</o:p></p>
+
+<p class=StyleJustified0 style='mso-pagination:none'>При этом вместо символа «
+, » программист поставил точку. Однако компилятор, проигнорировав пробелы,
+воспринял данный оператор как допустимый оператор присваивания:</p>
+
+<p class=StyleJustified0><o:p>&nbsp;</o:p></p>
+
+<p class=StyleJustified0><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'>DO3I=1.3<o:p></o:p></i></b></p>
+
+<p class=StyleJustified0><o:p>&nbsp;</o:p></p>
+
+<p class=StyleJustified0>В результате эта ошибка привела к отказу и
+невыполнению всей программы полета, стоившей больше миллиарда долларов.</p>
+
+<p class=StyleJustified0>Причины:</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.3pt;margin-bottom:0cm;
+margin-left:0cm;margin-bottom:.0001pt;text-align:justify;text-indent:35.45pt;
+mso-list:l6 level1 lfo4;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>«плохой» компилятор;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-1.1pt;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:justify;text-indent:35.45pt;
+mso-list:l6 level1 lfo4;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>«плохое» тестирование;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-1.1pt;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:justify;text-indent:35.45pt;
+mso-list:l6 level1 lfo4;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>3)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>субъективные факторы (ошибка программиста).</p>
+
+<p class=StyleJustified0>Таким образом, задача повышения надежности ПО является
+актуальной.<span style='mso-spacerun:yes'>   </span></p>
+
+<p class=20 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:24.0pt;
+margin-left:35.45pt;mso-pagination:widow-orphan lines-together;tab-stops:81.0pt'><a
+name="_Toc312255018"><b><span style='font-size:18.0pt;mso-bidi-font-size:14.0pt;
+font-family:"Arial Black","sans-serif";mso-fareast-font-family:"Times New Roman";
+font-style:normal;mso-bidi-font-style:italic'>3.2. Понятие свойств, функций и требований
+к программному обеспечению. <br>
+Критерии качества требований</span></b></a><b><span style='font-size:18.0pt;
+mso-bidi-font-size:14.0pt;font-family:"Arial Black","sans-serif";mso-fareast-font-family:
+"Times New Roman";font-style:normal;mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:36.0pt'>Очевидно, что
+разработчик может создать качественное ПО, если понимает реальные потребности
+пользователя.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:36.0pt'>В общем
+потребности пользователей не конкретны и не однозначны, и обычно пользователь
+описывает свои пожелания в абстрактной форме, например:</p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:36.0pt;
+mso-list:l3 level1 lfo6;tab-stops:list 54.0pt 71.25pt'><![if !supportLists]><span
+style='mso-list:Ignore'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Я хочу, чтобы разрабатываемое ПС обеспечивало
+дружественный интерфейс.</p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:36.0pt;
+mso-list:l3 level1 lfo6;tab-stops:list 54.0pt 71.25pt'><![if !supportLists]><span
+style='color:black'><span style='mso-list:Ignore'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Я хочу, чтобы разрабатываемое ПС предоставляло
+текущую информацию о <span style='color:black'>клиентах банка.<o:p></o:p></span></p>
+
+<p class=StyleJustified0><span style='color:black'>Таким образом, обычно
+пользователь описывает свойства программного обеспечения, которые ему
+необходимы. На данном уровне детализации требования к ПС обычно называются <i
+style='mso-bidi-font-style:normal'>пользовательскими требованиями</i> или <i
+style='mso-bidi-font-style:normal'>функциями</i> (от английского <span
+class=SpellE>feature</span> – свойства, функции), хотя в данном контексте это
+могут быть как функциональные свойства ПС, так и нефункциональные. Функции
+представляют собой описание желаемого поведения разрабатываемого ПС и служат
+основой для формирования <i style='mso-bidi-font-style:normal'>требований
+разработчика</i> к ПС. В общем случае каждая пользовательская функция порождает
+одно или несколько требований разработчика.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:36.0pt'><span
+style='color:black'>Требования разработчика представляют собой детализированные
+описания пользовательских функций. Например, требование пользователя имеет
+следующий вид: «Разрабатываемое ПС должно предоставлять текущую информацию о вкладах
+клиентов банка». Очевидно, что данная функция не является требованием
+разработчика, потому что здесь ничего не говорится о формате выводимых данных,
+о количестве атрибутов, о типе валют и т.д. Такую пользовательскую функцию
+можно представить набором требований разработчика. Например, к одному из таких
+требований может относиться следующее:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:36.0pt'><span
+style='color:black'>«Информацию о текущих вкладах предоставлять в виде печатной
+формы, представленной в виде таблицы».<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='color:black'><span
+style='mso-tab-count:1'>         </span>Документом, в котором представлены
+требования к разрабатываемому</span> программному средству, является <i
+style='mso-bidi-font-style:normal'>спецификация требований к программному
+обеспечению (СТПО)</i>.</p>
+
+<p class=StyleJustified0><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'>Спецификация</i></b> представляет собой
+формализованное представление требований, предъявляемых к программе, которые
+должны быть удовлетворены при ее разработке, а также описание условий и эффекта
+действий без указания способа их достижения.</p>
+
+<p class=StyleJustified0>Спецификация требований к ПО<i style='mso-bidi-font-style:
+normal'> </i>является техническим документом, в котором описаны <i
+style='mso-bidi-font-style:normal'>условия функционирования</i> для отдельного
+программного продукта или набора программ, которые выполняют определенные
+задачи в определенной среде.<span style='mso-spacerun:yes'> 
+</span>Спецификация требований к ПО<i style='mso-bidi-font-style:normal'> </i>играет
+важную роль в общем плане проекта, так как она может описывать не только
+отдельный программный продукт, но также тот, который является частью большей
+системы. В случае, когда спецификация требований к ПО<i style='mso-bidi-font-style:
+normal'> </i>является частью большей системы, у разработчика должна иметься
+спецификация требований к ПО,<i style='mso-bidi-font-style:normal'> </i>описывающая
+взаимодействие системы с частью программного обеспечения и содержащая
+требования к характеристикам и функциональности данной части программного
+обеспечения. </p>
+
+<p class=MsoNormal style='text-indent:36.0pt'>Спецификация требований к ПО<i
+style='mso-bidi-font-style:normal'> </i>не должна содержать:</p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-indent:-18.0pt;mso-list:l2 level1 lfo8;
+tab-stops:list 54.0pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>требований к процессу разработки;</p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-indent:-18.0pt;mso-list:l2 level1 lfo8;
+tab-stops:list 54.0pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>требований к проекту<span lang=EN-US
+style='mso-ansi-language:EN-US'>.</span></p>
+
+<p class=StyleJustified0>Одной из главных причин низкого качества
+разрабатываемого ПО является недостаточная детализация спецификации и ее низкая
+формализация. В общем случае ПО создается на основании требований из
+собственного видения продукта заказчиком. Очевидной причиной возможных ошибок,
+заложенных в спецификации, является недостаточная работа разработчика с
+заказчиком.</p>
+
+<p class=StyleJustified0><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'>Критерии качества требований к ПО</i></b>
+декларирует стандарт <span lang=EN-US style='mso-ansi-language:EN-US'>ISO</span>/<span
+lang=EN-US style='mso-ansi-language:EN-US'>IEC</span>/<span lang=EN-US
+style='mso-ansi-language:EN-US'>IEEE</span> 29148:2011 [10]<i style='mso-bidi-font-style:
+normal'>. </i>Он выделяет следующие критерии для оценки качества спецификации
+требований к ПО.</p>
+
+<p class=StyleJustified0><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:36.0pt;mso-list:l5 level1 lfo10;
+tab-stops:list 54.0pt 71.45pt'><![if !supportLists]><b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'><span style='mso-list:Ignore'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></i></b><![endif]><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>Корректность
+(правильность) требований<o:p></o:p></i></b></p>
+
+<p class=MsoNormal style='margin-left:35.25pt'><o:p>&nbsp;</o:p></p>
+
+<p class=StyleJustified0 style='mso-pagination:none'>Требования правильны тогда
+и только тогда, когда все заявленные в них требования отражают реальные
+потребности заказчика и могут быть реализованы в будущем продукте.</p>
+
+<p class=StyleJustified0>Например, если А – потребности пользователя, В –
+сформулированные требования, то корректные требования находятся на пересечении
+А и В (рис. 3.1).</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:36.0pt;page-break-after:
+avoid'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:36.0pt;
+page-break-after:avoid'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Рисунок_x0020_1" o:spid="_x0000_i1025" type="#_x0000_t75"
+ style='width:225.75pt;height:120pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Раздел%203.files/image001.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=301 height=160
+src="Раздел%203.files/image002.jpg" v:shapes="Рисунок_x0020_1"><![endif]></span></p>
+
+<p class=MsoNormal style='page-break-after:avoid'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoCaption>Рис. 3.1. Взаимозависимость потребностей пользователя, <br>
+сформулированных требований и<span style='mso-spacerun:yes'>  </span>корректных
+требований</p>
+
+<p class=MsoNormal style='margin-left:53.25pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:36.0pt;page-break-after:
+avoid;mso-list:l5 level1 lfo10;tab-stops:list 54.0pt 71.45pt'><![if !supportLists]><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
+style='mso-list:Ignore'>2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></i></b><![endif]><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'>Недвусмысленность требований<o:p></o:p></i></b></p>
+
+<p class=MsoNormal style='page-break-after:avoid'><b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'><o:p>&nbsp;</o:p></i></b></p>
+
+<p class=StyleJustified0>Требование является недвусмысленным, когда его могут
+однозначно интерпретировать разработчик и заказчик.</p>
+
+<p class=StyleJustified0>Основными трудностями в формулировании требований
+часто является естественный язык, на котором они написаны. Так как естественный
+язык неоднозначен, это порождает множество проблем при формулировании
+однозначных требований. Для решения этой проблемы были придуманы специальные
+формализованные языки, называемые «<i style='mso-bidi-font-style:normal'>языками
+спецификации требований</i>», которые помогают разработчику описать требования
+однозначно.</p>
+
+<p class=MsoNormal style='text-indent:53.25pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:36.0pt;mso-list:l5 level1 lfo10;
+tab-stops:list 54.0pt 71.45pt'><![if !supportLists]><b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'><span style='mso-list:Ignore'>3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></i></b><![endif]><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>Полнота
+набора требований <o:p></o:p></i></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'><o:p>&nbsp;</o:p></i></b></p>
+
+<p class=StyleJustified0>Спецификация требований к ПО<i style='mso-bidi-font-style:
+normal'> </i>является полной, когда она удовлетворяет следующим критериям.</p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l7 level2 lfo12;tab-stops:list 54.0pt 107.25pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Содержит все существенные требования, касающиеся
+функциональных возможностей, выполнения, ограничений проектирования,
+характеристик или внешних интерфейсов. В частности, любые внешние требования,
+накладываемые спецификацией системы, должны быть выявлены и рассмотрены.</p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l7 level2 lfo12;tab-stops:list 54.0pt 107.25pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Содержит все реакции программного обеспечения на
+все возможные типы входных данных во всех возможных ситуациях. Важно определить
+реакции, как на допустимые значения данных, так и на недопустимые.</p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l7 level2 lfo12;tab-stops:list 54.0pt 107.25pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Содержит все подписи и ссылки на все рисунки,
+таблицы и диаграммы и определение всех терминов и единиц измерения.</p>
+
+<p class=MsoNormal style='margin-left:35.25pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:36.0pt;mso-list:l5 level1 lfo10;
+tab-stops:list 54.0pt 71.45pt'><![if !supportLists]><b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'><span style='mso-list:Ignore'>4)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></i></b><![endif]><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>Непротиворечивость
+требований<o:p></o:p></i></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'><o:p>&nbsp;</o:p></i></b></p>
+
+<p class=StyleJustified0>Спецификация требований к ПО<i style='mso-bidi-font-style:
+normal'> </i>непротиворечива тогда и только тогда, когда каждое заявленное
+требование не противоречит ни одному другому требованию.</p>
+
+<p class=StyleJustified0>Например, следующие характеристики объектов находятся
+в противоречии друг с другом:</p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:36.0pt;
+mso-list:l8 level1 lfo14;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>выходной отчет может быть описан в одном
+требовании как табличный, а в другом как – текстовый.</p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:36.0pt;
+mso-list:l8 level1 lfo14;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>одно требование может установить, что все
+индикаторы должны быть зеленого цвета, а другое требование – что голубого.</p>
+
+<p class=StyleJustified0>Другим примером является наличие логического или
+временного конфликта между двумя указанными действиями:</p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:36.0pt;
+mso-list:l9 level1 lfo16;tab-stops:54.0pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Одно требование может определить, что программа
+должна складывать две входных величины, другое – умножать их.</p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:36.0pt;
+mso-list:l9 level1 lfo16;tab-stops:54.0pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Одно требование устанавливает, что событие А
+должно всегда следовать за событием В, в то время как другое требование
+устанавливает, что события А и В происходят одновременно.</p>
+
+<p class=MsoNormal style='margin-left:35.25pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:36.0pt;
+mso-list:l5 level1 lfo10;tab-stops:list 54.0pt 71.45pt'><![if !supportLists]><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
+style='mso-list:Ignore'>5)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></i></b><![endif]><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'>Упорядоченность по важности и/или стабильности<o:p></o:p></i></b></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'><o:p>&nbsp;</o:p></i></b></p>
+
+<p class=StyleJustified0>Для улучшения восприятия и последующей работы с
+требованиями их следует упорядочить по важности и/или стабильности.</p>
+
+<p class=StyleJustified0>Под стабильностью понимают степень изменяемости
+требования во времени, а под важностью понимают степень необходимости
+требования, например<b style='mso-bidi-font-weight:normal'>:</b> обязательное
+требование, условное, необязательное.</p>
+
+<p class=MsoNormal style='margin-left:35.25pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:36.0pt;mso-list:l5 level1 lfo10;
+tab-stops:list 54.0pt 71.45pt'><![if !supportLists]><b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'><span style='mso-list:Ignore'>6)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></i></b><![endif]><span
+class=SpellE><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'>Проверяемость</i></b></span><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'> требований (<span class=SpellE>верифицируемость</span>)<o:p></o:p></i></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'><o:p>&nbsp;</o:p></i></b></p>
+
+<p class=StyleJustified0>Это характеристика спецификации требований к ПО,
+которая подразумевает возможность проверки требований. Например, сложно проверить
+требование «дружественный интерфейс», так как каждый человек (поставщик,
+заказчик) за этим требованием видит свое. Если в требовании существуют
+параметры, имеющие количественную оценку, то нужно указать либо конкретное
+значение, либо диапазон значений для того, чтобы можно было по результатам
+проверки выяснить, удовлетворяет ли продукт установленным для него требованиям.</p>
+
+<p class=MsoNormal style='margin-left:35.25pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:36.0pt;page-break-after:
+avoid;mso-list:l5 level1 lfo10;tab-stops:list 54.0pt 71.45pt'><![if !supportLists]><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
+style='mso-list:Ignore'>7)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></i></b><![endif]><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'>Целостность<o:p></o:p></i></b></p>
+
+<p class=MsoNormal style='page-break-after:avoid'><o:p>&nbsp;</o:p></p>
+
+<p class=StyleJustified0>Спецификация требований к ПО<i style='mso-bidi-font-style:
+normal'> </i>не должна противоречить документам более высокого уровня и обеспечивать
+внутреннюю целостность, что подразумевает отсутствие описаний общих частей
+требований, находящихся в противоречии друг с другом.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:36.0pt'>Например, два
+или более требований могут описывать один и тот же объект, но использовать
+различные термины для этого объекта. Так, запрос программы на ввод пользователя
+может называться одним термином в одном требовании и другим термином в другом.<i
+style='mso-bidi-font-style:normal'> <o:p></o:p></i></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:36.0pt'><i
+style='mso-bidi-font-style:normal'>Использование стандартных терминологии и
+определений улучшает целостность.<o:p></o:p></i></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:36.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:36.0pt;mso-list:l5 level1 lfo10;
+tab-stops:list 54.0pt 71.45pt'><![if !supportLists]><b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'><span style='mso-list:Ignore'>8)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></i></b><![endif]><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>Модифицируемость<o:p></o:p></i></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'><o:p>&nbsp;</o:p></i></b></p>
+
+<p class=StyleJustified0>Спецификация требований к ПО изменяема тогда и только
+тогда, когда имеет такие структуру и стиль, при которых любые изменения
+требований могут быть сделаны легко, полностью, последовательно и при
+сохранении структуры. Вот некоторые рекомендации по составлению модифицируемых
+спецификаций требований к ПО. Спецификация требований к ПО должна:</p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:36.0pt;
+mso-list:l4 level1 lfo18;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>иметь последовательную и удобную в работе
+структуру с оглавлением, индексом и<span style='mso-spacerun:yes'> 
+</span>явными взаимными ссылками;</p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:36.0pt;
+mso-list:l4 level1 lfo18;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>не быть избыточной; т.е. одно и то же требование
+не должно встречаться больше чем в одном месте в СТПО;</p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:36.0pt;
+mso-list:l4 level1 lfo18;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>выражать каждое требование предпочтительнее
+отдельно, чем смешанным с другими требованиями.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:36.0pt;mso-list:l5 level1 lfo10;
+tab-stops:list 54.0pt 71.45pt'><![if !supportLists]><b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'><span style='mso-list:Ignore'>9)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></i></b><![endif]><span
+class=SpellE><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'>Трассируемость</i></b></span><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'><o:p></o:p></i></b></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=StyleJustified0><span class=SpellE>Трассируемость</span> требований
+определяется возможностью отследить связь между требованием и другими
+артефактами проекта (документами, моделями, текстами программ и т.д. ),
+например должен быть обеспечен легкий доступ к каждому требованию из
+документации, создаваемой в процессе разработки продукта. </p>
+
+<p class=20 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:24.0pt;
+margin-left:35.45pt;mso-pagination:widow-orphan lines-together;tab-stops:81.0pt'><a
+name="_Toc312255019"><b><span style='font-size:18.0pt;mso-bidi-font-size:14.0pt;
+font-family:"Arial Black","sans-serif";mso-fareast-font-family:"Times New Roman";
+font-style:normal;mso-bidi-font-style:italic'>3.3. Понятие ошибки и отказа
+программного обеспечения</span></b></a><b><span style='font-size:18.0pt;
+mso-bidi-font-size:14.0pt;font-family:"Arial Black","sans-serif";mso-fareast-font-family:
+"Times New Roman";font-style:normal;mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Существуют различные
+подходы к определению одного из важнейших понятий надёжности ПО – ошибки ПО.
+Одним из распространённых определений ошибки в ПО является факт расхождения
+между ПО и его спецификацией. Но такое определение предполагает корректность
+спецификации, что на практике не всегда верно.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Например,
+одна из версий ПО Системы противоракетной обороны (ПРО) США восприняла восход
+луны за вражеский объект. С точки зрения заказчика (Министерства обороны, МО
+США) это ошибка. Но с точки зрения разработчика – нет, т.к. в соответствии со
+спецификацией на разработку системы она должна осуществлять перехват любых
+неопознанных движущихся объектов. Но заказчик (МО США) не мог себе даже
+представить, что разрабатываемое ПО воспримет луну за вражеский объект [29].</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Майерс
+предложил считать, что в ПО есть ошибка, если оно не выполняет того, что
+пользователю от него разумно ожидать. Но разумность ожидания пользователя
+трудно формализовать и тем более измерить. Говоря более простым языком, ошибка
+в ПО представляет собой некоторый дефект (изъян) в разработке ПО, который
+вызывает несоответствие ожидаемых результатов выполнения ПО и фактически
+полученных. Дефект может возникнуть на всех стадиях разработки ПО (анализ
+требований, проектирование, кодирование, ...). Дефектом также может быть любое
+несоответствие ожиданиям заказчика, которое даже может быть и не определено в
+спецификации ПО [29].</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>В общем
+случае ошибки в ПО неразрывно связаны со своими спецификациями. Очевидно, что
+чем более формализована спецификация и чем более она детализирована, тем выше
+качество будущего ПО. Но как показывает анализ разработки программных
+продуктов, формальные спецификации встречаются редко, потому что:</p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:2.0cm;mso-add-space:auto;
+text-align:justify;text-indent:-21.25pt;line-height:normal;mso-list:l1 level1 lfo20'><![if !supportLists]><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:RU'><span style='mso-list:Ignore'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";mso-ansi-language:
+RU'>большинство людей предпочитают неформальные спецификации, т.к. их легче
+понять ( они разрабатываются на естественном языке).<o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:2.0cm;mso-add-space:auto;
+text-align:justify;text-indent:-21.25pt;line-height:normal;mso-list:l1 level1 lfo20'><![if !supportLists]><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:RU'><span style='mso-list:Ignore'>2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";mso-ansi-language:
+RU'>написание формальной спецификации дорогостоящее дело.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Дадим
+следующее определение ошибки, которое будем считать наиболее правильным: будем
+считать, что в ПО есть <b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'>ошибка</i></b>, если его поведение не
+соответствует своей спецификации при условии, что спецификация корректна
+(правильна).</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>Отказ
+ПО</i></b> – проявление в ходе эксплуатации скрытой ошибки разработки,
+приводящей к получению неприемлемого результата или времени выполнения, либо
+того и другого вместе.</p>
+
+<p class=20 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:24.0pt;
+margin-left:35.45pt;mso-pagination:widow-orphan lines-together;tab-stops:81.0pt'><a
+name="_Toc312255020"><b><span style='font-size:18.0pt;mso-bidi-font-size:14.0pt;
+font-family:"Arial Black","sans-serif";mso-fareast-font-family:"Times New Roman";
+font-style:normal;mso-bidi-font-style:italic'>3.4. Понятие надежности
+программного обеспечения</span></b></a><b><span style='font-size:18.0pt;
+mso-bidi-font-size:14.0pt;font-family:"Arial Black","sans-serif";mso-fareast-font-family:
+"Times New Roman";font-style:normal;mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
+
+<p class=StyleJustified0>Одни авторы считают, что понятие надежности ПО не
+аналогично этому понятию в аппаратуре.<span style='mso-spacerun:yes'>  </span></p>
+
+<p class=StyleJustified0>Например, Майерс писал: «Надежность ПО – есть
+вероятность работы без отказов в течении определенного периода времени,
+рассчитанная с учетом стоимости<span style='mso-spacerun:yes'>  </span>для
+пользователя каждого отказа». </p>
+
+<p class=StyleJustified0>Другие считают, что наблюдаемое поведение ПО при его
+отказах аналогично поведению при отказах аппаратуры. Это объясняется, что
+исходные данные в процессе<span style='mso-spacerun:yes'>  </span>эксплуатации
+ПО выбираются случайным образом, что приводит к случайному моменту проявления
+скрытых ошибок в ПО.</p>
+
+<p class=StyleJustified0>В соответствии со стандартом ISO/IEC 25010:2011 <b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>надежность</i></b>
+– <i style='mso-bidi-font-style:normal'>степень выполнения системой, продуктом
+или компонентом заданных функций в заданных условиях в течение заданного
+периода времени </i>[6]. </p>
+
+<p class=StyleJustified0>В отличие от аппаратуры не происходит износа или
+старения ПО. Снижение надежности ПО происходит из-за ошибок требований,
+проектирования и реализации. Отказы из-за этих ошибок зависят от способа
+использования ПО и контекста используемой среды, а не от времени работы. </p>
+
+<p class=StyleJustified0>Характеристике <b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'>надежность</i></b> в соответствии со
+стандартом ISO/IEC 25010:2011<span style='mso-spacerun:yes'> 
+</span>соответствуют следующие подхарактеристики.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:36.0pt'><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>Завершенность
+(стабильность</i></b>, <span class=SpellE><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'>Maturity</i></b></span><b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'>)</i></b> – степень соответствия
+системы, продукта или компонента потребностям в надежности при нормальной
+эксплуатации. Завершенность зависит от количества ошибок, оставшихся в системе,
+продукте или компоненте, и определяет возможность их безотказной работы.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:36.0pt'><a
+name="_Toc312255021"><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'>Готовность (</i></b></a><span class=SpellE><span
+style='mso-bookmark:_Toc312255021'><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'>Availability</i></b></span></span><span
+style='mso-bookmark:_Toc312255021'><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'>) </i></b>– степень работоспособности и
+доступности системы, продукта или компонента тогда, когда требуется их
+использование.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:36.0pt'><span
+style='mso-bookmark:_Toc312255021'><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'>Устойчивость к ошибке (<span class=SpellE>Fault</span>
+<span class=SpellE>tolerance</span>)</i></b> – степень функционирования
+системы, продукта или компонента в соответствии с предназначением, несмотря на
+наличие сбоев аппаратного обеспечения или ошибок в программном обеспечении.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:36.0pt'><span
+style='mso-bookmark:_Toc312255021'><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'>Восстанавливаемость (<span class=SpellE>Recoverability</span>)</i>
+</b>– степень восстановления поврежденных данных и <span class=SpellE>переустановления</span>
+требуемого состояния системы в случае прерывания или отказа продукта или
+системы. </span></p>
+
+<p class=20 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:24.0pt;
+margin-left:35.45pt;mso-pagination:widow-orphan lines-together;tab-stops:81.0pt'><span
+style='mso-bookmark:_Toc312255021'><b><span style='font-size:18.0pt;mso-bidi-font-size:
+14.0pt;font-family:"Arial Black","sans-serif";mso-fareast-font-family:"Times New Roman";
+font-style:normal;mso-bidi-font-style:italic'>3.5. Особенности программ по
+сравнению с аппаратурой</span></b></span><b><span style='font-size:18.0pt;
+mso-bidi-font-size:14.0pt;font-family:"Arial Black","sans-serif";mso-fareast-font-family:
+"Times New Roman";font-style:normal;mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:36.0pt;tab-stops:center 0cm;
+mso-layout-grid-align:none;text-autospace:none'>Можно выделить следующие <b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>особенности
+программного обеспечения</i></b> по сравнению с аппаратным обеспечением
+компьютеров.</p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:36.0pt;
+mso-list:l0 level1 lfo22;tab-stops:center 0cm;mso-layout-grid-align:none;
+text-autospace:none'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Ошибки в программах проявляются при их
+выполнении на некоторых наборах исходных данных (в аппаратуре – из-за сбоев и
+отказов аппаратуры).</p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:36.0pt;
+mso-list:l0 level1 lfo22;tab-stops:center 0cm;mso-layout-grid-align:none;
+text-autospace:none'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Компонентам программ не присущи старение и
+износ.</p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:36.0pt;
+mso-list:l0 level1 lfo22;tab-stops:center 0cm;mso-layout-grid-align:none;
+text-autospace:none'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Коррекция ошибок в программе приводит к
+изменению её конфигурации и обычно устраняет саму возможность повторного
+проявления данной ошибки.</p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:36.0pt;
+mso-list:l0 level1 lfo22;tab-stops:center 0cm;mso-layout-grid-align:none;
+text-autospace:none'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Тщательный анализ типа отказа и его влияние
+непрактичны в сложных программах.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

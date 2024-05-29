@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test0">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="The &quot;..\Resources\TestSequence.xlsx&quot; Excel workbook does not exist."/>
+							</Node>
+						</Node>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="name" type="S" value="ProjectTestItem1"/>
+						<Prp name="durationwithoutchildren" type="I" value="2559"/>
+						<Prp name="duration" type="I" value="2559"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBBAEMAQwA0AEEAMQA2ADQALQA5ADEARQBCAC0ANAA0ADkARAAtADgARQBEAEYALQA4ADQAMQAwADMAOQBCADgAMAAwADYANQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="starttime" type="D" value="44909.0736740625"/>
+					</Node>
+				</Node>
+				<Prp name="name" type="S" value="SR-lab-5"/>
+				<Prp name="incompletedtests" type="I" value="0"/>
+				<Prp name="warningtests" type="I" value="0"/>
+				<Prp name="duration" type="I" value="2559"/>
+				<Prp name="starttime" type="D" value="44909.0736740625"/>
+				<Prp name="failedtests" type="I" value="1"/>
+			</Node>
+		</Node>
+		<Prp name="successtestwithretries" type="I" value="0"/>
+		<Prp name="executionstatus" type="I" value="2"/>
+		<Prp name="incompletedtests" type="I" value="0"/>
+		<Prp name="tests" type="I" value="1"/>
+		<Prp name="warningtests" type="I" value="0"/>
+		<Prp name="failedtests" type="I" value="1"/>
+		<Prp name="host" type="S" value="GRAENN"/>
+		<Prp name="testname" type="S" value="SR-lab-5"/>
+		<Prp name="user" type="S" value="Andmin"/>
+		<Prp name="name" type="S" value="SR-lab-5"/>
+		<Prp name="starttime" type="D" value="44909.0736740625"/>
+		<Prp name="key" type="S" value="{F4CD7DBE-5016-412A-A6A1-78C30428F0CA}"/>
+		<Prp name="stop" type="D" value="44909.0737047222"/>
+		<Prp name="warningtestwithretries" type="I" value="0"/>
+	</Node>
+</Nodes>

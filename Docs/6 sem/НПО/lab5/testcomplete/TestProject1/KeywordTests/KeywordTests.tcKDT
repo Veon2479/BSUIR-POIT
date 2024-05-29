@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9576DAFD-0ADD-41A8-9897-C72F150AF6BB}" version="15.0">
+	<children>
+		<folder name="signature_check">
+			<child name="TestEmptyFile" key="{3C586E03-691F-4393-8BAD-1271BF4AA6A1}" path="TestEmptyFile.tcKDTest" />
+			<child name="TestBSUIR" key="{078C5CD1-EFC8-4D29-B137-D4B5F6D1B1B9}" path="TestBSUIR.tcKDTest" />
+			<child name="TestWrongFormat" key="{F37ED13A-39ED-4CFA-851A-153AF65B6807}" path="TestWrongFormat.tcKDTest" />
+			<child name="TestWrongSignature" key="{A7EFF4D5-C4F6-40FC-BAB7-0DBD58BF3C8F}" path="TestWrongSignature.tcKDTest" />
+		</folder>
+		<folder name="input_check">
+			<child name="TestChars" key="{E24016BF-802A-480A-AEEA-7C93B3B9297E}" path="TestChars.tcKDTest" />
+			<child name="TestHInterval" key="{8987D6DF-6080-4DA8-9401-FE76FDE62B7E}" path="TestHInterval.tcKDTest" />
+			<child name="TestKInterval" key="{6AD7B930-D5BF-4FD0-B149-85DF8C4693FA}" path="TestKInterval.tcKDTest" />
+			<child name="TestNoParameters" key="{DC50CDF4-A95C-4A6B-BC33-03F165AF9EB9}" path="TestNoParameters.tcKDTest" />
+			<child name="TestPNotPrime" key="{E82B660E-1246-4F95-A473-DA9121D2D48B}" path="TestPNotPrime.tcKDTest" />
+			<child name="TestQNotP_1" key="{7FB0BC04-27BE-48C3-995A-8D560E16C1E2}" path="TestQNotP_1.tcKDTest" />
+			<child name="TestQNotPrime" key="{4EB63298-67B7-48F6-895E-7ACC72A72766}" path="TestQNotPrime.tcKDTest" />
+			<child name="TestXInterval" key="{B2412AA2-EC1D-4DDE-B50E-2D1AC5E0841F}" path="TestXInterval.tcKDTest" />
+		</folder>
+	</children>
+</Root>

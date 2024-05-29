@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "p0JOFi+TCYzoKuQenk4eiAsRLzFJ2vQS69aSdTDFjX8egCwx+S0uSXnXP2X2hNOpyMdl+ffXej0Y/iUu2/8FnA==",
+  "success": true,
+  "projectFilePath": "D:\\Homework\\НПО\\lab5\\Dsa\\Dsa.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Andmin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Andmin\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Andmin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Andmin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}

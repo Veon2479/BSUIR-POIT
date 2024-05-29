@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="aeed0533-b777-41e9-bbfc-53da1dad4618" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8731/Design_Time_Addresses/WcfServiceLibrary1/WhetherService/?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="c81ec05b-2528-4ac1-a6b3-a629efae7ef5" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/WcfServiceLibrary1/WhetherService/?xsd=xsd1" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="79fcb651-29e1-4a9d-891f-b9dd819648d0" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/WcfServiceLibrary1/WhetherService/?xsd=xsd2" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="486f2f28-0895-43cc-ade4-1591a9394542" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/WcfServiceLibrary1/WhetherService/?xsd=xsd0" />
+    <MetadataFile FileName="item.wsdl" MetadataType="Wsdl" ID="04cca259-431f-4d9c-b16e-a58934250194" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/WcfServiceLibrary1/WhetherService/?wsdl=wsdl0" />
+    <MetadataFile FileName="WhetherService.wsdl" MetadataType="Wsdl" ID="42d5e168-1c1f-42d9-bdb7-249bac84d9e9" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/WcfServiceLibrary1/WhetherService/?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

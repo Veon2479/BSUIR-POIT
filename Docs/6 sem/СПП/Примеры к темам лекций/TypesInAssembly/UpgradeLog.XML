@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="TypesInAssembly">
+</Property><Property Name="Solution File" Value="C:\My\BSUIR\DotNetLectures\TypesInAssembly\TypesInAssembly.sln">
+</Property><Property Name="Date" Value="24 апреля 2008 г.">
+</Property><Property Name="Time" Value="12:43">
+</Property></Properties><Event ErrorLevel="0" Project="TypesInAssembly" Source="TypesInAssembly.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="TypesInAssembly" Source="TypesInAssembly.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="TypesInAssembly.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="TypesInAssembly.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TypesInAssembly" Source="TypesInAssembly.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

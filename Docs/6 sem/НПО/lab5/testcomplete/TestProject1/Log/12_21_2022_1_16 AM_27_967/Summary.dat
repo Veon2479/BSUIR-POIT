@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test7">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="durationwithoutchildren" type="I" value="1323"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="duration" type="I" value="1323"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAxADkAQQBDAEEANwAzADIALQA2AEEAMwAwAC0ANABBAEUAQQAtAEIAQQAwAEYALQA2ADAAQQBCAEIAQgA1ADYAQgAwAEIAOQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="TestXInterval"/>
+						<Prp name="starttime" type="D" value="44916.0532898611"/>
+					</Node>
+					<Node name="test0">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="durationwithoutchildren" type="I" value="2494"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="duration" type="I" value="2494"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAzADUAOABDADIARAA2AEIALQA3ADMAQQAzAC0ANAAzADEANgAtAEEARgBGAEIALQA4ADkANAAzAEIANQBCADYAQgA3AEMAQQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="StartApplication"/>
+						<Prp name="starttime" type="D" value="44916.0531016898"/>
+					</Node>
+					<Node name="test1">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="durationwithoutchildren" type="I" value="2440"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="duration" type="I" value="2440"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA5ADYAMQBFAEQAMAA5ADQALQBCADYAMgA3AC0ANABDADcAQgAtAEIANQAzADYALQA4ADgANgAwADgARQBCAEYAOQA0AEQANQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="TestNoParameters"/>
+						<Prp name="starttime" type="D" value="44916.0531307176"/>
+					</Node>
+					<Node name="test11">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="durationwithoutchildren" type="I" value="0"/>
+						<Prp name="status" type="I" value="3"/>
+						<Prp name="duration" type="I" value="0"/>
+						<Prp name="name" type="S" value="TestWrongFormat"/>
+						<Prp name="starttime" type="D" value="44916.0533772338"/>
+					</Node>
+					<Node name="test6">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="durationwithoutchildren" type="I" value="2163"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="duration" type="I" value="2163"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAyAEQARQBCADcAMwBBAEQALQA0AEMAOQAxAC0ANAA3ADcAMQAtADkARAA2ADAALQAyAEQAQQA0AEMAMgA2ADIARAA5AEEAMQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="TestQNotP_1"/>
+						<Prp name="starttime" type="D" value="44916.0532645949"/>
+					</Node>
+					<Node name="test5">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="durationwithoutchildren" type="I" value="2266"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="duration" type="I" value="2266"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBCAEEAQgBEADcANwAzAEYALQAwADAAMABBAC0ANAAxADcAOAAtADgAMABCADYALQA4AEEANwAyAEYANwA3AEYAOAAyADIANgB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="TestHInterval"/>
+						<Prp name="starttime" type="D" value="44916.0532382407"/>
+					</Node>
+					<Node name="test12">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="durationwithoutchildren" type="I" value="0"/>
+						<Prp name="status" type="I" value="3"/>
+						<Prp name="duration" type="I" value="0"/>
+						<Prp name="name" type="S" value="TestWrongSignature"/>
+						<Prp name="starttime" type="D" value="44916.0533772338"/>
+					</Node>
+					<Node name="test2">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="durationwithoutchildren" type="I" value="2290"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="duration" type="I" value="2290"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA3ADgANQBGAEUAMAAxADEALQAwADQAMQBEAC0ANAAzADcARAAtAEEAMgBBADYALQAxADAAMABEADgANAAxADkAMQA4AEYAMAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="TestCharParameters"/>
+						<Prp name="starttime" type="D" value="44916.0531590162"/>
+					</Node>
+					<Node name="test9">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="y is incorrect"/>
+							</Node>
+						</Node>
+						<Prp name="durationwithoutchildren" type="I" value="2244"/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="duration" type="I" value="2244"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA4AEMANQA3AEQAQgAzADIALQBFAEEANwAxAC0ANAA3AEYANgAtADgAMgBFADUALQAxAEMAMQA4ADMAQwBGADYANwAwAEIAMQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="TestEmptyFile"/>
+						<Prp name="starttime" type="D" value="44916.0533199306"/>
+					</Node>
+					<Node name="test8">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="durationwithoutchildren" type="I" value="1250"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="duration" type="I" value="1250"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAyAEUARQAyADcAQQBFAEMALQA2ADEAQwBEAC0ANAAyADkAOAAtADkAQgA1ADYALQA4ADkAOAA3AEMARgA3ADgAQwAxADIAQQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="TestKInterval"/>
+						<Prp name="starttime" type="D" value="44916.0533053472"/>
+					</Node>
+					<Node name="test10">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The execution process was interrupted."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="The test execution was interrupted."/>
+							</Node>
+						</Node>
+						<Prp name="durationwithoutchildren" type="I" value="2697"/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="duration" type="I" value="2697"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAyAEQANQBDADgAMQA0ADkALQBBAEQAMgAyAC0ANAAzAEQANgAtAEIAQgBFADQALQA1AEMAMgBFADEAMwBGAEUAOQAyAEMAMgB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="TestBSUIR"/>
+						<Prp name="starttime" type="D" value="44916.0533460185"/>
+					</Node>
+					<Node name="test3">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="durationwithoutchildren" type="I" value="2129"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="duration" type="I" value="2129"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA0ADQAQgA1ADUARQAzADMALQAwADkAOQAzAC0ANAA4ADEANAAtAEIAQQA5AEQALQAwAEYAMQA4AEQANQA0ADgARQBDAEEARAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="TestPNotPrime"/>
+						<Prp name="starttime" type="D" value="44916.0531857523"/>
+					</Node>
+					<Node name="test13">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="durationwithoutchildren" type="I" value="0"/>
+						<Prp name="status" type="I" value="3"/>
+						<Prp name="duration" type="I" value="0"/>
+						<Prp name="name" type="S" value="StopApplication"/>
+						<Prp name="starttime" type="D" value="44916.0533772338"/>
+					</Node>
+					<Node name="test4">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="durationwithoutchildren" type="I" value="2370"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="duration" type="I" value="2370"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA5AEUAOQBCADMAOAA1AEUALQBCAEIAOAA5AC0ANAAzAEQAMQAtAEIAOQA2ADUALQBFADIAMQBCADkANgBCADYAQQA4ADIAQgB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="TestQNotPrime"/>
+						<Prp name="starttime" type="D" value="44916.0532106713"/>
+					</Node>
+				</Node>
+				<Prp name="incompletedtests" type="I" value="3"/>
+				<Prp name="duration" type="I" value="23666"/>
+				<Prp name="name" type="S" value="Test_DSA"/>
+				<Prp name="failedtests" type="I" value="2"/>
+				<Prp name="warningtests" type="I" value="0"/>
+				<Prp name="starttime" type="D" value="44916.0531016898"/>
+			</Node>
+		</Node>
+		<Prp name="executionstatus" type="I" value="2"/>
+		<Prp name="successtestwithretries" type="I" value="0"/>
+		<Prp name="key" type="S" value="{06140291-49A5-4E6C-8653-18708CE240C1}"/>
+		<Prp name="host" type="S" value="GRAENN"/>
+		<Prp name="incompletedtests" type="I" value="3"/>
+		<Prp name="starttime" type="D" value="44916.0531015856"/>
+		<Prp name="warningtestwithretries" type="I" value="0"/>
+		<Prp name="name" type="S" value="Test_DSA"/>
+		<Prp name="tests" type="I" value="14"/>
+		<Prp name="stop" type="D" value="44916.0533783218"/>
+		<Prp name="warningtests" type="I" value="0"/>
+		<Prp name="failedtests" type="I" value="2"/>
+		<Prp name="user" type="S" value="Andmin"/>
+		<Prp name="testname" type="S" value="Test_DSA"/>
+	</Node>
+</Nodes>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test0">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="name" type="S" value="ProjectTestItem1"/>
+						<Prp name="starttime" type="D" value="44909.6088039815"/>
+						<Prp name="duration" type="I" value="2330"/>
+						<Prp name="durationwithoutchildren" type="I" value="2330"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA2AEQANQAxADEARgA3ADEALQA2AEMAOQAwAC0ANABCADUANAAtAEEAQQBBADAALQA0ADMANAA0ADMANwBGADgARQBGADAARAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="status" type="I" value="0"/>
+					</Node>
+					<Node name="test2">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="name" type="S" value="ProjectTestItem2"/>
+						<Prp name="starttime" type="D" value="44909.6089597801"/>
+						<Prp name="duration" type="I" value="240"/>
+						<Prp name="durationwithoutchildren" type="I" value="240"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBGAEEARQA5AEMAQgBGADAALQBEAEIANgAyAC0ANAAyAEIANQAtAEIAMgA5AEIALQBFADkARQBDAEMAOAA0AEIAMAA0AEEAQwB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="status" type="I" value="0"/>
+					</Node>
+					<Node name="test1">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="Cannot obtain the window with the window class 'TI_4.MainWindow', window caption '*' and index -1. See Details for additional information."/>
+							</Node>
+						</Node>
+						<Prp name="name" type="S" value="ProjectTestItem3"/>
+						<Prp name="starttime" type="D" value="44909.6088310648"/>
+						<Prp name="duration" type="I" value="11091"/>
+						<Prp name="durationwithoutchildren" type="I" value="11091"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAxADMANQBGAEEAOAAzADkALQBDAEMAMwA0AC0ANABEAEIANQAtAEIANQBCAEIALQA5AEIAMQAzADIANQAyADkAQQAzADIANgB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="status" type="I" value="2"/>
+					</Node>
+				</Node>
+				<Prp name="incompletedtests" type="I" value="0"/>
+				<Prp name="warningtests" type="I" value="0"/>
+				<Prp name="name" type="S" value="SR-lab-5"/>
+				<Prp name="starttime" type="D" value="44909.6088039815"/>
+				<Prp name="duration" type="I" value="13661"/>
+				<Prp name="failedtests" type="I" value="1"/>
+			</Node>
+		</Node>
+		<Prp name="executionstatus" type="I" value="2"/>
+		<Prp name="name" type="S" value="SR-lab-5"/>
+		<Prp name="warningtestwithretries" type="I" value="0"/>
+		<Prp name="testname" type="S" value="SR-lab-5"/>
+		<Prp name="stop" type="D" value="44909.6089635995"/>
+		<Prp name="user" type="S" value="Andmin"/>
+		<Prp name="key" type="S" value="{24AC0B55-A0D5-4C5D-834D-A4475AC405C0}"/>
+		<Prp name="host" type="S" value="GRAENN"/>
+		<Prp name="failedtests" type="I" value="1"/>
+		<Prp name="successtestwithretries" type="I" value="0"/>
+		<Prp name="warningtests" type="I" value="0"/>
+		<Prp name="starttime" type="D" value="44909.6088038542"/>
+		<Prp name="tests" type="I" value="3"/>
+		<Prp name="incompletedtests" type="I" value="0"/>
+	</Node>
+</Nodes>

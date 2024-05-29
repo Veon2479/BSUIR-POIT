@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="units">
+			<Prp name="unit 1" type="S" value="{C0A3FE18-3A15-476C-B6DB-0E3371C74C9D}"/>
+			<Prp name="unit 2" type="S" value="{3C586E03-691F-4393-8BAD-1271BF4AA6A1}"/>
+			<Prp name="unit 0" type="S" value="{841DA912-AD02-4DC7-9ABC-0249A9F3E99D}"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="child data"/>
+		<Node name="item 2">
+			<Prp name="line no" type="I" value="0"/>
+			<Prp name="stacktext" type="S" value="TestEmptyFile()"/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 3">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="76"/>
+			<Prp name="date" type="D" value="44916.0505996644"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="message" type="S" value="There may be an error (or errors) caused by test self-healing."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;style&gt;body {font-family : Segoe UI, Tahoma, Arial, Helvetica, sans-serif; font-size : 10pt; font-weight : normal; padding : 14px 8px 8px 14px; margin : 0 0 0 0;} p {margin : 4px 0 4px 0; padding : 0 0 0 0;} h4 {font-size: 10pt; font-weight : bold; margin : 12px 0 0 16px; padding : 0 0 0 0;} table {margin-left : 16px; border-top: 1px solid grey;} td {font-size : 10pt; font-weight : normal; padding-left : 8px;} &lt;/style&gt;&lt;style&gt;p, td, th{font-size: 10pt;} td, th {border-bottom: 1px solid #cdcdcd; padding: 2px 10px 2px 10px;} th {text-align: left; background: #cdcdcd; font-weight : normal;}  p {padding : 0; margin : 4 0 4 0px; line-height: 16pt;} table {border: 0px;}&lt;/style&gt;&lt;body&gt;&lt;p&gt;During the test run, one or several test objects were not found, and the test engine tried to “heal” your test by replacing missing objects with similar ones automatically. &lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;color: #777;&quot;&gt;Tips&lt;/b&gt;&lt;/p&gt;&lt;ul style=&quot;margin-top: 10px&quot;&gt;&lt;li&gt;If a replacement object is selected incorrectly, this can affect further behavior of your test and cause errors.&lt;/li&gt;&lt;li&gt;Please check all the preceding ‘Object was replaced with a similar object’ messages in the test log.&lt;/li&gt;&lt;li&gt;If the found replacement object meets your requirements, make sure to click the &lt;b&gt;Accept Intelligent Fix&lt;/b&gt; button.The mapping criteria will be updated, and the message will no longer appear for that object.&lt;/li&gt;&lt;li&gt;If the found replacement object was not the correct one, please update its mapping criteria manually.&lt;/li&gt;&lt;li&gt;To cancel the automatic replacement of missing objects during the runtime, disable the &lt;a href=&quot;aqa-help://2196&quot;&gt;Enable Self-Healing mode&lt;/a&gt; option.&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 1">
+			<Prp name="picture" type="S" value="Picture15.png"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="67"/>
+			<Prp name="date" type="D" value="44916.050594294"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="message" type="S" value="The &quot;dlg_2&quot; object was replaced with a similar object."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;style&gt;body {font-family : Segoe UI, Tahoma, Arial, Helvetica, sans-serif; font-size : 10pt; font-weight : normal; padding : 14px 8px 8px 14px; margin : 0 0 0 0;} p {margin : 4px 0 4px 0; padding : 0 0 0 0;} h4 {font-size: 10pt; font-weight : bold; margin : 12px 0 0 16px; padding : 0 0 0 0;} table {margin-left : 16px; border-top: 1px solid grey;} td {font-size : 10pt; font-weight : normal; padding-left : 8px;} &lt;/style&gt;&lt;style&gt;p, td, th{font-size: 10pt;} td, th {border-bottom: 1px solid #cdcdcd; padding: 2px 10px 2px 10px;}table.tableIntelegentFix th {text-align: left; background: #cdcdcd; font-weight : normal;}  p {padding : 0; margin : 4 0 4 0px; line-height: 16pt;} table {border: 0px;}&lt;/style&gt;&lt;body&gt;&lt;p&gt;Your test self-healed automatically. The mapping criteria for the above object were replaced with the criteria of a similar object found during the runtime.&lt;/p&gt;&lt;p&gt;&lt;code&gt;NameMapping.&amp;#8203;Sys.&amp;#8203;Dsa.&amp;#8203;&lt;a href=&quot;namemapping://{1566799D-EFFA-4438-9B10-7813FFDB5277}.{2FFE4E90-6137-42A3-BD91-9E05A7682A3E}&quot; title=&quot;Missing object. Click to view and change its recognition settings.&quot;&gt;&lt;span style=&quot;color: red; font-weight: bold;&quot;&gt;dlg_2&lt;/span&gt;&lt;/a&gt;&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;A similar object has been found &amp;ndash; see the Picture tab.&lt;/p&gt;&lt;table class=&quot;tableIntelegentFix&quot; style=&quot;margin-top: 12px;&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Property&lt;/th&gt;&lt;th&gt;Mapping Value&lt;/th&gt;&lt;th&gt;Found&lt;/th&gt;&lt;th&gt;Action&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody style=&quot;background-color: #f0f0f0;&quot;&gt;&lt;tr&gt;&lt;td&gt;WndClass&lt;/td&gt;&lt;td&gt;#32770&lt;/td&gt;&lt;td&gt;#32770&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;WndCaption&lt;/td&gt;&lt;td&gt;Открытие&lt;/td&gt;&lt;td&gt;Open&lt;/td&gt;&lt;td&gt;Update&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&amp;nbsp;&lt;br/&gt;&lt;/p&gt;&lt;p&gt; &lt;style&gt; a.btn { background-color: #00b2ff; color: white; padding: 5px 20px; text-decoration: none; font-weight : bold; } &lt;/style&gt;&lt;a class=&quot;btn&quot; href=&quot;autofixnamemapping://54Wh5r2zAQAEAHJvb3QLAAcAcGljZmlsZQEAKgB7Q0QwQ0JCQTAtRjBBNS00MUMzLUEwMjEtMUJG&#xA;OEVDOThBRTJEfS5wbmcEAG1vZGUAAAAABwBwcm9qZWN0AQAkADE1NjY3OTlEeEVGRkF4NDQzOHg5&#xA;QjEweDc4MTNGRkRCNTI3NwIAbm0BACQAMkZGRTRFOTB4NjEzN3g0MkEzeEJEOTF4OUUwNUE3Njgy&#xA;QTNFAQBsAAAAAAEAdAAAAAABAGIAAMmYAAkAcHJvcGNvdW50AAACAAQAdHlwZQEACwBSZWNvZ25p&#xA;dGlvbgEAcgAAz4AABgBjb25maWcBABUARGVmYXVsdCBDb25maWd1cmF0aW9uBAALAGZvdW5kdmFs&#xA;dWVzAgABADABABkAQDIzMDAzMzAwMzIwMDM3MDAzNzAwMzAwMAEAMQEAEQBANEYwMDcwMDA2NTAw&#xA;NkUwMAAABgB2YWx1ZXMCAAEAMAEAGQBAMjMwMDMzMDAzMjAwMzcwMDM3MDAzMDAwAQAxAQAhAEAx&#xA;RTA0NDIwNDNBMDQ0MDA0NEIwNDQyMDQzODA0MzUwNAAABQBuYW1lcwIAAQAwAQAIAFduZENsYXNz&#xA;AQAxAQAKAFduZENhcHRpb24AAAcAbWF0Y2hlZAIAAQAwAADvv7/nv78BADEAAAEAAAA=&quot;&gt;Accept Intelligent Fix&lt;/a&gt;&lt;/p&gt;&lt;br/&gt;&lt;p&gt;&lt;b style=&quot;color: #777;&quot;&gt;Tips&lt;/b&gt;&lt;/p&gt;&lt;ul style=&quot;margin-top: 10px&quot;&gt;&lt;li&gt;We replaced the missing object automatically during the runtime, but did not update its recognition criteria.&lt;/li&gt;&lt;li&gt;To update the recognition criteria in the Name Mapping repository, click Accept Intelligent Fix.&lt;/li&gt;&lt;li&gt;To cancel automatic replacement of missing objects during the runtime, disable the &lt;a href=&quot;aqa-help://2196&quot;&gt;Enable Self-Healing mode&lt;/a&gt; option.&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;aqa-help://2220&quot;&gt;Learn more&lt;/a&gt; about possible causes of the issue.&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 5">
+			<Prp name="picture" type="S" value="Picture17.png"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="0"/>
+			<Prp name="date" type="D" value="44916.0506067014"/>
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="message" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;p&gt;The test run has stopped because --&lt;/p&gt;&lt;ul&gt;&lt;li&gt;An error message was posted to the log and&lt;/li&gt;&lt;li&gt;The &lt;a href=&quot;aqa-help://6090&quot;&gt;On error&lt;/a&gt; project property is set to &quot;Stop project&quot; or &quot;Stop current item&quot;.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;If you don't want the test to stop on errors, set this property (&lt;b&gt;Project Editor &amp;rArr; Properties &amp;rArr; Playback&lt;/b&gt;), to &quot;Continue running&quot; or change your test commands so that they do not post errors to the log automatically. For example, if a window or process was not found, use WaitWindow, WaitProcess or similar methods to get the needed object.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;aqa-help://2207&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="stack beginning" type="I" value="3"/>
+			<Prp name="stack end" type="I" value="3"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="item 3">
+			<Prp name="line no" type="I" value="0"/>
+			<Prp name="stacktext" type="S" value="TestEmptyFile()"/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 2">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object name" type="S" value="Aliases.Dsa.dlg_2.cbx_2.Window(&quot;ComboBox&quot;, &quot;&quot;, 1).Window(&quot;Edit&quot;, &quot;&quot;, 1)"/>
+					<Prp name="datetime" type="D" value="44915.9255946412"/>
+					<Prp name="object bottom" type="I" value="531"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object top" type="I" value="511"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="image file name" type="S" value="visImage29.png"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object right" type="I" value="657"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="line #" type="I" value="67"/>
+					<Prp name="object left" type="I" value="234"/>
+				</Node>
+			</Node>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="67"/>
+			<Prp name="date" type="D" value="44916.0505950463"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="The text 'D:\Homework\НПО\lab5\testcomplete\Resources\TestFiles\empty.txt' was entered in the text editor."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Sys.Process(&quot;Dsa&quot;).Window(&quot;#32770&quot;, &quot;Open&quot;, 1).Window(&quot;ComboBoxEx32&quot;, &quot;&quot;, 1).Window(&quot;ComboBox&quot;, &quot;&quot;, 1).Window(&quot;Edit&quot;, &quot;&quot;, 1)"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="item 0">
+			<Prp name="line no" type="I" value="76"/>
+			<Prp name="stacktext" type="S" value="test_sign_values"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 4">
+			<Prp name="picture" type="S" value="Picture16.png"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="76"/>
+			<Prp name="date" type="D" value="44916.0506024537"/>
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="y is incorrect"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="stack beginning" type="I" value="0"/>
+			<Prp name="stack end" type="I" value="2"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 0">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object name" type="S" value="Aliases.Dsa.frmDsa.gbRadiobtnSign.btnChoice"/>
+					<Prp name="datetime" type="D" value="44915.9254729745"/>
+					<Prp name="object bottom" type="I" value="196"/>
+					<Prp name="click point y" type="I" value="181"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object top" type="I" value="167"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="847"/>
+					<Prp name="image file name" type="S" value="visImage28.png"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object right" type="I" value="922"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="line #" type="I" value="27"/>
+					<Prp name="object left" type="I" value="773"/>
+				</Node>
+			</Node>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="27"/>
+			<Prp name="date" type="D" value="44916.0504736227"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="remarks" type="S" value="A click at point (74, 14) with no key pressed.&#xA;&#xA;Tested object:&#xA;Aliases.Dsa.frmDsa.gbRadiobtnSign.btnChoice&#xA;(Sys.Process(&quot;Dsa&quot;).WinFormsObject(&quot;frmDsa&quot;).WinFormsObject(&quot;gbRadiobtnSign&quot;).WinFormsObject(&quot;btnChoice&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="item 1">
+			<Prp name="line no" type="I" value="5"/>
+			<Prp name="stacktext" type="S" value="test_sign_empty_file"/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Prp name="status" type="I" value="2"/>
+	</Node>
+</Nodes>
