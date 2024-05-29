@@ -1,0 +1,464 @@
+-----------------------------------------------------------------------------
+
+  VGOPHONG.TXT - Phong lighting and specular highlights. Theory,
+		 practice and explaination of the phong lighting
+		 and shading model.
+
+-----------------------------------------------------------------------------
+
+  by TimJ/Vertigo
+
+  "I am he, as you are he, as you are me, and we are all together"
+
+  email: tim@legend.co.uk
+  irc:   #coders #vertcode
+
+
+  revision history:
+
+  16/02/97      v1.0    -       Initial version
+
+
+-----------------------------------------------------------------------------
+ INTRODUCTION
+-----------------------------------------------------------------------------
+
+  First off, I hope this doc is of use to some people, and maybe other
+  people will find it interesting.
+
+  Recently, I've been thinking a lot about phong shading and lighting.
+  There was something that was bugging me. I couldn't quite put my finger
+  on it. It was something I knew to be true, but I had to explain it to
+  myself. It all started when I was chatting to Vector about true phong
+  shading. We'd both recently looked at Voltaire/OTM's doc on fast phong
+  shading (again).
+
+  We were (among other things) chatting about lighting functions in our
+  3D engine. It was about specular highlights and the way normal (fast)
+  phong lighting doesn't yield specular highlights on a flat plane
+  (all normals pointing one way). This got me thinking. I thought, well
+  of course it doesn't, because the light calculated at each point will be
+  the same (because all normals are the same). This annoyed me because I
+  knew it wasn't true -- but I couldn't remember why. It's all to do with
+  the light vector and the view vector (and keeping them constant).
+
+  Volatire's phong method also doesn't yield specular highlights in the
+  center of polygons. Oh, and his method emulates the equation given
+  exactly -- it's not a tradeoff. But then again, it's also just the
+  same as using gouraud. I'll explain later.
+
+  Then I remembered the actual theory behind the lighting equations. It
+  stuck me that people tend to get mixed up in code and forget about the
+  theory behind it.
+
+  What I'll do is go through the theory, how it's implemented.
+  Based on that I'll then address what this doc is actually about --
+  highlights in the center of polygons and on flat planes.
+
+  If you think this doc is a bit slow, forgive me, but you can never please
+  everybody :)
+
+  [Oh, important point.. this is generally about the phong equation. You
+   can do it per pixel or per vertex, either way it's the phong equation.
+   Just because you gouraud shade doesn't mean you can't have phong style
+   specular highlights.]
+
+
+-----------------------------------------------------------------------------
+ LIGHT RAY REFLECTION
+-----------------------------------------------------------------------------
+
+  I was going to explain the theory behind light ray relfection and the
+  spread of the ray across a surface depending on the angle of incidence.
+  But but then I realized I'd have to go into they physics behind spectral
+  reflectivity too, so I won't :)
+
+  If there's enough demand for it, email me and I'll put it in.
+
+
+-----------------------------------------------------------------------------
+ PHONG'S SPECULAR HIGHLIGHTS
+-----------------------------------------------------------------------------
+
+  We need to understand how the phong lighting equation is made up. Let's
+  define a few useful values:
+
+
+		  ^N
+		  |
+	    Lےےے  |     R        V
+	     \ےے  |    /      __/
+	      \ے  |   /    __/
+	       \  |  /  __/
+		\ | /__/
+		 \|//
+     -------------.--------------
+		  P
+		  ^
+		  point under consideration
+
+
+  It's important you know what these values actually are:
+
+  N	= surface normal
+  L     = unit vector between point and light
+  V	= unit vector between point and view
+  R     = light reflection unit vector (mirror of L about N)
+
+
+  First, the diffuse relfection is given by the Lamertian Relfection
+  equation:
+
+    diffuse = Kd * (N dot L)
+
+  Where Kd is the diffuse relfection constant. (N dot L) is the same as
+  the cosine of the angle between N and L, so as the angle decrease, the
+  resulting diffuse value is higher.
+
+  Phong gave spectral reflectivity as:
+
+    diffuse + Ks * (R dot V)^n
+
+  Which is:
+
+    Kd * (N dot L) + Ks * (R dot V)^n
+
+  Where Kd is the diffuse component and Ks is the specular compoenet. This
+  is the generally accepted phong lighting equation. Ks is generaly taken to
+  be a specularity constant (although Phong defined it as W(i).. see later).
+
+  As the angle between the view (V) and the reflected light (R) decreases,
+  you will get more specularity.
+
+  The clever thing about Phong's equation was that it gave a neat way to
+  calculate the specular intensity 'bump' around the light reflection
+  vector (R). The larger the exponential power (n) the smaller and more
+  intense the specular intensity bump. Hence specular highlights.
+
+
+-----------------------------------------------------------------------------
+ IMPLEMENTATION OF PHONG'S EQUATION
+-----------------------------------------------------------------------------
+
+  Most people simplify this equation somewhat, for speed. We begin with :
+
+    Kd * (N dot L) + Ks * (R dot V)^n
+
+  The obvious thing we'd like to remove is (R dot V). Since we don't
+  want to calculate the light relfection vector (mirror of light incidence
+  around the surface normal) -- because it's expensive. Blinn introduced a
+  way to do this using an imaginary vector H. It's then reduced to (N dot H).
+  H is defined as halfway between L and V (after L and V are normalized).
+
+  H is therefore (L + V) / 2. You will see that the angle R dot V is double
+  N dot H -- but this doesn't matter as you can alter the specular
+  exponential value (n) to compenstate. This gives us the equation :
+
+    Kd * (N dot L) + Ks * (N dot ( L + V / 2))^n
+
+  Up until now we've ignored the ambient factor, this is because it's
+  damn obvious and has little consequence on the math.. we'll put it in
+  now
+
+    Ka + Kd * (N dot L) + Ks * (N dot ( L + V / 2))^n
+
+  Which is easily implemented. You only need three vectors: the surface
+  normal, the light vector and the view vector. It's obviously advised
+  to do this equation in object-space.
+
+
+  Another way to remove R dot V, is by replacing it with N dot L :
+
+    Ka + Kd * (N dot L) + Ks * (N dot L)^n
+
+  This assumes you will always get the maximum specularly reflected light,
+  no matter where the view is. Here's why :
+
+  If we assume V is always the same as R, then the angle between N and V is
+  the same as N and L --
+
+		  ^N
+		  |                     A = angle between N and L
+	    Lےےے  |     R (also V)      B = angle between N and V
+	     \ےےA | B  /
+	      \ے /|\  /
+	       \/ | \/
+		\ | /
+		 \|/
+     -------------.--------------
+
+
+  Angle A and B are the same (of course, since R is the mirror vector of L).
+  So, N dot V becomes the same as L dot N.
+
+  This makes life easier and faster. The results completely ignore the
+  position of the view; so it's like having a reflective surface that always
+  reflects the maximum amount of specular light towards the view.
+
+    (normally, as the angle between the view and the reflected light
+     increases, you get less specularly reflected light).
+
+  It's just a trade off.
+
+    Ka + Kd * (N dot L) + Ks * (N dot L)^n
+
+  or
+
+    Ka + Kd * cos(theta) + Ks * cos(theta)^n
+
+  where cos(theta) is N dot L. Most likely, the above equation is the
+  one most people use. Also, since more implementation assume V is constant
+  across the scene (normalized.. at infinity) then using N dot L can be
+  acceptable. But it does have some dire consequences.
+
+
+-----------------------------------------------------------------------------
+ REAL TIME PHONG SHADING
+-----------------------------------------------------------------------------
+
+  This is what was causing the confusion. Voltaires text on phong shading
+  (OTMPHONG.TXT) used the equation
+
+    color = specular + (cos x) * diffuse + (cos x)^n * specular
+
+  for calculating phong lighting. This is the same as the last equation we
+  just disussed. He then went on to explain the specular intensity 'bump'
+  through the (cos x)^n term of the equation.
+
+  (note: phong shading is done by recalculating the lighting equation at
+   each pixel -- this is done by interpolating the vertex normals across
+   the polygon and re-evaluating).
+
+  Since there is just one angle term in the equation (N dot L), he realized
+  he could dispense with normals and just interpolate the angle.
+
+  Remember :
+
+    Ka + Kd * cos(theta) + Ks * cos(theta)^n
+
+  You only need to interpolate theta, then you can do a lookup table for
+  the correct colour created like so:
+
+  for( theta=0 ; theta < 90 ; theta++ )
+  {
+    table[i] = Ka + Kd * cos(theta) + Ks * pow( cos(theta) , specExp ) ;
+  }
+
+  The problem with all this is that the original equation was inaccurate,
+  so the results will be inaccurate. However, Voltaire does point this
+  out, and state that highlights can't be inside polygons.
+
+  But, as Zog pointed out to me, you can get exactly the same effect with
+  gouraud, by setting up the palette in a similar way. This method is
+  basically the same as gouraud, you're just interpolating an angle instead
+  of an intensity.. as Zog put it, "it's fucking gouraud revisited" :)
+
+  I just thought I'd clear this up, as people tend not to believe it's
+  real, and think it's some kind of trick (if you use the same equation
+  in a true shader, you'll get the same results).
+  It's also important for the next section (the equation at least).
+
+-----------------------------------------------------------------------------
+ PHONG'S SPECULAR HIGHLIGHTS (REVISITED)
+-----------------------------------------------------------------------------
+
+  As pointed out, phong shading requires the interpolating of vertex
+  normals across the polygon, and recalculation of the equation.
+
+  Right, here's where more confustion comes in. To simplify things,
+  people tend to treat V as a constant over the entire scene.
+
+			     N
+		     L        |    / V (view)
+	       (light) \      |   /
+			 \    |  /
+			   \  | /
+			     \|/
+		 -------------.--------------
+			      P
+
+
+
+  V is not constant though.. it is dependant on the point under
+  consideration (P). So making V constant, is like sticking the view at
+  infinity (this is done by normalizing the view vector).
+  This means that the falloff of the specular light at sharp angles
+  between the surface and view is not taken into account (it's linear).
+  So the highlight will be too big and intense at sharp angles (the
+  falloff will be linear in respect to the view position). Also, the
+  highlight won't move correctly with the view.
+
+  You can probably see that the same thing can be done for L..
+  ie. directional lighting. Putting L at infinity affects specular fall
+  off with respect to the light and the view. But I'm sure everyone knows
+  the implications of directional lighting (it's just like having a light
+  really really far away).
+
+
+  As explained earlier, dispensing with V altogether can give you a nice
+  speed up using N dot L instead of R dot V.
+
+  Let's look at the consequences of dispensing with V. This is like
+  assuming you have a perfect reflector.. like a mirror. The surface will
+  always reflect the maximum amount of specular light towards the view --
+  the highlight will seem to 'stick' to the light relfection vector and not
+  change shape or size, no matter where you put the view.
+
+  But, given this, you just have to interpolate N for the polygon
+
+    (remember, we need (N dot L) and (N dot H) where is H = L+V/2)
+
+
+-----------------------------------------------------------------------------
+ SPECULAR REFLECTION
+-----------------------------------------------------------------------------
+
+  Now we get to the crux of the problem. All that time ago back at the
+  start, I mentioned a plane with all the normals pointing one way.
+
+  The thing to remember is this, the lighting is *not* just dependant on
+  the surface normal. It's a function of the light vector and the view
+  vector. The important value is V, as V affects how specular light is
+  reflected.
+
+  If V is properly calculated, for a flat surface, the angle between the
+  view and the normal (which is constant) will alter.
+
+			      N
+	V                    ^
+	\ \                  |
+	 \   \               |
+	  \     \            |
+	   \       \         |
+	    \         \      |
+	     \           \   |
+       -------.-----------.---
+	      p1          p2
+
+
+  The angle at p1 is obviously sharper than the angle at p2. Even though
+  N is the same at both points. It all becomes obvious now. Unless you
+  calculate V correctly, the reflected specular light over a flat surface
+  will be the even at any point on it.
+
+  At this point you might be thinking : "what if V is put at infinity and
+  L is calculated properly? -- won't that do the same job?"
+
+  In a word, no, because V is the important vector. We have to remember the
+  original equation where the specular light was a function of R and V.
+  N would be constant, V would be constant, so specular light would just be
+  a function of V -- ie, not very accurate at all.
+
+  So, we're left with the following equation:
+
+    Ka + Kd * (N dot L) + Ks * (N dot ( L + V / 2))^n
+
+  So, basically, in a nutshell, you've got to recalculate V for the new
+  point under consideration. If you do that, you'll get specular highlights
+  on flat planes.
+
+  If you have directional lights (L at infinity) then the highlight will be
+  incorrectly positioned and spread -- since the angle between any given
+  point and the light will be more or less the same (to an infintecial
+  degree). On a flat surface you'd be depending on the angle the view makes
+  with the surface. Although, this isn't too much to worry about --
+  I think directional lighting is a choice, not a compromise.
+
+    [ Oh yeah, in the first section I said Phong defined Ks as W(i). Well,
+      this meant that Ks was a function of the angle of incidence between
+      the light and the surface. So specularly reflected light was dependant
+      on the incoming angle as well as the outgoing angle. Phong never
+      actually defined W(i) though -- so it's usually ignored. It does give
+      you another parameter for your surface to play with though. ]
+
+-----------------------------------------------------------------------------
+ REAL TIME PHONG SHADING (REVISIED)
+-----------------------------------------------------------------------------
+
+  Ok, so now we know that V and L are important factors of the equation.
+  Voltaire's phong shading method is completely correct for the equation
+  he used (but as mentioned, it's basically the same as gouraud).
+
+  What he did was place L at infinity and make the surface a perfect
+  reflector (that always reflected the maximum specular light) towards
+  the view (where ever it was). I explained all this earlier anyway :)
+
+  That meant there was only one angle to interpolate, but it also meant
+  that on flat surfaces it was impossible to get correct highlights.
+  (polygons are flat :)
+
+  However, Voltaire's method is more accurate than normal gouraud for the
+  same lighting equation (due to the non-linear lookup table).
+  However, you can do the same with gouraud.. it just another way of
+  implenenting it (and quite redundant).
+  His method won't extend to other equations though.
+
+  What's annoying is when people just say his method doesn't work and is
+  a load of crap, without explaining why.
+
+
+-----------------------------------------------------------------------------
+ CLOSING WORDS
+
+ "picture yourself in boat on river with tangerine trees and marmalade skies"
+
+-----------------------------------------------------------------------------
+
+  Well, I guess I've managed to confuse almost eveyone. What I've tried
+  to do is explain the factors of the phong lighting equation -- what parts
+  do what, and why it works.
+
+  I've probably made loads of typo's and got different bit's mixed up --
+  but hell, I don't care :)  With any luck, I might not get flamed.
+  If I have mixed something up, forgive me -- it get's hard to track what
+  you have/have not said etc.. and it's not easy without some good
+  diagrams :)
+
+  There are a couple of sections I've left out.. I started the one on
+  light ray reflection, but left it out. I also has a section on optimizing
+  the equation :
+
+    Ka + Kd * (N dot L) + Ks * (N dot ( L + V / 2))^n
+
+  But I didn't get it finished (it's based on the routines I use in my
+  3D engine). There are no square roots, tables, divides or pow()'s used.
+  Yet it still produces the same results (to a reasonable degree of
+  accuracy -- any errors are covered up by (a). the number of intensities we
+  can actually display and (b). the precision of the fpu).
+  If there's enough demand then I'll put it in.
+
+  At the end of all this, an interesting thing to note is that all these
+  equations have no physical basic what so ever -- they're just equations
+  that fit real work observations. Light is actually better represented as
+  radiation -- but let's not get into that now :)
+
+  Greets:
+    Oh god, I don't know.. um.. people I know.. hmmm
+    (no particular order)
+
+    Vector
+    Vastator
+    Phred
+    Gooroo
+    Midnight
+    aM
+    Eckart
+    codex
+    PGM (where ever he may be)
+    BigCheese
+    Pel
+    Wog (Zog, whatever)
+    Crom
+    God
+    All at Abstract Entertainment
+
+    [plus anyone I've missed]
+
+    Flames/comments go to: tim@legend.co.uk
+
+
+-----------------------------------------------------------------------------
+
+  "Living is easy with eyes closed. Misunderstanding all you see.
+   It's getting hard to be someone, but it all works out. It doesn't matter
+   much to me."

@@ -1,0 +1,4 @@
+newmtl african_head
+map_Kd african_head_diffuse.png
+norm african_head_nm.png
+map_Ks african_head_spec.png
