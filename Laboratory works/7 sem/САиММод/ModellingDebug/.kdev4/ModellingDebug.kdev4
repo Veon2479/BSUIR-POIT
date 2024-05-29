@@ -1,0 +1,27 @@
+[Buildset]
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00\x1c\x00M\x00o\x00d\x00e\x00l\x00l\x00i\x00n\x00g\x00D\x00e\x00b\x00u\x00g)
+
+[Launch]
+Launch Configurations=Launch Configuration 0,Launch Configuration 1
+
+[Launch][Launch Configuration 0]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=New Compiled Binary Launcher
+Type=Native Application
+
+[Launch][Launch Configuration 1]
+Configured Launch Modes=execute
+Configured Launchers=scriptAppLauncher
+Name=ModellingDebug.py
+Type=Script Application
+
+[Launch][Launch Configuration 1][Data]
+Configured from ProjectItem=ModellingDebug,ModellingDebug.py
+Executable=file:///home/andmin/Workspace/Modelling/ModellingDebug/ModellingDebug.py
+Interpreter=python3
+Output Filtering Mode=2
+Run current file=false
+
+[Project]
+VersionControlSupport=
